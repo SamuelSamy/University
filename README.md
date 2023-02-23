@@ -20,7 +20,7 @@ University lectures, seminars, labs and assignments.
         
 
 * :blue_book: Semester 3
-    * [Advanced programming methods](Semester-3/Advanced%20Programming%20Methods/) - java
+    * [Advanced programming methods](Semester-3/Advanced%20programming%20methods/) - java
     * [Computer Networks](Semester-3/Computer%20Networks) - c / python
     * [Databases](Semester-3/Databases) - sql
     * [Functional and logical programming](Semester-3/Functional%20and%20logical%20programming) - prolog / lisp
