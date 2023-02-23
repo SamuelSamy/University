@@ -1,0 +1,376 @@
+>>Program State:
+executionStack = [(int v; (v = 4; (while(v > 0) { (print(v); v = (v - 1)) }; print(v))))]
+symbolTable = {}
+output = []
+files = {}
+heap = {}
+
+
+>>Program State:
+executionStack = [(v = 4; (while(v > 0) { (print(v); v = (v - 1)) }; print(v))), int v]
+symbolTable = {}
+output = []
+files = {}
+heap = {}
+
+
+>>Program State:
+executionStack = [(v = 4; (while(v > 0) { (print(v); v = (v - 1)) }; print(v))), int v]
+symbolTable = {}
+output = []
+files = {}
+heap = {}
+
+
+>>Program State:
+executionStack = [(v = 4; (while(v > 0) { (print(v); v = (v - 1)) }; print(v)))]
+symbolTable = {v=0}
+output = []
+files = {}
+heap = {}
+
+
+>>Program State:
+executionStack = [(v = 4; (while(v > 0) { (print(v); v = (v - 1)) }; print(v)))]
+symbolTable = {v=0}
+output = []
+files = {}
+heap = {}
+
+
+>>Program State:
+executionStack = [(while(v > 0) { (print(v); v = (v - 1)) }; print(v)), v = 4]
+symbolTable = {v=0}
+output = []
+files = {}
+heap = {}
+
+
+>>Program State:
+executionStack = [(while(v > 0) { (print(v); v = (v - 1)) }; print(v)), v = 4]
+symbolTable = {v=0}
+output = []
+files = {}
+heap = {}
+
+
+>>Program State:
+executionStack = [(while(v > 0) { (print(v); v = (v - 1)) }; print(v))]
+symbolTable = {v=4}
+output = []
+files = {}
+heap = {}
+
+
+>>Program State:
+executionStack = [(while(v > 0) { (print(v); v = (v - 1)) }; print(v))]
+symbolTable = {v=4}
+output = []
+files = {}
+heap = {}
+
+
+>>Program State:
+executionStack = [print(v), while(v > 0) { (print(v); v = (v - 1)) }]
+symbolTable = {v=4}
+output = []
+files = {}
+heap = {}
+
+
+>>Program State:
+executionStack = [print(v), while(v > 0) { (print(v); v = (v - 1)) }]
+symbolTable = {v=4}
+output = []
+files = {}
+heap = {}
+
+
+>>Program State:
+executionStack = [print(v), while(v > 0) { (print(v); v = (v - 1)) }, (print(v); v = (v - 1))]
+symbolTable = {v=4}
+output = []
+files = {}
+heap = {}
+
+
+>>Program State:
+executionStack = [print(v), while(v > 0) { (print(v); v = (v - 1)) }, (print(v); v = (v - 1))]
+symbolTable = {v=4}
+output = []
+files = {}
+heap = {}
+
+
+>>Program State:
+executionStack = [print(v), while(v > 0) { (print(v); v = (v - 1)) }, v = (v - 1), print(v)]
+symbolTable = {v=4}
+output = []
+files = {}
+heap = {}
+
+
+>>Program State:
+executionStack = [print(v), while(v > 0) { (print(v); v = (v - 1)) }, v = (v - 1), print(v)]
+symbolTable = {v=4}
+output = []
+files = {}
+heap = {}
+
+
+>>Program State:
+executionStack = [print(v), while(v > 0) { (print(v); v = (v - 1)) }, v = (v - 1)]
+symbolTable = {v=4}
+output = [4]
+files = {}
+heap = {}
+
+
+>>Program State:
+executionStack = [print(v), while(v > 0) { (print(v); v = (v - 1)) }, v = (v - 1)]
+symbolTable = {v=4}
+output = [4]
+files = {}
+heap = {}
+
+
+>>Program State:
+executionStack = [print(v), while(v > 0) { (print(v); v = (v - 1)) }]
+symbolTable = {v=3}
+output = [4]
+files = {}
+heap = {}
+
+
+>>Program State:
+executionStack = [print(v), while(v > 0) { (print(v); v = (v - 1)) }]
+symbolTable = {v=3}
+output = [4]
+files = {}
+heap = {}
+
+
+>>Program State:
+executionStack = [print(v), while(v > 0) { (print(v); v = (v - 1)) }, (print(v); v = (v - 1))]
+symbolTable = {v=3}
+output = [4]
+files = {}
+heap = {}
+
+
+>>Program State:
+executionStack = [print(v), while(v > 0) { (print(v); v = (v - 1)) }, (print(v); v = (v - 1))]
+symbolTable = {v=3}
+output = [4]
+files = {}
+heap = {}
+
+
+>>Program State:
+executionStack = [print(v), while(v > 0) { (print(v); v = (v - 1)) }, v = (v - 1), print(v)]
+symbolTable = {v=3}
+output = [4]
+files = {}
+heap = {}
+
+
+>>Program State:
+executionStack = [print(v), while(v > 0) { (print(v); v = (v - 1)) }, v = (v - 1), print(v)]
+symbolTable = {v=3}
+output = [4]
+files = {}
+heap = {}
+
+
+>>Program State:
+executionStack = [print(v), while(v > 0) { (print(v); v = (v - 1)) }, v = (v - 1)]
+symbolTable = {v=3}
+output = [4, 3]
+files = {}
+heap = {}
+
+
+>>Program State:
+executionStack = [print(v), while(v > 0) { (print(v); v = (v - 1)) }, v = (v - 1)]
+symbolTable = {v=3}
+output = [4, 3]
+files = {}
+heap = {}
+
+
+>>Program State:
+executionStack = [print(v), while(v > 0) { (print(v); v = (v - 1)) }]
+symbolTable = {v=2}
+output = [4, 3]
+files = {}
+heap = {}
+
+
+>>Program State:
+executionStack = [print(v), while(v > 0) { (print(v); v = (v - 1)) }]
+symbolTable = {v=2}
+output = [4, 3]
+files = {}
+heap = {}
+
+
+>>Program State:
+executionStack = [print(v), while(v > 0) { (print(v); v = (v - 1)) }, (print(v); v = (v - 1))]
+symbolTable = {v=2}
+output = [4, 3]
+files = {}
+heap = {}
+
+
+>>Program State:
+executionStack = [print(v), while(v > 0) { (print(v); v = (v - 1)) }, (print(v); v = (v - 1))]
+symbolTable = {v=2}
+output = [4, 3]
+files = {}
+heap = {}
+
+
+>>Program State:
+executionStack = [print(v), while(v > 0) { (print(v); v = (v - 1)) }, v = (v - 1), print(v)]
+symbolTable = {v=2}
+output = [4, 3]
+files = {}
+heap = {}
+
+
+>>Program State:
+executionStack = [print(v), while(v > 0) { (print(v); v = (v - 1)) }, v = (v - 1), print(v)]
+symbolTable = {v=2}
+output = [4, 3]
+files = {}
+heap = {}
+
+
+>>Program State:
+executionStack = [print(v), while(v > 0) { (print(v); v = (v - 1)) }, v = (v - 1)]
+symbolTable = {v=2}
+output = [4, 3, 2]
+files = {}
+heap = {}
+
+
+>>Program State:
+executionStack = [print(v), while(v > 0) { (print(v); v = (v - 1)) }, v = (v - 1)]
+symbolTable = {v=2}
+output = [4, 3, 2]
+files = {}
+heap = {}
+
+
+>>Program State:
+executionStack = [print(v), while(v > 0) { (print(v); v = (v - 1)) }]
+symbolTable = {v=1}
+output = [4, 3, 2]
+files = {}
+heap = {}
+
+
+>>Program State:
+executionStack = [print(v), while(v > 0) { (print(v); v = (v - 1)) }]
+symbolTable = {v=1}
+output = [4, 3, 2]
+files = {}
+heap = {}
+
+
+>>Program State:
+executionStack = [print(v), while(v > 0) { (print(v); v = (v - 1)) }, (print(v); v = (v - 1))]
+symbolTable = {v=1}
+output = [4, 3, 2]
+files = {}
+heap = {}
+
+
+>>Program State:
+executionStack = [print(v), while(v > 0) { (print(v); v = (v - 1)) }, (print(v); v = (v - 1))]
+symbolTable = {v=1}
+output = [4, 3, 2]
+files = {}
+heap = {}
+
+
+>>Program State:
+executionStack = [print(v), while(v > 0) { (print(v); v = (v - 1)) }, v = (v - 1), print(v)]
+symbolTable = {v=1}
+output = [4, 3, 2]
+files = {}
+heap = {}
+
+
+>>Program State:
+executionStack = [print(v), while(v > 0) { (print(v); v = (v - 1)) }, v = (v - 1), print(v)]
+symbolTable = {v=1}
+output = [4, 3, 2]
+files = {}
+heap = {}
+
+
+>>Program State:
+executionStack = [print(v), while(v > 0) { (print(v); v = (v - 1)) }, v = (v - 1)]
+symbolTable = {v=1}
+output = [4, 3, 2, 1]
+files = {}
+heap = {}
+
+
+>>Program State:
+executionStack = [print(v), while(v > 0) { (print(v); v = (v - 1)) }, v = (v - 1)]
+symbolTable = {v=1}
+output = [4, 3, 2, 1]
+files = {}
+heap = {}
+
+
+>>Program State:
+executionStack = [print(v), while(v > 0) { (print(v); v = (v - 1)) }]
+symbolTable = {v=0}
+output = [4, 3, 2, 1]
+files = {}
+heap = {}
+
+
+>>Program State:
+executionStack = [print(v), while(v > 0) { (print(v); v = (v - 1)) }]
+symbolTable = {v=0}
+output = [4, 3, 2, 1]
+files = {}
+heap = {}
+
+
+>>Program State:
+executionStack = [print(v)]
+symbolTable = {v=0}
+output = [4, 3, 2, 1]
+files = {}
+heap = {}
+
+
+>>Program State:
+executionStack = [print(v)]
+symbolTable = {v=0}
+output = [4, 3, 2, 1]
+files = {}
+heap = {}
+
+
+>>Program State:
+executionStack = []
+symbolTable = {v=0}
+output = [4, 3, 2, 1, 0]
+files = {}
+heap = {}
+
+
+>>Program State:
+executionStack = []
+symbolTable = {v=0}
+output = [4, 3, 2, 1, 0]
+files = {}
+heap = {}
+
+

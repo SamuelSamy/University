@@ -1,0 +1,143 @@
+
+
+awk -F: {print $1}' /etc/passwd
+
+
+awk program:
+```
+BEGIN   { s = 0 } 
+
+/regex/ {  }
+NR % 2 == 0 { code }
+
+END { print s }
+```
+
+Special variables:
+
+NR - no of row
+NF - no of fields
+$0 - the entire line
+$1, $2, ..., $NF - the index of each field
+
+
+Print full name of users on odd lines:
+awk -F: 'NR % 2 == 1 { print $5 } /etc/passwd'
+
+Full name of users having username > 10 characters
+awk -F: 'length($1) > 10 { print $5}' /etc/passwd
+
+Full name of users having username start with a vowel
+awk -F: '$1 ~ /^[aeiou]/ { print $5 }' /etc/passwd
+grep "^[aeiou]" /etc/passwd | awk -F: '{ print $5 }'
+
+Display the product of the differene between user ID and group ID
+awk -F: -f script.awk /etc/passwd
+
+script.awk
+```
+BEGIN { p = 1 }
+
+{p += ($3 - $4)}
+
+END { print p }
+```
+
+
+
+        Shell Programing
+
+
+helloworld.sh
+```
+#!/bin/bash
+
+echo "Hello `whoami`!"
+```
+
+chmod 700 helloworld.sh
+
+./helloworld.sh
+
+
+
+$0 - name of the script
+$1, $2, ... - the arguments in the command line
+$# - no of cmd line arguments
+$* - list of all cmd line arguments
+$@ - array of all cmd line arguments
+$? - the exit code of the previouslly run command
+        0 / true - success
+        1 / false - error
+
+
+test != == (string)
+test -lt -gt -le -ge -eq -ne (int)
+
+    -f (if its file)
+    -d (if its directory)
+    -r/w/x (if a file has read/write/execute perms)
+
+
+
+Count all the lines of C code in the directory given as command line argument
+home/Seminar02/
+
+ls
+* - matches any sequence of characters (including empty) but not the first dot
+? - any single character
+[abc] - any character from the list
+[!abc] - any character except the lsit
+
+
+  1 #!/bin/bash
+  2 s = 0
+  3
+  4 for file in $1/*.c do
+  5     n = `grep -E "[^  ]" $fie | wc -l`
+  6     s = `expr $n + $s`
+  7 done
+  8
+  9 echo $s
+
+
+
+    Test
+
+Read the console input untill the user provides a file name that exists and can be read
+
+
+F = ""
+while test -z $F
+read -p "Provide a valid and readable file name " F
+
+
+test ~ [    ]
+
+
+  1 #!/bin/bash
+  2
+  3 F = ""
+  4 while test -z $f || !test -f $F || !test -r $F ;  do
+  5     read -p "Please input a valid and readable filename " F
+  6 done
+
+
+
+
+
+Variabile is a number?
+
+  1 #!/bin/bash
+  2
+  3 $var = `expr 2`
+  4
+  5 if echo $var | grep -E "^-?[0-9]*\.?[0-9]+$" ; then
+  6     echo "$var is a number"
+  7 else
+  8     echo "$var is not a number"
+  9 fi
+
+
+
+Sort files given as cmd line arguments in ascending order acording to file size

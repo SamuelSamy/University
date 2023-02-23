@@ -1,0 +1,5 @@
+2,32,90,11,Yellow,https://d1flfk77wl2xk4.cloudfront.net/Assets/GalleryImage/80/463/L_g0060146380.jpg
+3,36,45,15,Yellow,https://d1flfk77wl2xk4.cloudfront.net/Assets/GalleryImage/80/463/L_g0060146380.jpg
+4,32,10,3,Green,https://d1flfk77wl2xk4.cloudfront.net/Assets/GalleryImage/82/463/L_g0060146382.jpg
+5,34,120,20,Blue,https://d1flfk77wl2xk4.cloudfront.net/Assets/GalleryImage/84/463/L_g0060146384.jpg
+6,36,50,13,Black,https://d1flfk77wl2xk4.cloudfront.net/Assets/GalleryImage/93/463/L_g0060146393.jpg

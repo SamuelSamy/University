@@ -1,0 +1,370 @@
+>>Program State:
+Thread ID: 1
+executionStack = [(v = 20; (wait(10); print((v * 10)))), int v]
+symbolTable = {}
+output = []
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(v = 20; (wait(10); print((v * 10))))]
+symbolTable = {v=0}
+output = []
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(wait(10); print((v * 10))), v = 20]
+symbolTable = {v=0}
+output = []
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(wait(10); print((v * 10)))]
+symbolTable = {v=20}
+output = []
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [print((v * 10)), wait(10)]
+symbolTable = {v=20}
+output = []
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [print((v * 10)), (print(10); wait(9))]
+symbolTable = {v=20}
+output = []
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [print((v * 10)), wait(9), print(10)]
+symbolTable = {v=20}
+output = []
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [print((v * 10)), wait(9)]
+symbolTable = {v=20}
+output = [10]
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [print((v * 10)), (print(9); wait(8))]
+symbolTable = {v=20}
+output = [10]
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [print((v * 10)), wait(8), print(9)]
+symbolTable = {v=20}
+output = [10]
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [print((v * 10)), wait(8)]
+symbolTable = {v=20}
+output = [10, 9]
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [print((v * 10)), (print(8); wait(7))]
+symbolTable = {v=20}
+output = [10, 9]
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [print((v * 10)), wait(7), print(8)]
+symbolTable = {v=20}
+output = [10, 9]
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [print((v * 10)), wait(7)]
+symbolTable = {v=20}
+output = [10, 9, 8]
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [print((v * 10)), (print(7); wait(6))]
+symbolTable = {v=20}
+output = [10, 9, 8]
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [print((v * 10)), wait(6), print(7)]
+symbolTable = {v=20}
+output = [10, 9, 8]
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [print((v * 10)), wait(6)]
+symbolTable = {v=20}
+output = [10, 9, 8, 7]
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [print((v * 10)), (print(6); wait(5))]
+symbolTable = {v=20}
+output = [10, 9, 8, 7]
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [print((v * 10)), wait(5), print(6)]
+symbolTable = {v=20}
+output = [10, 9, 8, 7]
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [print((v * 10)), wait(5)]
+symbolTable = {v=20}
+output = [10, 9, 8, 7, 6]
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [print((v * 10)), (print(5); wait(4))]
+symbolTable = {v=20}
+output = [10, 9, 8, 7, 6]
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [print((v * 10)), wait(4), print(5)]
+symbolTable = {v=20}
+output = [10, 9, 8, 7, 6]
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [print((v * 10)), wait(4)]
+symbolTable = {v=20}
+output = [10, 9, 8, 7, 6, 5]
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [print((v * 10)), (print(4); wait(3))]
+symbolTable = {v=20}
+output = [10, 9, 8, 7, 6, 5]
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [print((v * 10)), wait(3), print(4)]
+symbolTable = {v=20}
+output = [10, 9, 8, 7, 6, 5]
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [print((v * 10)), wait(3)]
+symbolTable = {v=20}
+output = [10, 9, 8, 7, 6, 5, 4]
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [print((v * 10)), (print(3); wait(2))]
+symbolTable = {v=20}
+output = [10, 9, 8, 7, 6, 5, 4]
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [print((v * 10)), wait(2), print(3)]
+symbolTable = {v=20}
+output = [10, 9, 8, 7, 6, 5, 4]
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [print((v * 10)), wait(2)]
+symbolTable = {v=20}
+output = [10, 9, 8, 7, 6, 5, 4, 3]
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [print((v * 10)), (print(2); wait(1))]
+symbolTable = {v=20}
+output = [10, 9, 8, 7, 6, 5, 4, 3]
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [print((v * 10)), wait(1), print(2)]
+symbolTable = {v=20}
+output = [10, 9, 8, 7, 6, 5, 4, 3]
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [print((v * 10)), wait(1)]
+symbolTable = {v=20}
+output = [10, 9, 8, 7, 6, 5, 4, 3, 2]
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [print((v * 10)), (print(1); wait(0))]
+symbolTable = {v=20}
+output = [10, 9, 8, 7, 6, 5, 4, 3, 2]
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [print((v * 10)), wait(0), print(1)]
+symbolTable = {v=20}
+output = [10, 9, 8, 7, 6, 5, 4, 3, 2]
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [print((v * 10)), wait(0)]
+symbolTable = {v=20}
+output = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [print((v * 10))]
+symbolTable = {v=20}
+output = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = []
+symbolTable = {v=20}
+output = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 200]
+files = {}
+heap = {}
+status: finished
+
+

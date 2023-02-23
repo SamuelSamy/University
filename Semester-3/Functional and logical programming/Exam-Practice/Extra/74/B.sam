@@ -1,0 +1,23 @@
+% B. Să se scrie un program PROLOG care generează lista submulţimilor de sumă pară, cu elementele unei liste.
+% Se vor scrie modelele matematice și modelele de flux pentru predicatele folosite.
+% Exemplu- pentru lista L=[2, 3, 4] ⇒ [[],[2],[4],[2,4]] (nu neapărat în această ordine)
+
+subsets([], []).
+subsets([_ | T], R) :-
+    subsets(T, R).
+
+subsets([H | T], [H | R]) :-
+    subsets(T, R).
+
+sum([], 0).
+sum([H | T], R) :-
+    sum(T, R1),
+    R is R1 + H.
+
+oneSol(L, R) :-
+    subsets(L, R),
+    sum(R, S),
+    S mod 2 =:= 0.
+
+main(L, R) :-
+    findall(R1, oneSol(L, R1), R).

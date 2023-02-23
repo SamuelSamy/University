@@ -1,0 +1,100 @@
+>>Program State:
+Thread ID: 1
+executionStack = [(v1 = 2; (int v2; (v2 = 3; ( if (v1 != 0) then (print(MUL(v1, v2))) else (print(v1)) )))), int v1]
+symbolTable = {}
+output = []
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(v1 = 2; (int v2; (v2 = 3; ( if (v1 != 0) then (print(MUL(v1, v2))) else (print(v1)) ))))]
+symbolTable = {v1=0}
+output = []
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(int v2; (v2 = 3; ( if (v1 != 0) then (print(MUL(v1, v2))) else (print(v1)) ))), v1 = 2]
+symbolTable = {v1=0}
+output = []
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(int v2; (v2 = 3; ( if (v1 != 0) then (print(MUL(v1, v2))) else (print(v1)) )))]
+symbolTable = {v1=2}
+output = []
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(v2 = 3; ( if (v1 != 0) then (print(MUL(v1, v2))) else (print(v1)) )), int v2]
+symbolTable = {v1=2}
+output = []
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(v2 = 3; ( if (v1 != 0) then (print(MUL(v1, v2))) else (print(v1)) ))]
+symbolTable = {v1=2, v2=0}
+output = []
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [( if (v1 != 0) then (print(MUL(v1, v2))) else (print(v1)) ), v2 = 3]
+symbolTable = {v1=2, v2=0}
+output = []
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [( if (v1 != 0) then (print(MUL(v1, v2))) else (print(v1)) )]
+symbolTable = {v1=2, v2=3}
+output = []
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [print(MUL(v1, v2))]
+symbolTable = {v1=2, v2=3}
+output = []
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = []
+symbolTable = {v1=2, v2=3}
+output = [1]
+files = {}
+heap = {}
+status: finished
+
+

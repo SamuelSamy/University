@@ -1,0 +1,48 @@
+     1                                  ; Fatu Samuel
+     2                                  ; [100 - 10 * a + 4 * (b + c)] - d
+     3                                  ; a, b, c - byte
+     4                                  ; d - word
+     5                                  
+     6                                  bits 32 
+     7                                  
+     8                                  global start        
+     9                                  
+    10                                  extern exit               
+    11                                  import exit msvcrt.dll  
+    12                                  
+    13                                  
+    14                                  segment data use32 class=data
+    15 00000000 08                          a   db  8
+    16 00000001 04                          b   db  4
+    17 00000002 02                          _c  db  2
+    18 00000003 0100                        d   dw  1
+    19                                      
+    20 00000005 0A                         temp db  10
+    21                                  
+    22                                  segment code use32 class=code
+    23                                      start:
+    24                                        
+    25 00000000 A0[00000000]                    mov AL, [a] ; AL <- [a]
+    26 00000005 F625[05000000]                  mul byte [temp] ; AX <- AL * [temp]
+    27                                         
+    28 0000000B 6689C3                          mov BX, AX ; BX <- AX ; (10 * a)
+    29                                         
+    30 0000000E A0[01000000]                    mov AL, [b]  ; AL <- [b]
+    31 00000013 0205[02000000]                  add AL, [_c] ; AL <- AL + [_c] 
+    32                                         
+    33 00000019 C605[05000000]04                mov byte [temp], 4 ; [temp] <- 4
+    34                                         
+    35 00000020 F625[05000000]                  mul byte [temp] ; AX <- AL * [temp]
+    36                                         
+    37 00000026 6689C2                          mov DX, AX ; 4 * (b + c)
+    38                                         
+    39 00000029 C605[05000000]64                mov byte [temp], 100 ; [temp] <- 100
+    40                                         
+    41 00000030 66A1[05000000]                  mov AX, [temp] ; AX <- [temp]
+    42 00000036 6629D8                          sub AX, BX ; AX <- AX - BX ; < 100 - 10 * a >
+    43 00000039 6601D0                          add AX, DX ; AX <- AX - DX ; < 100 - 10 * a + 4 * (b + c) >
+    44                                         
+    45 0000003C 662B05[03000000]                sub AX, [d] ; AX <- AX - [d]
+    46                                          
+    47 00000043 6A00                            push    dword 0      
+    48 00000045 FF15[00000000]                  call    [exit]

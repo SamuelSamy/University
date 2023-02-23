@@ -1,0 +1,14 @@
+window_sizes 1800 910 450 1345 810 54
+
+diagrams
+  active  classdiagram_ref 128002 // diagram
+    1345 808 80 A4 0 0
+end
+show_stereotypes
+selected 
+package_ref 129 // diagram
+open
+  classview_ref 128002 // Assignment89
+  deploymentview_ref 128002 // Assignment89
+end
+end

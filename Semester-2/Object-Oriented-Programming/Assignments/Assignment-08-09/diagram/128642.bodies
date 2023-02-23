@@ -1,0 +1,60 @@
+class HTMLRepository
+!!!132354.cpp!!!	write() : void
+
+    std::ofstream fout(fileName);
+
+    fout << "<!DOCTYPE html>\n";
+    fout << "<html>\n";
+    fout << "\t<head>\n";
+    fout << "\t\t<title>Shopping Basket</title>\n";
+    fout << "\t</head>\n";
+    fout << "\t<body>\n";
+    fout << "\t\t<table border=\"1\">\n";
+    fout << "\t\t<tr>\n";
+    fout << "\t\t\t<td>Size</td>\n";
+    fout << "\t\t\t<td>Price</td>\n";
+    fout << "\t\t\t<td>Quantity</td>\n";
+    fout << "\t\t\t<td>Color</td>\n";
+    fout << "\t\t\t<td>Photo</td>\n";
+    fout << "\t\t\t</tr>\n";
+
+    for (std::pair<int, int> p : this->basket)
+    {
+        Coat c = this->repo->get_coat_by_ID(p.first);
+
+        fout << "\t\t<tr>\n";
+        fout << "\t\t\t<td>" << c.get_size() << "</td>\n";
+        fout << "\t\t\t<td>" << c.get_price() << "</td>\n";
+        fout << "\t\t\t<td>" << p.second << "</td>\n";
+        fout << "\t\t\t<td>" << c.get_color() << "</td>\n";
+        fout << "\t\t\t<td><a href=\"" << c.get_photo() << "\">Link</a></td>\n";
+        fout << "\t\t\t</tr>\n";
+    }
+
+    fout.close();
+!!!132482.cpp!!!	operator [](in index : int) : std::pair<int, int>
+
+    return this->UserRepository::operator[](index);
+!!!132610.cpp!!!	length() : int
+
+    return this->UserRepository::length();
+!!!132738.cpp!!!	add(in ID : int) : void
+
+    this->UserRepository::add(ID);
+
+    this->write();
+!!!132866.cpp!!!	get_total_price() : int
+
+    int total = 0;
+
+    for (const auto& element : this->basket)
+    {
+        const Coat coat = this->repo->get_coat_by_ID(element.first);
+        total += coat.get_price() * element.second;
+    }
+
+    return total;
+    
+!!!132994.cpp!!!	get_file_name() : std::string
+
+    return this->fileName;

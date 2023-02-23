@@ -1,0 +1,50 @@
+     1                                  ; Fatu Samuel
+     2                                  
+     3                                  ; Given the doublewords M and N, compute the doubleword P as follows.
+     4                                  ; the bits 0-6 of P are the same as the bits 10-16 of M
+     5                                  ; the bits 7-20 of P are the same as the bits 7-20 of (M AND N).
+     6                                  ; the bits 21-31 of P are the same as the bits 1-11 of N.
+     7                                  
+     8                                  bits 32 
+     9                                  
+    10                                  global start        
+    11                                  
+    12                                  extern exit               
+    13                                  import exit msvcrt.dll  
+    14                                  
+    15                                  
+    16                                  segment data use32 class=data
+    17 00000000 FFFFFFFF                    n   dd  11111111111111111111111111111111b
+    18 00000004 FFFFFFFF                    m   dd  11111111111111111111111111111111b
+    19                                      
+    20 00000008 FFFFFFFF                    temp dd 11111111111111111111111111111111b
+    21                                      
+    22 0000000C 00000000                    p   dd  0
+    23                                      
+    24                                      
+    25                                  segment code use32 class=code
+    26                                      start:
+    27                                         
+    28 00000000 BB00000000                      mov ebx, 0
+    29                                         
+    30 00000005 A1[04000000]                    mov eax, [m]
+    31 0000000A 2500FC0100                      and eax, 00000000000000011111110000000000b
+    32 0000000F B10A                            mov  cl, 10
+    33 00000011 D3C8                            ror eax, cl
+    34 00000013 09C3                            or  ebx, eax
+    35                                         
+    36 00000015 A1[00000000]                    mov eax, [n]
+    37 0000001A 2305[04000000]                  and eax, [m]
+    38 00000020 2580FF1F00                      and eax, 00000000000111111111111110000000b
+    39 00000025 09C3                            or  ebx, eax
+    40                                          
+    41 00000027 A1[00000000]                    mov eax, [n]
+    42 0000002C 25FE0F0000                      and eax, 00000000000000000000111111111110b
+    43 00000031 B114                            mov  cl, 20
+    44 00000033 D3C0                            rol eax, cl
+    45 00000035 09C3                            or  ebx, eax
+    46                                          
+    47 00000037 891D[0C000000]                  mov dword [p], ebx
+    48                                          
+    49 0000003D 6A00                            push    dword 0      
+    50 0000003F FF15[00000000]                  call    [exit]

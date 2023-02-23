@@ -1,0 +1,33 @@
+     1                                  ; Fatu Samuel
+     2                                  ; (c + d + d) - (a + a + b)
+     3                                  
+     4                                  bits 32 
+     5                                  
+     6                                  global start        
+     7                                  
+     8                                  extern exit               
+     9                                  import exit msvcrt.dll  
+    10                                  
+    11                                  
+    12                                  segment data use32 class=data
+    13 00000000 04                          a   db  4
+    14 00000001 08                          b   db  8
+    15 00000002 10                          _c  db  16
+    16 00000003 02                          d   db  2
+    17                                  
+    18                                  
+    19                                  segment code use32 class=code
+    20                                      start:
+    21                                          
+    22 00000000 A0[02000000]                    mov AL, [_c]
+    23 00000005 0205[03000000]                  add AL, [d]
+    24 0000000B 0205[03000000]                  add AL, [d]
+    25                                          
+    26 00000011 8A1D[00000000]                  mov BL, [a]
+    27 00000017 021D[00000000]                  add BL, [a]
+    28 0000001D 021D[01000000]                  add BL, [b]
+    29                                         
+    30 00000023 28D8                            sub AL, BL
+    31                                          
+    32 00000025 6A00                            push    dword 0      
+    33 00000027 FF15[00000000]                  call    [exit]

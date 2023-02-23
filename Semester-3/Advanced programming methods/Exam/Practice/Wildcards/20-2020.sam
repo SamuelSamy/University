@@ -1,0 +1,40 @@
+class A {...}
+class B extends A {...}
+class C extends A {...}
+
+class Amain {
+
+    A method1 (ArrayList<? extends A> list) {return list.get(1);};
+
+    void method2 (... list, A el) {list.add(el);}
+
+    void method3 (A elem) {
+        ArrayList<A> listA = new ArrayList<A>();
+        listA.add(new A()); listA.add(new A());
+
+        ArrayList<B> listB = new ArrayList<B>();
+        listB.add(new B()); listB.add(new B());
+        
+        ArrayList<C> listC = new ArrayList<C>();
+        listC.add(new C()); listC.add(new C());
+
+        this.method1(listA);
+        this.method1(listB);
+        this.method1(listC);
+    
+        this.method2(listA, elem);
+        this.method2(listB, elem);
+        this.method2(listC, elem);
+    }
+}
+
+-- For method1 we use an upper bound wildcard (? extends A) because we only read objects from the lists.
+-- Upper bound wildcards allow us to provide any class that is a subtype of the specified class (In our case A)
+-- We use `? extends A` because we call method1 for each type of list (A, B and C). 
+-- A is the class itself, B is a subtype of A and C is a also subtype of A.
+-- Also, the return type of method1 should be `A` because it returns class A of a subtype of the class A.
+
+-- We can not use a wildcard for method2 because we call method2 for each list (listA, listB and listC)
+-- If we use the lower bound wildcard `? super C` we would not be able to call method2 for listB (since B is not a supertype of C)
+-- If we use the lower bound wildcard `? super B` we would not be able to call method2 for listC (since C is not a supertype of B)
+-- If we use the unbounded wildcard `?` we would have to write only null in lists (which we do not, we try to write an element of type A).

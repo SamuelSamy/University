@@ -1,0 +1,6 @@
+class RepositoryException
+!!!137602.cpp!!!	RepositoryException(in _message : std::string)
+
+!!!137730.cpp!!!	what() : char
+
+    return message.c_str();

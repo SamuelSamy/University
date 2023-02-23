@@ -1,0 +1,10 @@
+0,30,30,19,Green,https://d1flfk77wl2xk4.cloudfront.net/Assets/GalleryImage/31/435/L_g0060143531.jpg
+1,30,40,29,Red,https://d1flfk77wl2xk4.cloudfront.net/Assets/GalleryImage/05/436/L_g0060143605.jpg
+2,30,60,39,Pink,https://d1flfk77wl2xk4.cloudfront.net/Assets/GalleryImage/77/463/L_g0060146377.jpg
+3,32,90,10,Yellow,https://d1flfk77wl2xk4.cloudfront.net/Assets/GalleryImage/80/463/L_g0060146380.jpg
+4,32,10,2,Green,https://d1flfk77wl2xk4.cloudfront.net/Assets/GalleryImage/82/463/L_g0060146382.jpg
+5,34,120,1,Blue,https://d1flfk77wl2xk4.cloudfront.net/Assets/GalleryImage/84/463/L_g0060146384.jpg
+6,36,50,20,Black,https://d1flfk77wl2xk4.cloudfront.net/Assets/GalleryImage/93/463/L_g0060146393.jpg
+7,36,80,24,Brown,https://d1flfk77wl2xk4.cloudfront.net/Assets/GalleryImage/96/463/L_g0060146396.jpg
+8,36,30,12,Red,https://d1flfk77wl2xk4.cloudfront.net/Assets/GalleryImage/99/463/L_g0060146399.jpg
+9,36,60,14,Green,https://d1flfk77wl2xk4.cloudfront.net/Assets/GalleryImage/86/147/L_g0161214786.jpg

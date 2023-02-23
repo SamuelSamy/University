@@ -1,0 +1,280 @@
+>>Program State:
+executionStack = [(string varf; (varf = 'test.in'; (openReadFile(varf); (int varc; (readFile(varf); (print(varc); (readFile(varf); (print(varc); closeReadFile(varf)))))))))]
+symbolTable = {}
+output = []
+files = {}
+heap = {}
+
+
+>>Program State:
+executionStack = [(varf = 'test.in'; (openReadFile(varf); (int varc; (readFile(varf); (print(varc); (readFile(varf); (print(varc); closeReadFile(varf)))))))), string varf]
+symbolTable = {}
+output = []
+files = {}
+heap = {}
+
+
+>>Program State:
+executionStack = [(varf = 'test.in'; (openReadFile(varf); (int varc; (readFile(varf); (print(varc); (readFile(varf); (print(varc); closeReadFile(varf)))))))), string varf]
+symbolTable = {}
+output = []
+files = {}
+heap = {}
+
+
+>>Program State:
+executionStack = [(varf = 'test.in'; (openReadFile(varf); (int varc; (readFile(varf); (print(varc); (readFile(varf); (print(varc); closeReadFile(varf))))))))]
+symbolTable = {varf=''}
+output = []
+files = {}
+heap = {}
+
+
+>>Program State:
+executionStack = [(varf = 'test.in'; (openReadFile(varf); (int varc; (readFile(varf); (print(varc); (readFile(varf); (print(varc); closeReadFile(varf))))))))]
+symbolTable = {varf=''}
+output = []
+files = {}
+heap = {}
+
+
+>>Program State:
+executionStack = [(openReadFile(varf); (int varc; (readFile(varf); (print(varc); (readFile(varf); (print(varc); closeReadFile(varf))))))), varf = 'test.in']
+symbolTable = {varf=''}
+output = []
+files = {}
+heap = {}
+
+
+>>Program State:
+executionStack = [(openReadFile(varf); (int varc; (readFile(varf); (print(varc); (readFile(varf); (print(varc); closeReadFile(varf))))))), varf = 'test.in']
+symbolTable = {varf=''}
+output = []
+files = {}
+heap = {}
+
+
+>>Program State:
+executionStack = [(openReadFile(varf); (int varc; (readFile(varf); (print(varc); (readFile(varf); (print(varc); closeReadFile(varf)))))))]
+symbolTable = {varf='test.in'}
+output = []
+files = {}
+heap = {}
+
+
+>>Program State:
+executionStack = [(openReadFile(varf); (int varc; (readFile(varf); (print(varc); (readFile(varf); (print(varc); closeReadFile(varf)))))))]
+symbolTable = {varf='test.in'}
+output = []
+files = {}
+heap = {}
+
+
+>>Program State:
+executionStack = [(int varc; (readFile(varf); (print(varc); (readFile(varf); (print(varc); closeReadFile(varf)))))), openReadFile(varf)]
+symbolTable = {varf='test.in'}
+output = []
+files = {}
+heap = {}
+
+
+>>Program State:
+executionStack = [(int varc; (readFile(varf); (print(varc); (readFile(varf); (print(varc); closeReadFile(varf)))))), openReadFile(varf)]
+symbolTable = {varf='test.in'}
+output = []
+files = {}
+heap = {}
+
+
+>>Program State:
+executionStack = [(int varc; (readFile(varf); (print(varc); (readFile(varf); (print(varc); closeReadFile(varf))))))]
+symbolTable = {varf='test.in'}
+output = []
+files = {test.in=java.io.BufferedReader@5d6f64b1}
+heap = {}
+
+
+>>Program State:
+executionStack = [(int varc; (readFile(varf); (print(varc); (readFile(varf); (print(varc); closeReadFile(varf))))))]
+symbolTable = {varf='test.in'}
+output = []
+files = {test.in=java.io.BufferedReader@5d6f64b1}
+heap = {}
+
+
+>>Program State:
+executionStack = [(readFile(varf); (print(varc); (readFile(varf); (print(varc); closeReadFile(varf))))), int varc]
+symbolTable = {varf='test.in'}
+output = []
+files = {test.in=java.io.BufferedReader@5d6f64b1}
+heap = {}
+
+
+>>Program State:
+executionStack = [(readFile(varf); (print(varc); (readFile(varf); (print(varc); closeReadFile(varf))))), int varc]
+symbolTable = {varf='test.in'}
+output = []
+files = {test.in=java.io.BufferedReader@5d6f64b1}
+heap = {}
+
+
+>>Program State:
+executionStack = [(readFile(varf); (print(varc); (readFile(varf); (print(varc); closeReadFile(varf)))))]
+symbolTable = {varf='test.in', varc=0}
+output = []
+files = {test.in=java.io.BufferedReader@5d6f64b1}
+heap = {}
+
+
+>>Program State:
+executionStack = [(readFile(varf); (print(varc); (readFile(varf); (print(varc); closeReadFile(varf)))))]
+symbolTable = {varf='test.in', varc=0}
+output = []
+files = {test.in=java.io.BufferedReader@5d6f64b1}
+heap = {}
+
+
+>>Program State:
+executionStack = [(print(varc); (readFile(varf); (print(varc); closeReadFile(varf)))), readFile(varf)]
+symbolTable = {varf='test.in', varc=0}
+output = []
+files = {test.in=java.io.BufferedReader@5d6f64b1}
+heap = {}
+
+
+>>Program State:
+executionStack = [(print(varc); (readFile(varf); (print(varc); closeReadFile(varf)))), readFile(varf)]
+symbolTable = {varf='test.in', varc=0}
+output = []
+files = {test.in=java.io.BufferedReader@5d6f64b1}
+heap = {}
+
+
+>>Program State:
+executionStack = [(print(varc); (readFile(varf); (print(varc); closeReadFile(varf))))]
+symbolTable = {varf='test.in', varc=15}
+output = []
+files = {test.in=java.io.BufferedReader@5d6f64b1}
+heap = {}
+
+
+>>Program State:
+executionStack = [(print(varc); (readFile(varf); (print(varc); closeReadFile(varf))))]
+symbolTable = {varf='test.in', varc=15}
+output = []
+files = {test.in=java.io.BufferedReader@5d6f64b1}
+heap = {}
+
+
+>>Program State:
+executionStack = [(readFile(varf); (print(varc); closeReadFile(varf))), print(varc)]
+symbolTable = {varf='test.in', varc=15}
+output = []
+files = {test.in=java.io.BufferedReader@5d6f64b1}
+heap = {}
+
+
+>>Program State:
+executionStack = [(readFile(varf); (print(varc); closeReadFile(varf))), print(varc)]
+symbolTable = {varf='test.in', varc=15}
+output = []
+files = {test.in=java.io.BufferedReader@5d6f64b1}
+heap = {}
+
+
+>>Program State:
+executionStack = [(readFile(varf); (print(varc); closeReadFile(varf)))]
+symbolTable = {varf='test.in', varc=15}
+output = [15]
+files = {test.in=java.io.BufferedReader@5d6f64b1}
+heap = {}
+
+
+>>Program State:
+executionStack = [(readFile(varf); (print(varc); closeReadFile(varf)))]
+symbolTable = {varf='test.in', varc=15}
+output = [15]
+files = {test.in=java.io.BufferedReader@5d6f64b1}
+heap = {}
+
+
+>>Program State:
+executionStack = [(print(varc); closeReadFile(varf)), readFile(varf)]
+symbolTable = {varf='test.in', varc=15}
+output = [15]
+files = {test.in=java.io.BufferedReader@5d6f64b1}
+heap = {}
+
+
+>>Program State:
+executionStack = [(print(varc); closeReadFile(varf)), readFile(varf)]
+symbolTable = {varf='test.in', varc=15}
+output = [15]
+files = {test.in=java.io.BufferedReader@5d6f64b1}
+heap = {}
+
+
+>>Program State:
+executionStack = [(print(varc); closeReadFile(varf))]
+symbolTable = {varf='test.in', varc=40}
+output = [15]
+files = {test.in=java.io.BufferedReader@5d6f64b1}
+heap = {}
+
+
+>>Program State:
+executionStack = [(print(varc); closeReadFile(varf))]
+symbolTable = {varf='test.in', varc=40}
+output = [15]
+files = {test.in=java.io.BufferedReader@5d6f64b1}
+heap = {}
+
+
+>>Program State:
+executionStack = [closeReadFile(varf), print(varc)]
+symbolTable = {varf='test.in', varc=40}
+output = [15]
+files = {test.in=java.io.BufferedReader@5d6f64b1}
+heap = {}
+
+
+>>Program State:
+executionStack = [closeReadFile(varf), print(varc)]
+symbolTable = {varf='test.in', varc=40}
+output = [15]
+files = {test.in=java.io.BufferedReader@5d6f64b1}
+heap = {}
+
+
+>>Program State:
+executionStack = [closeReadFile(varf)]
+symbolTable = {varf='test.in', varc=40}
+output = [15, 40]
+files = {test.in=java.io.BufferedReader@5d6f64b1}
+heap = {}
+
+
+>>Program State:
+executionStack = [closeReadFile(varf)]
+symbolTable = {varf='test.in', varc=40}
+output = [15, 40]
+files = {test.in=java.io.BufferedReader@5d6f64b1}
+heap = {}
+
+
+>>Program State:
+executionStack = []
+symbolTable = {varf='test.in', varc=40}
+output = [15, 40]
+files = {}
+heap = {}
+
+
+>>Program State:
+executionStack = []
+symbolTable = {varf='test.in', varc=40}
+output = [15, 40]
+files = {}
+heap = {}
+
+

@@ -1,0 +1,85 @@
+     1                                  ; Fatu Samuel
+     2                                  ; (a + b - c) + (a + b + d) - (a + b)
+     3                                  ;      r1     +     r2      -    r3
+     4                                  
+     5                                  ; a - byte, b - word, c - double word, d - qword
+     6                                  
+     7                                  bits 32 
+     8                                  
+     9                                  global start        
+    10                                  
+    11                                  extern exit               
+    12                                  import exit msvcrt.dll  
+    13                                  
+    14                                  
+    15                                  segment data use32 class=data
+    16 00000000 05                          a   db  5
+    17 00000001 0A00                        b   dw  10
+    18 00000003 1E000000                    _c  dd  30
+    19 00000007 0A00000000000000            d   dq  10
+    20                                      
+    21 0000000F <res 00000008>              r1 resw 4
+    22 00000017 <res 00000008>              r2 resw 4
+    23 0000001F <res 00000008>              r3 resw 4
+    24                                  
+    25                                      
+    26                                  segment code use32 class=code
+    27                                      start:
+    28                                         
+    29                                         ; r1 = (a + b - c)
+    30                                         
+    31 00000000 A0[00000000]                    mov AL, [a]
+    32 00000005 6698                            cbw ; AX = [a]
+    33                                          
+    34 00000007 660305[01000000]                add AX, [b]
+    35 0000000E 98                              cwde ; EAX = [a] + [b]
+    36                                          
+    37 0000000F 2B05[03000000]                  sub EAX, [_c]
+    38 00000015 99                              cdq
+    39                                          
+    40 00000016 A3[0F000000]                    mov dword [r1], EAX
+    41 0000001B 8915[13000000]                  mov dword [r1 + 4], EDX
+    42                                          
+    43                                          ; r2 = (a + b + d)
+    44                                          
+    45 00000021 A0[00000000]                    mov AL, [a] ; AL = [a]
+    46 00000026 6698                            cbw ; AX = [a]
+    47                                          
+    48 00000028 660305[01000000]                add AX, [b] ; AX = AX + [b] = [a] + [b]
+    49 0000002F 98                              cwde ; EAX = [a] + [b]
+    50 00000030 99                              cdq ; EDX:EAX = [a] + [b]
+    51                                          
+    52 00000031 0305[07000000]                  add EAX, dword [d]
+    53 00000037 1315[0B000000]                  adc EDX, dword [d + 4]
+    54                                          
+    55                                          ; move EDX:EAX (a + b + d) to r2 
+    56 0000003D A3[17000000]                    mov dword [r2], EAX
+    57 00000042 8915[1B000000]                  mov dword [r2 + 4], EDX
+    58                                          
+    59                                          ; r3 = (a + b)
+    60                                          
+    61 00000048 A0[00000000]                    mov AL, [a]
+    62 0000004D 6698                            cbw ; AX = [a]
+    63                                          
+    64 0000004F 660305[01000000]                add AX, [b] ; AX = AX + [b] = [a] + [b]
+    65 00000056 98                              cwde ; EAX = [a] + [b]
+    66 00000057 99                              cdq ; EDX:EAX = [a] + [b]
+    67                                          
+    68 00000058 A3[1F000000]                    mov dword [r3], EAX ; dword [r2] = EAX
+    69 0000005D 8915[23000000]                  mov dword [r3 + 4], EDX ; dword [r2 + 2] = EDX
+    70                                          
+    71 00000063 A1[0F000000]                    mov EAX, dword [r1] ; EAX = dword [r1]
+    72 00000068 8B15[13000000]                  mov EDX, dword [r1 + 4] ; EDX = dword [r1 + 4]
+    73                                          
+    74                                          
+    75 0000006E 0305[17000000]                  add EAX, dword [r2] ; EAX = EAX + dword [r2]
+    76 00000074 1315[1B000000]                  adc EDX, dword [r2 + 4] ; EDX = EDX + dword [r2 + 4] + cf
+    77                                          
+    78 0000007A 2B05[1F000000]                  sub EAX, dword [r3] ; EAX = EAX - dword [r2]
+    79 00000080 1B15[23000000]                  sbb EDX, dword [r3 + 4] ; EDX = EDX - dword [r2 + 4] - cf
+    80                                  
+    81 00000086 6A00                            push    dword 0      
+    82 00000088 FF15[00000000]                  call    [exit]
+    83                                  
+    84                                          
+    85                                          

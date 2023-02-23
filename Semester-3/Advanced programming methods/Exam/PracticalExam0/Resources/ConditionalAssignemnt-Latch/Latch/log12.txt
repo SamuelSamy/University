@@ -1,0 +1,781 @@
+>>Program State:
+Thread ID: 1
+executionStack = [(Ref(int) v2; (Ref(int) v3; (int cnt; (new(v1, 2); (new(v2, 3); (new(v3, 4); (newLatch(cnt, readHeap(v2)); (fork((writeHeap(v1, (readHeap(v1) * 10)); (print(readHeap(v1)); (countDown(cnt); fork((writeHeap(v2, (readHeap(v2) * 10)); (print(readHeap(v2)); (countDown(cnt); fork((writeHeap(v3, (readHeap(v3) * 10)); (print(readHeap(v3)); countDown(cnt)))))))))))); (await(cnt); (print(100); (countDown(cnt); print(100)))))))))))), Ref(int) v1]
+symbolTable = {}
+output = []
+files = {}
+heap = {}
+latchTable = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(Ref(int) v2; (Ref(int) v3; (int cnt; (new(v1, 2); (new(v2, 3); (new(v3, 4); (newLatch(cnt, readHeap(v2)); (fork((writeHeap(v1, (readHeap(v1) * 10)); (print(readHeap(v1)); (countDown(cnt); fork((writeHeap(v2, (readHeap(v2) * 10)); (print(readHeap(v2)); (countDown(cnt); fork((writeHeap(v3, (readHeap(v3) * 10)); (print(readHeap(v3)); countDown(cnt)))))))))))); (await(cnt); (print(100); (countDown(cnt); print(100))))))))))))]
+symbolTable = {v1=(0, int)}
+output = []
+files = {}
+heap = {}
+latchTable = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(Ref(int) v3; (int cnt; (new(v1, 2); (new(v2, 3); (new(v3, 4); (newLatch(cnt, readHeap(v2)); (fork((writeHeap(v1, (readHeap(v1) * 10)); (print(readHeap(v1)); (countDown(cnt); fork((writeHeap(v2, (readHeap(v2) * 10)); (print(readHeap(v2)); (countDown(cnt); fork((writeHeap(v3, (readHeap(v3) * 10)); (print(readHeap(v3)); countDown(cnt)))))))))))); (await(cnt); (print(100); (countDown(cnt); print(100))))))))))), Ref(int) v2]
+symbolTable = {v1=(0, int)}
+output = []
+files = {}
+heap = {}
+latchTable = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(Ref(int) v3; (int cnt; (new(v1, 2); (new(v2, 3); (new(v3, 4); (newLatch(cnt, readHeap(v2)); (fork((writeHeap(v1, (readHeap(v1) * 10)); (print(readHeap(v1)); (countDown(cnt); fork((writeHeap(v2, (readHeap(v2) * 10)); (print(readHeap(v2)); (countDown(cnt); fork((writeHeap(v3, (readHeap(v3) * 10)); (print(readHeap(v3)); countDown(cnt)))))))))))); (await(cnt); (print(100); (countDown(cnt); print(100)))))))))))]
+symbolTable = {v1=(0, int), v2=(0, int)}
+output = []
+files = {}
+heap = {}
+latchTable = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(int cnt; (new(v1, 2); (new(v2, 3); (new(v3, 4); (newLatch(cnt, readHeap(v2)); (fork((writeHeap(v1, (readHeap(v1) * 10)); (print(readHeap(v1)); (countDown(cnt); fork((writeHeap(v2, (readHeap(v2) * 10)); (print(readHeap(v2)); (countDown(cnt); fork((writeHeap(v3, (readHeap(v3) * 10)); (print(readHeap(v3)); countDown(cnt)))))))))))); (await(cnt); (print(100); (countDown(cnt); print(100)))))))))), Ref(int) v3]
+symbolTable = {v1=(0, int), v2=(0, int)}
+output = []
+files = {}
+heap = {}
+latchTable = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(int cnt; (new(v1, 2); (new(v2, 3); (new(v3, 4); (newLatch(cnt, readHeap(v2)); (fork((writeHeap(v1, (readHeap(v1) * 10)); (print(readHeap(v1)); (countDown(cnt); fork((writeHeap(v2, (readHeap(v2) * 10)); (print(readHeap(v2)); (countDown(cnt); fork((writeHeap(v3, (readHeap(v3) * 10)); (print(readHeap(v3)); countDown(cnt)))))))))))); (await(cnt); (print(100); (countDown(cnt); print(100))))))))))]
+symbolTable = {v1=(0, int), v2=(0, int), v3=(0, int)}
+output = []
+files = {}
+heap = {}
+latchTable = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(new(v1, 2); (new(v2, 3); (new(v3, 4); (newLatch(cnt, readHeap(v2)); (fork((writeHeap(v1, (readHeap(v1) * 10)); (print(readHeap(v1)); (countDown(cnt); fork((writeHeap(v2, (readHeap(v2) * 10)); (print(readHeap(v2)); (countDown(cnt); fork((writeHeap(v3, (readHeap(v3) * 10)); (print(readHeap(v3)); countDown(cnt)))))))))))); (await(cnt); (print(100); (countDown(cnt); print(100))))))))), int cnt]
+symbolTable = {v1=(0, int), v2=(0, int), v3=(0, int)}
+output = []
+files = {}
+heap = {}
+latchTable = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(new(v1, 2); (new(v2, 3); (new(v3, 4); (newLatch(cnt, readHeap(v2)); (fork((writeHeap(v1, (readHeap(v1) * 10)); (print(readHeap(v1)); (countDown(cnt); fork((writeHeap(v2, (readHeap(v2) * 10)); (print(readHeap(v2)); (countDown(cnt); fork((writeHeap(v3, (readHeap(v3) * 10)); (print(readHeap(v3)); countDown(cnt)))))))))))); (await(cnt); (print(100); (countDown(cnt); print(100)))))))))]
+symbolTable = {cnt=0, v1=(0, int), v2=(0, int), v3=(0, int)}
+output = []
+files = {}
+heap = {}
+latchTable = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(new(v2, 3); (new(v3, 4); (newLatch(cnt, readHeap(v2)); (fork((writeHeap(v1, (readHeap(v1) * 10)); (print(readHeap(v1)); (countDown(cnt); fork((writeHeap(v2, (readHeap(v2) * 10)); (print(readHeap(v2)); (countDown(cnt); fork((writeHeap(v3, (readHeap(v3) * 10)); (print(readHeap(v3)); countDown(cnt)))))))))))); (await(cnt); (print(100); (countDown(cnt); print(100)))))))), new(v1, 2)]
+symbolTable = {cnt=0, v1=(0, int), v2=(0, int), v3=(0, int)}
+output = []
+files = {}
+heap = {}
+latchTable = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(new(v2, 3); (new(v3, 4); (newLatch(cnt, readHeap(v2)); (fork((writeHeap(v1, (readHeap(v1) * 10)); (print(readHeap(v1)); (countDown(cnt); fork((writeHeap(v2, (readHeap(v2) * 10)); (print(readHeap(v2)); (countDown(cnt); fork((writeHeap(v3, (readHeap(v3) * 10)); (print(readHeap(v3)); countDown(cnt)))))))))))); (await(cnt); (print(100); (countDown(cnt); print(100))))))))]
+symbolTable = {cnt=0, v1=(1, int), v2=(0, int), v3=(0, int)}
+output = []
+files = {}
+heap = {1=2}
+latchTable = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(new(v3, 4); (newLatch(cnt, readHeap(v2)); (fork((writeHeap(v1, (readHeap(v1) * 10)); (print(readHeap(v1)); (countDown(cnt); fork((writeHeap(v2, (readHeap(v2) * 10)); (print(readHeap(v2)); (countDown(cnt); fork((writeHeap(v3, (readHeap(v3) * 10)); (print(readHeap(v3)); countDown(cnt)))))))))))); (await(cnt); (print(100); (countDown(cnt); print(100))))))), new(v2, 3)]
+symbolTable = {cnt=0, v1=(1, int), v2=(0, int), v3=(0, int)}
+output = []
+files = {}
+heap = {1=2}
+latchTable = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(new(v3, 4); (newLatch(cnt, readHeap(v2)); (fork((writeHeap(v1, (readHeap(v1) * 10)); (print(readHeap(v1)); (countDown(cnt); fork((writeHeap(v2, (readHeap(v2) * 10)); (print(readHeap(v2)); (countDown(cnt); fork((writeHeap(v3, (readHeap(v3) * 10)); (print(readHeap(v3)); countDown(cnt)))))))))))); (await(cnt); (print(100); (countDown(cnt); print(100)))))))]
+symbolTable = {cnt=0, v1=(1, int), v2=(2, int), v3=(0, int)}
+output = []
+files = {}
+heap = {1=2, 2=3}
+latchTable = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(newLatch(cnt, readHeap(v2)); (fork((writeHeap(v1, (readHeap(v1) * 10)); (print(readHeap(v1)); (countDown(cnt); fork((writeHeap(v2, (readHeap(v2) * 10)); (print(readHeap(v2)); (countDown(cnt); fork((writeHeap(v3, (readHeap(v3) * 10)); (print(readHeap(v3)); countDown(cnt)))))))))))); (await(cnt); (print(100); (countDown(cnt); print(100)))))), new(v3, 4)]
+symbolTable = {cnt=0, v1=(1, int), v2=(2, int), v3=(0, int)}
+output = []
+files = {}
+heap = {1=2, 2=3}
+latchTable = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(newLatch(cnt, readHeap(v2)); (fork((writeHeap(v1, (readHeap(v1) * 10)); (print(readHeap(v1)); (countDown(cnt); fork((writeHeap(v2, (readHeap(v2) * 10)); (print(readHeap(v2)); (countDown(cnt); fork((writeHeap(v3, (readHeap(v3) * 10)); (print(readHeap(v3)); countDown(cnt)))))))))))); (await(cnt); (print(100); (countDown(cnt); print(100))))))]
+symbolTable = {cnt=0, v1=(1, int), v2=(2, int), v3=(3, int)}
+output = []
+files = {}
+heap = {1=2, 2=3, 3=4}
+latchTable = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(fork((writeHeap(v1, (readHeap(v1) * 10)); (print(readHeap(v1)); (countDown(cnt); fork((writeHeap(v2, (readHeap(v2) * 10)); (print(readHeap(v2)); (countDown(cnt); fork((writeHeap(v3, (readHeap(v3) * 10)); (print(readHeap(v3)); countDown(cnt)))))))))))); (await(cnt); (print(100); (countDown(cnt); print(100))))), newLatch(cnt, readHeap(v2))]
+symbolTable = {cnt=0, v1=(1, int), v2=(2, int), v3=(3, int)}
+output = []
+files = {}
+heap = {1=2, 2=3, 3=4}
+latchTable = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(fork((writeHeap(v1, (readHeap(v1) * 10)); (print(readHeap(v1)); (countDown(cnt); fork((writeHeap(v2, (readHeap(v2) * 10)); (print(readHeap(v2)); (countDown(cnt); fork((writeHeap(v3, (readHeap(v3) * 10)); (print(readHeap(v3)); countDown(cnt)))))))))))); (await(cnt); (print(100); (countDown(cnt); print(100)))))]
+symbolTable = {cnt=0, v1=(1, int), v2=(2, int), v3=(3, int)}
+output = []
+files = {}
+heap = {1=2, 2=3, 3=4}
+latchTable = {0=3}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(await(cnt); (print(100); (countDown(cnt); print(100)))), fork((writeHeap(v1, (readHeap(v1) * 10)); (print(readHeap(v1)); (countDown(cnt); fork((writeHeap(v2, (readHeap(v2) * 10)); (print(readHeap(v2)); (countDown(cnt); fork((writeHeap(v3, (readHeap(v3) * 10)); (print(readHeap(v3)); countDown(cnt))))))))))))]
+symbolTable = {cnt=0, v1=(1, int), v2=(2, int), v3=(3, int)}
+output = []
+files = {}
+heap = {1=2, 2=3, 3=4}
+latchTable = {0=3}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(await(cnt); (print(100); (countDown(cnt); print(100))))]
+symbolTable = {cnt=0, v1=(1, int), v2=(2, int), v3=(3, int)}
+output = []
+files = {}
+heap = {1=2, 2=3, 3=4}
+latchTable = {0=3}
+status: running
+
+
+>>Program State:
+Thread ID: 2
+executionStack = [(writeHeap(v1, (readHeap(v1) * 10)); (print(readHeap(v1)); (countDown(cnt); fork((writeHeap(v2, (readHeap(v2) * 10)); (print(readHeap(v2)); (countDown(cnt); fork((writeHeap(v3, (readHeap(v3) * 10)); (print(readHeap(v3)); countDown(cnt)))))))))))]
+symbolTable = {cnt=0, v1=(1, int), v2=(2, int), v3=(3, int)}
+output = []
+files = {}
+heap = {1=2, 2=3, 3=4}
+latchTable = {0=3}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(print(100); (countDown(cnt); print(100))), await(cnt)]
+symbolTable = {cnt=0, v1=(1, int), v2=(2, int), v3=(3, int)}
+output = []
+files = {}
+heap = {1=2, 2=3, 3=4}
+latchTable = {0=3}
+status: running
+
+
+>>Program State:
+Thread ID: 2
+executionStack = [(print(readHeap(v1)); (countDown(cnt); fork((writeHeap(v2, (readHeap(v2) * 10)); (print(readHeap(v2)); (countDown(cnt); fork((writeHeap(v3, (readHeap(v3) * 10)); (print(readHeap(v3)); countDown(cnt)))))))))), writeHeap(v1, (readHeap(v1) * 10))]
+symbolTable = {cnt=0, v1=(1, int), v2=(2, int), v3=(3, int)}
+output = []
+files = {}
+heap = {1=2, 2=3, 3=4}
+latchTable = {0=3}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(print(100); (countDown(cnt); print(100))), await(cnt)]
+symbolTable = {cnt=0, v1=(1, int), v2=(2, int), v3=(3, int)}
+output = []
+files = {}
+heap = {1=20, 2=3, 3=4}
+latchTable = {0=3}
+status: running
+
+
+>>Program State:
+Thread ID: 2
+executionStack = [(print(readHeap(v1)); (countDown(cnt); fork((writeHeap(v2, (readHeap(v2) * 10)); (print(readHeap(v2)); (countDown(cnt); fork((writeHeap(v3, (readHeap(v3) * 10)); (print(readHeap(v3)); countDown(cnt))))))))))]
+symbolTable = {cnt=0, v1=(1, int), v2=(2, int), v3=(3, int)}
+output = []
+files = {}
+heap = {1=20, 2=3, 3=4}
+latchTable = {0=3}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(print(100); (countDown(cnt); print(100))), await(cnt)]
+symbolTable = {cnt=0, v1=(1, int), v2=(2, int), v3=(3, int)}
+output = []
+files = {}
+heap = {1=20, 2=3, 3=4}
+latchTable = {0=3}
+status: running
+
+
+>>Program State:
+Thread ID: 2
+executionStack = [(countDown(cnt); fork((writeHeap(v2, (readHeap(v2) * 10)); (print(readHeap(v2)); (countDown(cnt); fork((writeHeap(v3, (readHeap(v3) * 10)); (print(readHeap(v3)); countDown(cnt))))))))), print(readHeap(v1))]
+symbolTable = {cnt=0, v1=(1, int), v2=(2, int), v3=(3, int)}
+output = []
+files = {}
+heap = {1=20, 2=3, 3=4}
+latchTable = {0=3}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(print(100); (countDown(cnt); print(100))), await(cnt)]
+symbolTable = {cnt=0, v1=(1, int), v2=(2, int), v3=(3, int)}
+output = [20]
+files = {}
+heap = {1=20, 2=3, 3=4}
+latchTable = {0=3}
+status: running
+
+
+>>Program State:
+Thread ID: 2
+executionStack = [(countDown(cnt); fork((writeHeap(v2, (readHeap(v2) * 10)); (print(readHeap(v2)); (countDown(cnt); fork((writeHeap(v3, (readHeap(v3) * 10)); (print(readHeap(v3)); countDown(cnt)))))))))]
+symbolTable = {cnt=0, v1=(1, int), v2=(2, int), v3=(3, int)}
+output = [20]
+files = {}
+heap = {1=20, 2=3, 3=4}
+latchTable = {0=3}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(print(100); (countDown(cnt); print(100))), await(cnt)]
+symbolTable = {cnt=0, v1=(1, int), v2=(2, int), v3=(3, int)}
+output = [20]
+files = {}
+heap = {1=20, 2=3, 3=4}
+latchTable = {0=3}
+status: running
+
+
+>>Program State:
+Thread ID: 2
+executionStack = [fork((writeHeap(v2, (readHeap(v2) * 10)); (print(readHeap(v2)); (countDown(cnt); fork((writeHeap(v3, (readHeap(v3) * 10)); (print(readHeap(v3)); countDown(cnt)))))))), countDown(cnt)]
+symbolTable = {cnt=0, v1=(1, int), v2=(2, int), v3=(3, int)}
+output = [20]
+files = {}
+heap = {1=20, 2=3, 3=4}
+latchTable = {0=3}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(print(100); (countDown(cnt); print(100))), await(cnt)]
+symbolTable = {cnt=0, v1=(1, int), v2=(2, int), v3=(3, int)}
+output = [20]
+files = {}
+heap = {1=20, 2=3, 3=4}
+latchTable = {0=2}
+status: running
+
+
+>>Program State:
+Thread ID: 2
+executionStack = [fork((writeHeap(v2, (readHeap(v2) * 10)); (print(readHeap(v2)); (countDown(cnt); fork((writeHeap(v3, (readHeap(v3) * 10)); (print(readHeap(v3)); countDown(cnt)))))))), print(2)]
+symbolTable = {cnt=0, v1=(1, int), v2=(2, int), v3=(3, int)}
+output = [20]
+files = {}
+heap = {1=20, 2=3, 3=4}
+latchTable = {0=2}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(print(100); (countDown(cnt); print(100))), await(cnt)]
+symbolTable = {cnt=0, v1=(1, int), v2=(2, int), v3=(3, int)}
+output = [20, 2]
+files = {}
+heap = {1=20, 2=3, 3=4}
+latchTable = {0=2}
+status: running
+
+
+>>Program State:
+Thread ID: 2
+executionStack = [fork((writeHeap(v2, (readHeap(v2) * 10)); (print(readHeap(v2)); (countDown(cnt); fork((writeHeap(v3, (readHeap(v3) * 10)); (print(readHeap(v3)); countDown(cnt))))))))]
+symbolTable = {cnt=0, v1=(1, int), v2=(2, int), v3=(3, int)}
+output = [20, 2]
+files = {}
+heap = {1=20, 2=3, 3=4}
+latchTable = {0=2}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(print(100); (countDown(cnt); print(100))), await(cnt)]
+symbolTable = {cnt=0, v1=(1, int), v2=(2, int), v3=(3, int)}
+output = [20, 2]
+files = {}
+heap = {1=20, 2=3, 3=4}
+latchTable = {0=2}
+status: running
+
+
+>>Program State:
+Thread ID: 2
+executionStack = []
+symbolTable = {cnt=0, v1=(1, int), v2=(2, int), v3=(3, int)}
+output = [20, 2]
+files = {}
+heap = {1=20, 2=3, 3=4}
+latchTable = {0=2}
+status: finished
+
+
+>>Program State:
+Thread ID: 3
+executionStack = [(writeHeap(v2, (readHeap(v2) * 10)); (print(readHeap(v2)); (countDown(cnt); fork((writeHeap(v3, (readHeap(v3) * 10)); (print(readHeap(v3)); countDown(cnt)))))))]
+symbolTable = {cnt=0, v1=(1, int), v2=(2, int), v3=(3, int)}
+output = [20, 2]
+files = {}
+heap = {1=20, 2=3, 3=4}
+latchTable = {0=2}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(print(100); (countDown(cnt); print(100))), await(cnt)]
+symbolTable = {cnt=0, v1=(1, int), v2=(2, int), v3=(3, int)}
+output = [20, 2]
+files = {}
+heap = {1=20, 2=3, 3=4}
+latchTable = {0=2}
+status: running
+
+
+>>Program State:
+Thread ID: 3
+executionStack = [(print(readHeap(v2)); (countDown(cnt); fork((writeHeap(v3, (readHeap(v3) * 10)); (print(readHeap(v3)); countDown(cnt)))))), writeHeap(v2, (readHeap(v2) * 10))]
+symbolTable = {cnt=0, v1=(1, int), v2=(2, int), v3=(3, int)}
+output = [20, 2]
+files = {}
+heap = {1=20, 2=3, 3=4}
+latchTable = {0=2}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(print(100); (countDown(cnt); print(100))), await(cnt)]
+symbolTable = {cnt=0, v1=(1, int), v2=(2, int), v3=(3, int)}
+output = [20, 2]
+files = {}
+heap = {1=20, 2=30, 3=4}
+latchTable = {0=2}
+status: running
+
+
+>>Program State:
+Thread ID: 3
+executionStack = [(print(readHeap(v2)); (countDown(cnt); fork((writeHeap(v3, (readHeap(v3) * 10)); (print(readHeap(v3)); countDown(cnt))))))]
+symbolTable = {cnt=0, v1=(1, int), v2=(2, int), v3=(3, int)}
+output = [20, 2]
+files = {}
+heap = {1=20, 2=30, 3=4}
+latchTable = {0=2}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(print(100); (countDown(cnt); print(100))), await(cnt)]
+symbolTable = {cnt=0, v1=(1, int), v2=(2, int), v3=(3, int)}
+output = [20, 2]
+files = {}
+heap = {1=20, 2=30, 3=4}
+latchTable = {0=2}
+status: running
+
+
+>>Program State:
+Thread ID: 3
+executionStack = [(countDown(cnt); fork((writeHeap(v3, (readHeap(v3) * 10)); (print(readHeap(v3)); countDown(cnt))))), print(readHeap(v2))]
+symbolTable = {cnt=0, v1=(1, int), v2=(2, int), v3=(3, int)}
+output = [20, 2]
+files = {}
+heap = {1=20, 2=30, 3=4}
+latchTable = {0=2}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(print(100); (countDown(cnt); print(100))), await(cnt)]
+symbolTable = {cnt=0, v1=(1, int), v2=(2, int), v3=(3, int)}
+output = [20, 2, 30]
+files = {}
+heap = {1=20, 2=30, 3=4}
+latchTable = {0=2}
+status: running
+
+
+>>Program State:
+Thread ID: 3
+executionStack = [(countDown(cnt); fork((writeHeap(v3, (readHeap(v3) * 10)); (print(readHeap(v3)); countDown(cnt)))))]
+symbolTable = {cnt=0, v1=(1, int), v2=(2, int), v3=(3, int)}
+output = [20, 2, 30]
+files = {}
+heap = {1=20, 2=30, 3=4}
+latchTable = {0=2}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(print(100); (countDown(cnt); print(100))), await(cnt)]
+symbolTable = {cnt=0, v1=(1, int), v2=(2, int), v3=(3, int)}
+output = [20, 2, 30]
+files = {}
+heap = {1=20, 2=30, 3=4}
+latchTable = {0=2}
+status: running
+
+
+>>Program State:
+Thread ID: 3
+executionStack = [fork((writeHeap(v3, (readHeap(v3) * 10)); (print(readHeap(v3)); countDown(cnt)))), countDown(cnt)]
+symbolTable = {cnt=0, v1=(1, int), v2=(2, int), v3=(3, int)}
+output = [20, 2, 30]
+files = {}
+heap = {1=20, 2=30, 3=4}
+latchTable = {0=2}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(print(100); (countDown(cnt); print(100))), await(cnt)]
+symbolTable = {cnt=0, v1=(1, int), v2=(2, int), v3=(3, int)}
+output = [20, 2, 30]
+files = {}
+heap = {1=20, 2=30, 3=4}
+latchTable = {0=1}
+status: running
+
+
+>>Program State:
+Thread ID: 3
+executionStack = [fork((writeHeap(v3, (readHeap(v3) * 10)); (print(readHeap(v3)); countDown(cnt)))), print(3)]
+symbolTable = {cnt=0, v1=(1, int), v2=(2, int), v3=(3, int)}
+output = [20, 2, 30]
+files = {}
+heap = {1=20, 2=30, 3=4}
+latchTable = {0=1}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(print(100); (countDown(cnt); print(100))), await(cnt)]
+symbolTable = {cnt=0, v1=(1, int), v2=(2, int), v3=(3, int)}
+output = [20, 2, 30, 3]
+files = {}
+heap = {1=20, 2=30, 3=4}
+latchTable = {0=1}
+status: running
+
+
+>>Program State:
+Thread ID: 3
+executionStack = [fork((writeHeap(v3, (readHeap(v3) * 10)); (print(readHeap(v3)); countDown(cnt))))]
+symbolTable = {cnt=0, v1=(1, int), v2=(2, int), v3=(3, int)}
+output = [20, 2, 30, 3]
+files = {}
+heap = {1=20, 2=30, 3=4}
+latchTable = {0=1}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(print(100); (countDown(cnt); print(100))), await(cnt)]
+symbolTable = {cnt=0, v1=(1, int), v2=(2, int), v3=(3, int)}
+output = [20, 2, 30, 3]
+files = {}
+heap = {1=20, 2=30, 3=4}
+latchTable = {0=1}
+status: running
+
+
+>>Program State:
+Thread ID: 3
+executionStack = []
+symbolTable = {cnt=0, v1=(1, int), v2=(2, int), v3=(3, int)}
+output = [20, 2, 30, 3]
+files = {}
+heap = {1=20, 2=30, 3=4}
+latchTable = {0=1}
+status: finished
+
+
+>>Program State:
+Thread ID: 4
+executionStack = [(writeHeap(v3, (readHeap(v3) * 10)); (print(readHeap(v3)); countDown(cnt)))]
+symbolTable = {cnt=0, v1=(1, int), v2=(2, int), v3=(3, int)}
+output = [20, 2, 30, 3]
+files = {}
+heap = {1=20, 2=30, 3=4}
+latchTable = {0=1}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(print(100); (countDown(cnt); print(100))), await(cnt)]
+symbolTable = {cnt=0, v1=(1, int), v2=(2, int), v3=(3, int)}
+output = [20, 2, 30, 3]
+files = {}
+heap = {1=20, 2=30, 3=4}
+latchTable = {0=1}
+status: running
+
+
+>>Program State:
+Thread ID: 4
+executionStack = [(print(readHeap(v3)); countDown(cnt)), writeHeap(v3, (readHeap(v3) * 10))]
+symbolTable = {cnt=0, v1=(1, int), v2=(2, int), v3=(3, int)}
+output = [20, 2, 30, 3]
+files = {}
+heap = {1=20, 2=30, 3=4}
+latchTable = {0=1}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(print(100); (countDown(cnt); print(100))), await(cnt)]
+symbolTable = {cnt=0, v1=(1, int), v2=(2, int), v3=(3, int)}
+output = [20, 2, 30, 3]
+files = {}
+heap = {1=20, 2=30, 3=40}
+latchTable = {0=1}
+status: running
+
+
+>>Program State:
+Thread ID: 4
+executionStack = [(print(readHeap(v3)); countDown(cnt))]
+symbolTable = {cnt=0, v1=(1, int), v2=(2, int), v3=(3, int)}
+output = [20, 2, 30, 3]
+files = {}
+heap = {1=20, 2=30, 3=40}
+latchTable = {0=1}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(print(100); (countDown(cnt); print(100))), await(cnt)]
+symbolTable = {cnt=0, v1=(1, int), v2=(2, int), v3=(3, int)}
+output = [20, 2, 30, 3]
+files = {}
+heap = {1=20, 2=30, 3=40}
+latchTable = {0=1}
+status: running
+
+
+>>Program State:
+Thread ID: 4
+executionStack = [countDown(cnt), print(readHeap(v3))]
+symbolTable = {cnt=0, v1=(1, int), v2=(2, int), v3=(3, int)}
+output = [20, 2, 30, 3]
+files = {}
+heap = {1=20, 2=30, 3=40}
+latchTable = {0=1}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(print(100); (countDown(cnt); print(100))), await(cnt)]
+symbolTable = {cnt=0, v1=(1, int), v2=(2, int), v3=(3, int)}
+output = [20, 2, 30, 3, 40]
+files = {}
+heap = {1=20, 2=30, 3=40}
+latchTable = {0=1}
+status: running
+
+
+>>Program State:
+Thread ID: 4
+executionStack = [countDown(cnt)]
+symbolTable = {cnt=0, v1=(1, int), v2=(2, int), v3=(3, int)}
+output = [20, 2, 30, 3, 40]
+files = {}
+heap = {1=20, 2=30, 3=40}
+latchTable = {0=1}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(print(100); (countDown(cnt); print(100))), await(cnt)]
+symbolTable = {cnt=0, v1=(1, int), v2=(2, int), v3=(3, int)}
+output = [20, 2, 30, 3, 40]
+files = {}
+heap = {1=20, 2=30, 3=40}
+latchTable = {0=0}
+status: running
+
+
+>>Program State:
+Thread ID: 4
+executionStack = [print(4)]
+symbolTable = {cnt=0, v1=(1, int), v2=(2, int), v3=(3, int)}
+output = [20, 2, 30, 3, 40]
+files = {}
+heap = {1=20, 2=30, 3=40}
+latchTable = {0=0}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(print(100); (countDown(cnt); print(100)))]
+symbolTable = {cnt=0, v1=(1, int), v2=(2, int), v3=(3, int)}
+output = [20, 2, 30, 3, 40, 4]
+files = {}
+heap = {1=20, 2=30, 3=40}
+latchTable = {0=0}
+status: running
+
+
+>>Program State:
+Thread ID: 4
+executionStack = []
+symbolTable = {cnt=0, v1=(1, int), v2=(2, int), v3=(3, int)}
+output = [20, 2, 30, 3, 40, 4]
+files = {}
+heap = {1=20, 2=30, 3=40}
+latchTable = {0=0}
+status: finished
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(countDown(cnt); print(100)), print(100)]
+symbolTable = {cnt=0, v1=(1, int), v2=(2, int), v3=(3, int)}
+output = [20, 2, 30, 3, 40, 4]
+files = {}
+heap = {1=20, 2=30, 3=40}
+latchTable = {0=0}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(countDown(cnt); print(100))]
+symbolTable = {cnt=0, v1=(1, int), v2=(2, int), v3=(3, int)}
+output = [20, 2, 30, 3, 40, 4, 100]
+files = {}
+heap = {1=20, 2=30, 3=40}
+latchTable = {0=0}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [print(100), countDown(cnt)]
+symbolTable = {cnt=0, v1=(1, int), v2=(2, int), v3=(3, int)}
+output = [20, 2, 30, 3, 40, 4, 100]
+files = {}
+heap = {1=20, 2=30, 3=40}
+latchTable = {0=0}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [print(100), print(1)]
+symbolTable = {cnt=0, v1=(1, int), v2=(2, int), v3=(3, int)}
+output = [20, 2, 30, 3, 40, 4, 100]
+files = {}
+heap = {1=20, 2=30, 3=40}
+latchTable = {0=0}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [print(100)]
+symbolTable = {cnt=0, v1=(1, int), v2=(2, int), v3=(3, int)}
+output = [20, 2, 30, 3, 40, 4, 100, 1]
+files = {}
+heap = {1=20, 2=30, 3=40}
+latchTable = {0=0}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = []
+symbolTable = {cnt=0, v1=(1, int), v2=(2, int), v3=(3, int)}
+output = [20, 2, 30, 3, 40, 4, 100, 1, 100]
+files = {}
+heap = {1=20, 2=30, 3=40}
+latchTable = {0=0}
+status: finished
+
+

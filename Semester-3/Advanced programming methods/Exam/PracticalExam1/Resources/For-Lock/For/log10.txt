@@ -1,0 +1,360 @@
+>>Program State:
+Thread ID: 1
+executionStack = [(new(a, 20); (for (v = 0; v < 3; v = (v + 1)) fork((print(v); v = (v * readHeap(a)))); print(readHeap(a)))), Ref(int) a]
+symbolTable = {}
+output = []
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(new(a, 20); (for (v = 0; v < 3; v = (v + 1)) fork((print(v); v = (v * readHeap(a)))); print(readHeap(a))))]
+symbolTable = {a=(0, int)}
+output = []
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(for (v = 0; v < 3; v = (v + 1)) fork((print(v); v = (v * readHeap(a)))); print(readHeap(a))), new(a, 20)]
+symbolTable = {a=(0, int)}
+output = []
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(for (v = 0; v < 3; v = (v + 1)) fork((print(v); v = (v * readHeap(a)))); print(readHeap(a)))]
+symbolTable = {a=(1, int)}
+output = []
+files = {}
+heap = {1=20}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [print(readHeap(a)), for (v = 0; v < 3; v = (v + 1)) fork((print(v); v = (v * readHeap(a))))]
+symbolTable = {a=(1, int)}
+output = []
+files = {}
+heap = {1=20}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [print(readHeap(a)), ((int v; v = 0); while(v < 3) { (fork((print(v); v = (v * readHeap(a)))); v = (v + 1)) })]
+symbolTable = {a=(1, int)}
+output = []
+files = {}
+heap = {1=20}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [print(readHeap(a)), while(v < 3) { (fork((print(v); v = (v * readHeap(a)))); v = (v + 1)) }, (int v; v = 0)]
+symbolTable = {a=(1, int)}
+output = []
+files = {}
+heap = {1=20}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [print(readHeap(a)), while(v < 3) { (fork((print(v); v = (v * readHeap(a)))); v = (v + 1)) }, v = 0, int v]
+symbolTable = {a=(1, int)}
+output = []
+files = {}
+heap = {1=20}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [print(readHeap(a)), while(v < 3) { (fork((print(v); v = (v * readHeap(a)))); v = (v + 1)) }, v = 0]
+symbolTable = {a=(1, int), v=0}
+output = []
+files = {}
+heap = {1=20}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [print(readHeap(a)), while(v < 3) { (fork((print(v); v = (v * readHeap(a)))); v = (v + 1)) }]
+symbolTable = {a=(1, int), v=0}
+output = []
+files = {}
+heap = {1=20}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [print(readHeap(a)), while(v < 3) { (fork((print(v); v = (v * readHeap(a)))); v = (v + 1)) }, (fork((print(v); v = (v * readHeap(a)))); v = (v + 1))]
+symbolTable = {a=(1, int), v=0}
+output = []
+files = {}
+heap = {1=20}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [print(readHeap(a)), while(v < 3) { (fork((print(v); v = (v * readHeap(a)))); v = (v + 1)) }, v = (v + 1), fork((print(v); v = (v * readHeap(a))))]
+symbolTable = {a=(1, int), v=0}
+output = []
+files = {}
+heap = {1=20}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [print(readHeap(a)), while(v < 3) { (fork((print(v); v = (v * readHeap(a)))); v = (v + 1)) }, v = (v + 1)]
+symbolTable = {a=(1, int), v=0}
+output = []
+files = {}
+heap = {1=20}
+status: running
+
+
+>>Program State:
+Thread ID: 2
+executionStack = [(print(v); v = (v * readHeap(a)))]
+symbolTable = {a=(1, int), v=0}
+output = []
+files = {}
+heap = {1=20}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [print(readHeap(a)), while(v < 3) { (fork((print(v); v = (v * readHeap(a)))); v = (v + 1)) }]
+symbolTable = {a=(1, int), v=1}
+output = []
+files = {}
+heap = {1=20}
+status: running
+
+
+>>Program State:
+Thread ID: 2
+executionStack = [v = (v * readHeap(a)), print(v)]
+symbolTable = {a=(1, int), v=0}
+output = []
+files = {}
+heap = {1=20}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [print(readHeap(a)), while(v < 3) { (fork((print(v); v = (v * readHeap(a)))); v = (v + 1)) }, (fork((print(v); v = (v * readHeap(a)))); v = (v + 1))]
+symbolTable = {a=(1, int), v=1}
+output = [0]
+files = {}
+heap = {1=20}
+status: running
+
+
+>>Program State:
+Thread ID: 2
+executionStack = [v = (v * readHeap(a))]
+symbolTable = {a=(1, int), v=0}
+output = [0]
+files = {}
+heap = {1=20}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [print(readHeap(a)), while(v < 3) { (fork((print(v); v = (v * readHeap(a)))); v = (v + 1)) }, v = (v + 1), fork((print(v); v = (v * readHeap(a))))]
+symbolTable = {a=(1, int), v=1}
+output = [0]
+files = {}
+heap = {1=20}
+status: running
+
+
+>>Program State:
+Thread ID: 2
+executionStack = []
+symbolTable = {a=(1, int), v=0}
+output = [0]
+files = {}
+heap = {1=20}
+status: finished
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [print(readHeap(a)), while(v < 3) { (fork((print(v); v = (v * readHeap(a)))); v = (v + 1)) }, v = (v + 1)]
+symbolTable = {a=(1, int), v=1}
+output = [0]
+files = {}
+heap = {1=20}
+status: running
+
+
+>>Program State:
+Thread ID: 3
+executionStack = [(print(v); v = (v * readHeap(a)))]
+symbolTable = {a=(1, int), v=1}
+output = [0]
+files = {}
+heap = {1=20}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [print(readHeap(a)), while(v < 3) { (fork((print(v); v = (v * readHeap(a)))); v = (v + 1)) }]
+symbolTable = {a=(1, int), v=2}
+output = [0]
+files = {}
+heap = {1=20}
+status: running
+
+
+>>Program State:
+Thread ID: 3
+executionStack = [v = (v * readHeap(a)), print(v)]
+symbolTable = {a=(1, int), v=1}
+output = [0]
+files = {}
+heap = {1=20}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [print(readHeap(a)), while(v < 3) { (fork((print(v); v = (v * readHeap(a)))); v = (v + 1)) }, (fork((print(v); v = (v * readHeap(a)))); v = (v + 1))]
+symbolTable = {a=(1, int), v=2}
+output = [0, 1]
+files = {}
+heap = {1=20}
+status: running
+
+
+>>Program State:
+Thread ID: 3
+executionStack = [v = (v * readHeap(a))]
+symbolTable = {a=(1, int), v=1}
+output = [0, 1]
+files = {}
+heap = {1=20}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [print(readHeap(a)), while(v < 3) { (fork((print(v); v = (v * readHeap(a)))); v = (v + 1)) }, v = (v + 1), fork((print(v); v = (v * readHeap(a))))]
+symbolTable = {a=(1, int), v=2}
+output = [0, 1]
+files = {}
+heap = {1=20}
+status: running
+
+
+>>Program State:
+Thread ID: 3
+executionStack = []
+symbolTable = {a=(1, int), v=20}
+output = [0, 1]
+files = {}
+heap = {1=20}
+status: finished
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [print(readHeap(a)), while(v < 3) { (fork((print(v); v = (v * readHeap(a)))); v = (v + 1)) }, v = (v + 1)]
+symbolTable = {a=(1, int), v=2}
+output = [0, 1]
+files = {}
+heap = {1=20}
+status: running
+
+
+>>Program State:
+Thread ID: 4
+executionStack = [(print(v); v = (v * readHeap(a)))]
+symbolTable = {a=(1, int), v=2}
+output = [0, 1]
+files = {}
+heap = {1=20}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [print(readHeap(a)), while(v < 3) { (fork((print(v); v = (v * readHeap(a)))); v = (v + 1)) }]
+symbolTable = {a=(1, int), v=3}
+output = [0, 1]
+files = {}
+heap = {1=20}
+status: running
+
+
+>>Program State:
+Thread ID: 4
+executionStack = [v = (v * readHeap(a)), print(v)]
+symbolTable = {a=(1, int), v=2}
+output = [0, 1]
+files = {}
+heap = {1=20}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [print(readHeap(a))]
+symbolTable = {a=(1, int), v=3}
+output = [0, 1, 2]
+files = {}
+heap = {1=20}
+status: running
+
+
+>>Program State:
+Thread ID: 4
+executionStack = [v = (v * readHeap(a))]
+symbolTable = {a=(1, int), v=2}
+output = [0, 1, 2]
+files = {}
+heap = {1=20}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = []
+symbolTable = {a=(1, int), v=3}
+output = [0, 1, 2, 20]
+files = {}
+heap = {1=20}
+status: finished
+
+
+>>Program State:
+Thread ID: 4
+executionStack = []
+symbolTable = {a=(1, int), v=40}
+output = [0, 1, 2, 20]
+files = {}
+heap = {1=20}
+status: finished
+
+

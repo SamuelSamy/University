@@ -1,0 +1,152 @@
+>>Program State:
+executionStack = [(Ref(int) v; (new(v, 20); (print(readHeap(v)); (writeHeap(v, 30); print((readHeap(v) + 5))))))]
+symbolTable = {}
+output = []
+files = {}
+heap = {}
+
+
+>>Program State:
+executionStack = [(new(v, 20); (print(readHeap(v)); (writeHeap(v, 30); print((readHeap(v) + 5))))), Ref(int) v]
+symbolTable = {}
+output = []
+files = {}
+heap = {}
+
+
+>>Program State:
+executionStack = [(new(v, 20); (print(readHeap(v)); (writeHeap(v, 30); print((readHeap(v) + 5))))), Ref(int) v]
+symbolTable = {}
+output = []
+files = {}
+heap = {}
+
+
+>>Program State:
+executionStack = [(new(v, 20); (print(readHeap(v)); (writeHeap(v, 30); print((readHeap(v) + 5)))))]
+symbolTable = {v=(0, int)}
+output = []
+files = {}
+heap = {}
+
+
+>>Program State:
+executionStack = [(new(v, 20); (print(readHeap(v)); (writeHeap(v, 30); print((readHeap(v) + 5)))))]
+symbolTable = {v=(0, int)}
+output = []
+files = {}
+heap = {}
+
+
+>>Program State:
+executionStack = [(print(readHeap(v)); (writeHeap(v, 30); print((readHeap(v) + 5)))), new(v, 20)]
+symbolTable = {v=(0, int)}
+output = []
+files = {}
+heap = {}
+
+
+>>Program State:
+executionStack = [(print(readHeap(v)); (writeHeap(v, 30); print((readHeap(v) + 5)))), new(v, 20)]
+symbolTable = {v=(0, int)}
+output = []
+files = {}
+heap = {}
+
+
+>>Program State:
+executionStack = [(print(readHeap(v)); (writeHeap(v, 30); print((readHeap(v) + 5))))]
+symbolTable = {v=(1, int)}
+output = []
+files = {}
+heap = {1=20}
+
+
+>>Program State:
+executionStack = [(print(readHeap(v)); (writeHeap(v, 30); print((readHeap(v) + 5))))]
+symbolTable = {v=(1, int)}
+output = []
+files = {}
+heap = {1=20}
+
+
+>>Program State:
+executionStack = [(writeHeap(v, 30); print((readHeap(v) + 5))), print(readHeap(v))]
+symbolTable = {v=(1, int)}
+output = []
+files = {}
+heap = {1=20}
+
+
+>>Program State:
+executionStack = [(writeHeap(v, 30); print((readHeap(v) + 5))), print(readHeap(v))]
+symbolTable = {v=(1, int)}
+output = []
+files = {}
+heap = {1=20}
+
+
+>>Program State:
+executionStack = [(writeHeap(v, 30); print((readHeap(v) + 5)))]
+symbolTable = {v=(1, int)}
+output = [20]
+files = {}
+heap = {1=20}
+
+
+>>Program State:
+executionStack = [(writeHeap(v, 30); print((readHeap(v) + 5)))]
+symbolTable = {v=(1, int)}
+output = [20]
+files = {}
+heap = {1=20}
+
+
+>>Program State:
+executionStack = [print((readHeap(v) + 5)), writeHeap(v, 30)]
+symbolTable = {v=(1, int)}
+output = [20]
+files = {}
+heap = {1=20}
+
+
+>>Program State:
+executionStack = [print((readHeap(v) + 5)), writeHeap(v, 30)]
+symbolTable = {v=(1, int)}
+output = [20]
+files = {}
+heap = {1=20}
+
+
+>>Program State:
+executionStack = [print((readHeap(v) + 5))]
+symbolTable = {v=(1, int)}
+output = [20]
+files = {}
+heap = {1=30}
+
+
+>>Program State:
+executionStack = [print((readHeap(v) + 5))]
+symbolTable = {v=(1, int)}
+output = [20]
+files = {}
+heap = {1=30}
+
+
+>>Program State:
+executionStack = []
+symbolTable = {v=(1, int)}
+output = [20, 35]
+files = {}
+heap = {1=30}
+
+
+>>Program State:
+executionStack = []
+symbolTable = {v=(1, int)}
+output = [20, 35]
+files = {}
+heap = {1=30}
+
+

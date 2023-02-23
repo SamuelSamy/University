@@ -1,0 +1,6 @@
+class ValidationException
+!!!137346.cpp!!!	ValidationException(in _message : std::string)
+
+!!!137474.cpp!!!	what() : char
+
+    return message.c_str();

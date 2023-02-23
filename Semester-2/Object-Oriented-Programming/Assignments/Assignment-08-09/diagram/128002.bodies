@@ -1,0 +1,117 @@
+class Repository
+!!!128002.cpp!!!	Repository()
+
+    
+!!!128130.cpp!!!	Repository(inout repo : Repository)
+
+    this->data.clear();
+    this->data.resize(0);
+
+    for (Coat* c : (*repo).data)
+    {
+        Coat* new_coat = new Coat(*c);
+        this->data.push_back(new_coat);
+    }
+!!!128258.cpp!!!	Repository(in repo : Repository)
+
+    this->data.clear();
+    this->data.resize(0);
+
+    for (Coat* c : repo.data)
+    {
+        Coat* new_coat = new Coat(*c);
+        this->data.push_back(new_coat);
+    }
+!!!128386.cpp!!!	operator [](in index : int) : Coat
+
+    return this->data[index];
+!!!128514.cpp!!!	operator =(in v : Repository) : Repository
+
+    this->data.clear();
+    this->data.resize(0);
+
+    for (Coat* c : v.data)
+    {
+        Coat* new_coat = new Coat(*c);
+        this->data.push_back(new_coat);
+    }
+
+    return *this;
+!!!128642.cpp!!!	get_coats_by_size(in size : int) : std::vector<Coat>
+
+    if (size == 0)
+    {
+        std::vector<Coat> coats{ this->data.size() };
+        std::transform(this->data.begin(), this->data.end(), coats.begin(), [](Coat* c) {return *c; });
+        return coats;
+    }
+
+    std::vector<Coat*> ptr_coats{this->data.size()};
+    std::vector<Coat*>::iterator it = std::copy_if(this->data.begin(), this->data.end(), ptr_coats.begin(), [size](Coat* coat) {return coat->get_size() == size; });
+    ptr_coats.resize(std::distance(ptr_coats.begin(), it));
+
+    std::vector<Coat> coats{ this->data.size() };
+    std::transform(ptr_coats.begin(), ptr_coats.end(), coats.begin(), [](Coat* c) {return *c; });
+
+    return coats;
+!!!128770.cpp!!!	get_coat_by_ID(in ID : int) : Coat
+
+    std::vector<Coat*>::iterator it = std::find_if(this->data.begin(), this->data.end(), [ID](Coat* coat) {return coat->get_ID() == ID; });
+    if (it == this->data.end())
+    {
+        throw RepositoryException(CoatNotFound);
+    }
+    return Coat{ **it };
+!!!128898.cpp!!!	length() : int
+
+    return (int)this->data.size();
+!!!129026.cpp!!!	add(in element : Coat) : void
+
+    Coat* new_coat = new Coat{ element };
+
+    std::vector<Coat*>::iterator it = std::find_if(this->data.begin(), this->data.end(), [new_coat](Coat* coat) {return new_coat->get_ID() == coat->get_ID(); });
+    if (it != this->data.end())
+    {
+        delete new_coat;
+        throw RepositoryException(DuplicateID);
+    }
+
+    this->data.push_back(new_coat);
+!!!129154.cpp!!!	remove(in ID : int) : void
+
+    std::vector<Coat*>::iterator it = std::find_if(this->data.begin(), this->data.end(), [ID](Coat* coat) {return coat->get_ID() == ID; });
+    
+    if (it == this->data.end())
+    {
+        throw RepositoryException(CoatNotFound);
+    }
+  
+    if ((*it)->get_quantity() != 0)
+    {
+        throw RepositoryException(CoatNotSoldOut);
+    }
+
+    delete *it;
+    this->data.erase(it);
+!!!129282.cpp!!!	update(in ID : int, in newData : Coat) : void
+
+    std::vector<Coat*>::iterator it = std::find_if(this->data.begin(), this->data.end(), [ID](Coat* coat) {return coat->get_ID() == ID; });
+    if (it == this->data.end())
+    {
+        throw RepositoryException(CoatNotFound);
+    }
+    (**it) = newData;
+!!!129410.cpp!!!	write() : void
+
+!!!129538.cpp!!!	read() : void
+
+!!!129666.cpp!!!	~Repository()
+
+    for (Coat* c : this->data)
+    {
+        delete c;
+    }
+!!!129794.cpp!!!	operator <<(inout os : std::ostream, in repository : Repository) : std::ostream
+
+    os << repository.data;
+    return os;

@@ -1,0 +1,407 @@
+>>Program State:
+Thread ID: 1
+executionStack = [(v = 2; (int w; (w = 5; (call sum[(v * 10), w]; (print(v); fork((call product[v, w]; fork(call sum[v, w])))))))), int v]
+symbolTable = [{}]
+output = []
+files = {}
+heap = {}
+procedures = {product=[a, b]=(int v; (v = (a * b); print(v))), sum=[a, b]=(int v; (v = (a + b); print(v)))}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(v = 2; (int w; (w = 5; (call sum[(v * 10), w]; (print(v); fork((call product[v, w]; fork(call sum[v, w]))))))))]
+symbolTable = [{v=0}]
+output = []
+files = {}
+heap = {}
+procedures = {product=[a, b]=(int v; (v = (a * b); print(v))), sum=[a, b]=(int v; (v = (a + b); print(v)))}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(int w; (w = 5; (call sum[(v * 10), w]; (print(v); fork((call product[v, w]; fork(call sum[v, w]))))))), v = 2]
+symbolTable = [{v=0}]
+output = []
+files = {}
+heap = {}
+procedures = {product=[a, b]=(int v; (v = (a * b); print(v))), sum=[a, b]=(int v; (v = (a + b); print(v)))}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(int w; (w = 5; (call sum[(v * 10), w]; (print(v); fork((call product[v, w]; fork(call sum[v, w])))))))]
+symbolTable = [{v=2}]
+output = []
+files = {}
+heap = {}
+procedures = {product=[a, b]=(int v; (v = (a * b); print(v))), sum=[a, b]=(int v; (v = (a + b); print(v)))}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(w = 5; (call sum[(v * 10), w]; (print(v); fork((call product[v, w]; fork(call sum[v, w])))))), int w]
+symbolTable = [{v=2}]
+output = []
+files = {}
+heap = {}
+procedures = {product=[a, b]=(int v; (v = (a * b); print(v))), sum=[a, b]=(int v; (v = (a + b); print(v)))}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(w = 5; (call sum[(v * 10), w]; (print(v); fork((call product[v, w]; fork(call sum[v, w]))))))]
+symbolTable = [{v=2, w=0}]
+output = []
+files = {}
+heap = {}
+procedures = {product=[a, b]=(int v; (v = (a * b); print(v))), sum=[a, b]=(int v; (v = (a + b); print(v)))}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(call sum[(v * 10), w]; (print(v); fork((call product[v, w]; fork(call sum[v, w]))))), w = 5]
+symbolTable = [{v=2, w=0}]
+output = []
+files = {}
+heap = {}
+procedures = {product=[a, b]=(int v; (v = (a * b); print(v))), sum=[a, b]=(int v; (v = (a + b); print(v)))}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(call sum[(v * 10), w]; (print(v); fork((call product[v, w]; fork(call sum[v, w])))))]
+symbolTable = [{v=2, w=5}]
+output = []
+files = {}
+heap = {}
+procedures = {product=[a, b]=(int v; (v = (a * b); print(v))), sum=[a, b]=(int v; (v = (a + b); print(v)))}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(print(v); fork((call product[v, w]; fork(call sum[v, w])))), call sum[(v * 10), w]]
+symbolTable = [{v=2, w=5}]
+output = []
+files = {}
+heap = {}
+procedures = {product=[a, b]=(int v; (v = (a * b); print(v))), sum=[a, b]=(int v; (v = (a + b); print(v)))}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(print(v); fork((call product[v, w]; fork(call sum[v, w])))), return, (int v; (v = (a + b); print(v)))]
+symbolTable = [{v=2, w=5}, {a=20, b=5}]
+output = []
+files = {}
+heap = {}
+procedures = {product=[a, b]=(int v; (v = (a * b); print(v))), sum=[a, b]=(int v; (v = (a + b); print(v)))}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(print(v); fork((call product[v, w]; fork(call sum[v, w])))), return, (v = (a + b); print(v)), int v]
+symbolTable = [{v=2, w=5}, {a=20, b=5}]
+output = []
+files = {}
+heap = {}
+procedures = {product=[a, b]=(int v; (v = (a * b); print(v))), sum=[a, b]=(int v; (v = (a + b); print(v)))}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(print(v); fork((call product[v, w]; fork(call sum[v, w])))), return, (v = (a + b); print(v))]
+symbolTable = [{v=2, w=5}, {a=20, b=5, v=0}]
+output = []
+files = {}
+heap = {}
+procedures = {product=[a, b]=(int v; (v = (a * b); print(v))), sum=[a, b]=(int v; (v = (a + b); print(v)))}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(print(v); fork((call product[v, w]; fork(call sum[v, w])))), return, print(v), v = (a + b)]
+symbolTable = [{v=2, w=5}, {a=20, b=5, v=0}]
+output = []
+files = {}
+heap = {}
+procedures = {product=[a, b]=(int v; (v = (a * b); print(v))), sum=[a, b]=(int v; (v = (a + b); print(v)))}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(print(v); fork((call product[v, w]; fork(call sum[v, w])))), return, print(v)]
+symbolTable = [{v=2, w=5}, {a=20, b=5, v=25}]
+output = []
+files = {}
+heap = {}
+procedures = {product=[a, b]=(int v; (v = (a * b); print(v))), sum=[a, b]=(int v; (v = (a + b); print(v)))}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(print(v); fork((call product[v, w]; fork(call sum[v, w])))), return]
+symbolTable = [{v=2, w=5}, {a=20, b=5, v=25}]
+output = [25]
+files = {}
+heap = {}
+procedures = {product=[a, b]=(int v; (v = (a * b); print(v))), sum=[a, b]=(int v; (v = (a + b); print(v)))}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(print(v); fork((call product[v, w]; fork(call sum[v, w]))))]
+symbolTable = [{v=2, w=5}]
+output = [25]
+files = {}
+heap = {}
+procedures = {product=[a, b]=(int v; (v = (a * b); print(v))), sum=[a, b]=(int v; (v = (a + b); print(v)))}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [fork((call product[v, w]; fork(call sum[v, w]))), print(v)]
+symbolTable = [{v=2, w=5}]
+output = [25]
+files = {}
+heap = {}
+procedures = {product=[a, b]=(int v; (v = (a * b); print(v))), sum=[a, b]=(int v; (v = (a + b); print(v)))}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [fork((call product[v, w]; fork(call sum[v, w])))]
+symbolTable = [{v=2, w=5}]
+output = [25, 2]
+files = {}
+heap = {}
+procedures = {product=[a, b]=(int v; (v = (a * b); print(v))), sum=[a, b]=(int v; (v = (a + b); print(v)))}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = []
+symbolTable = [{v=2, w=5}]
+output = [25, 2]
+files = {}
+heap = {}
+procedures = {product=[a, b]=(int v; (v = (a * b); print(v))), sum=[a, b]=(int v; (v = (a + b); print(v)))}
+status: finished
+
+
+>>Program State:
+Thread ID: 2
+executionStack = [(call product[v, w]; fork(call sum[v, w]))]
+symbolTable = [{v=2, w=5}]
+output = [25, 2]
+files = {}
+heap = {}
+procedures = {product=[a, b]=(int v; (v = (a * b); print(v))), sum=[a, b]=(int v; (v = (a + b); print(v)))}
+status: running
+
+
+>>Program State:
+Thread ID: 2
+executionStack = [fork(call sum[v, w]), call product[v, w]]
+symbolTable = [{v=2, w=5}]
+output = [25, 2]
+files = {}
+heap = {}
+procedures = {product=[a, b]=(int v; (v = (a * b); print(v))), sum=[a, b]=(int v; (v = (a + b); print(v)))}
+status: running
+
+
+>>Program State:
+Thread ID: 2
+executionStack = [fork(call sum[v, w]), return, (int v; (v = (a * b); print(v)))]
+symbolTable = [{v=2, w=5}, {a=2, b=5}]
+output = [25, 2]
+files = {}
+heap = {}
+procedures = {product=[a, b]=(int v; (v = (a * b); print(v))), sum=[a, b]=(int v; (v = (a + b); print(v)))}
+status: running
+
+
+>>Program State:
+Thread ID: 2
+executionStack = [fork(call sum[v, w]), return, (v = (a * b); print(v)), int v]
+symbolTable = [{v=2, w=5}, {a=2, b=5}]
+output = [25, 2]
+files = {}
+heap = {}
+procedures = {product=[a, b]=(int v; (v = (a * b); print(v))), sum=[a, b]=(int v; (v = (a + b); print(v)))}
+status: running
+
+
+>>Program State:
+Thread ID: 2
+executionStack = [fork(call sum[v, w]), return, (v = (a * b); print(v))]
+symbolTable = [{v=2, w=5}, {a=2, b=5, v=0}]
+output = [25, 2]
+files = {}
+heap = {}
+procedures = {product=[a, b]=(int v; (v = (a * b); print(v))), sum=[a, b]=(int v; (v = (a + b); print(v)))}
+status: running
+
+
+>>Program State:
+Thread ID: 2
+executionStack = [fork(call sum[v, w]), return, print(v), v = (a * b)]
+symbolTable = [{v=2, w=5}, {a=2, b=5, v=0}]
+output = [25, 2]
+files = {}
+heap = {}
+procedures = {product=[a, b]=(int v; (v = (a * b); print(v))), sum=[a, b]=(int v; (v = (a + b); print(v)))}
+status: running
+
+
+>>Program State:
+Thread ID: 2
+executionStack = [fork(call sum[v, w]), return, print(v)]
+symbolTable = [{v=2, w=5}, {a=2, b=5, v=10}]
+output = [25, 2]
+files = {}
+heap = {}
+procedures = {product=[a, b]=(int v; (v = (a * b); print(v))), sum=[a, b]=(int v; (v = (a + b); print(v)))}
+status: running
+
+
+>>Program State:
+Thread ID: 2
+executionStack = [fork(call sum[v, w]), return]
+symbolTable = [{v=2, w=5}, {a=2, b=5, v=10}]
+output = [25, 2, 10]
+files = {}
+heap = {}
+procedures = {product=[a, b]=(int v; (v = (a * b); print(v))), sum=[a, b]=(int v; (v = (a + b); print(v)))}
+status: running
+
+
+>>Program State:
+Thread ID: 2
+executionStack = [fork(call sum[v, w])]
+symbolTable = [{v=2, w=5}]
+output = [25, 2, 10]
+files = {}
+heap = {}
+procedures = {product=[a, b]=(int v; (v = (a * b); print(v))), sum=[a, b]=(int v; (v = (a + b); print(v)))}
+status: running
+
+
+>>Program State:
+Thread ID: 2
+executionStack = []
+symbolTable = [{v=2, w=5}]
+output = [25, 2, 10]
+files = {}
+heap = {}
+procedures = {product=[a, b]=(int v; (v = (a * b); print(v))), sum=[a, b]=(int v; (v = (a + b); print(v)))}
+status: finished
+
+
+>>Program State:
+Thread ID: 3
+executionStack = [call sum[v, w]]
+symbolTable = [{v=2, w=5}]
+output = [25, 2, 10]
+files = {}
+heap = {}
+procedures = {product=[a, b]=(int v; (v = (a * b); print(v))), sum=[a, b]=(int v; (v = (a + b); print(v)))}
+status: running
+
+
+>>Program State:
+Thread ID: 3
+executionStack = [return, (int v; (v = (a + b); print(v)))]
+symbolTable = [{v=2, w=5}, {a=2, b=5}]
+output = [25, 2, 10]
+files = {}
+heap = {}
+procedures = {product=[a, b]=(int v; (v = (a * b); print(v))), sum=[a, b]=(int v; (v = (a + b); print(v)))}
+status: running
+
+
+>>Program State:
+Thread ID: 3
+executionStack = [return, (v = (a + b); print(v)), int v]
+symbolTable = [{v=2, w=5}, {a=2, b=5}]
+output = [25, 2, 10]
+files = {}
+heap = {}
+procedures = {product=[a, b]=(int v; (v = (a * b); print(v))), sum=[a, b]=(int v; (v = (a + b); print(v)))}
+status: running
+
+
+>>Program State:
+Thread ID: 3
+executionStack = [return, (v = (a + b); print(v))]
+symbolTable = [{v=2, w=5}, {a=2, b=5, v=0}]
+output = [25, 2, 10]
+files = {}
+heap = {}
+procedures = {product=[a, b]=(int v; (v = (a * b); print(v))), sum=[a, b]=(int v; (v = (a + b); print(v)))}
+status: running
+
+
+>>Program State:
+Thread ID: 3
+executionStack = [return, print(v), v = (a + b)]
+symbolTable = [{v=2, w=5}, {a=2, b=5, v=0}]
+output = [25, 2, 10]
+files = {}
+heap = {}
+procedures = {product=[a, b]=(int v; (v = (a * b); print(v))), sum=[a, b]=(int v; (v = (a + b); print(v)))}
+status: running
+
+
+>>Program State:
+Thread ID: 3
+executionStack = [return, print(v)]
+symbolTable = [{v=2, w=5}, {a=2, b=5, v=7}]
+output = [25, 2, 10]
+files = {}
+heap = {}
+procedures = {product=[a, b]=(int v; (v = (a * b); print(v))), sum=[a, b]=(int v; (v = (a + b); print(v)))}
+status: running
+
+
+>>Program State:
+Thread ID: 3
+executionStack = [return]
+symbolTable = [{v=2, w=5}, {a=2, b=5, v=7}]
+output = [25, 2, 10, 7]
+files = {}
+heap = {}
+procedures = {product=[a, b]=(int v; (v = (a * b); print(v))), sum=[a, b]=(int v; (v = (a + b); print(v)))}
+status: running
+
+
+>>Program State:
+Thread ID: 3
+executionStack = []
+symbolTable = [{v=2, w=5}]
+output = [25, 2, 10, 7]
+files = {}
+heap = {}
+procedures = {product=[a, b]=(int v; (v = (a * b); print(v))), sum=[a, b]=(int v; (v = (a + b); print(v)))}
+status: finished
+
+

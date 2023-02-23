@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.Controllers.ResultController">
+   <children>
+      <TableView fx:id="questionsTableView" layoutY="60.0" onMouseClicked="#questionsTableView_onMouseClicked" prefHeight="540.0" prefWidth="600.0">
+         <columns>
+            <TableColumn fx:id="questionNoTableColumn" prefWidth="96.0" text="Question #" />
+            <TableColumn fx:id="questionStatementTableColumn" prefWidth="397.0" text="Statement" />
+            <TableColumn fx:id="questionStatusTableColumn" prefWidth="104.0" text="Status" />
+         </columns>
+      </TableView>
+      <TextArea fx:id="gradeMessageTextArea" prefHeight="60.0" prefWidth="600.0" />
+   </children>
+</AnchorPane>

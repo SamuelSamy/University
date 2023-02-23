@@ -1,0 +1,540 @@
+>>Program State:
+Thread ID: 1
+executionStack = [(int x; (int y; (v = 0; (repeat (fork((print(v); v = (v - 1))); v = (v + 1)) until v == 3; (x = 1; (
+; (y = 3; (
+; print((v * 10)))))))))), int v]
+symbolTable = {}
+output = []
+files = {}
+heap = {}
+latchTable = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(int x; (int y; (v = 0; (repeat (fork((print(v); v = (v - 1))); v = (v + 1)) until v == 3; (x = 1; (
+; (y = 3; (
+; print((v * 10))))))))))]
+symbolTable = {v=0}
+output = []
+files = {}
+heap = {}
+latchTable = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(int y; (v = 0; (repeat (fork((print(v); v = (v - 1))); v = (v + 1)) until v == 3; (x = 1; (
+; (y = 3; (
+; print((v * 10))))))))), int x]
+symbolTable = {v=0}
+output = []
+files = {}
+heap = {}
+latchTable = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(int y; (v = 0; (repeat (fork((print(v); v = (v - 1))); v = (v + 1)) until v == 3; (x = 1; (
+; (y = 3; (
+; print((v * 10)))))))))]
+symbolTable = {v=0, x=0}
+output = []
+files = {}
+heap = {}
+latchTable = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(v = 0; (repeat (fork((print(v); v = (v - 1))); v = (v + 1)) until v == 3; (x = 1; (
+; (y = 3; (
+; print((v * 10)))))))), int y]
+symbolTable = {v=0, x=0}
+output = []
+files = {}
+heap = {}
+latchTable = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(v = 0; (repeat (fork((print(v); v = (v - 1))); v = (v + 1)) until v == 3; (x = 1; (
+; (y = 3; (
+; print((v * 10))))))))]
+symbolTable = {v=0, x=0, y=0}
+output = []
+files = {}
+heap = {}
+latchTable = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(repeat (fork((print(v); v = (v - 1))); v = (v + 1)) until v == 3; (x = 1; (
+; (y = 3; (
+; print((v * 10))))))), v = 0]
+symbolTable = {v=0, x=0, y=0}
+output = []
+files = {}
+heap = {}
+latchTable = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(repeat (fork((print(v); v = (v - 1))); v = (v + 1)) until v == 3; (x = 1; (
+; (y = 3; (
+; print((v * 10)))))))]
+symbolTable = {v=0, x=0, y=0}
+output = []
+files = {}
+heap = {}
+latchTable = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(x = 1; (
+; (y = 3; (
+; print((v * 10)))))), repeat (fork((print(v); v = (v - 1))); v = (v + 1)) until v == 3]
+symbolTable = {v=0, x=0, y=0}
+output = []
+files = {}
+heap = {}
+latchTable = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(x = 1; (
+; (y = 3; (
+; print((v * 10)))))), ((fork((print(v); v = (v - 1))); v = (v + 1)); while(!v == 3) { (fork((print(v); v = (v - 1))); v = (v + 1)) })]
+symbolTable = {v=0, x=0, y=0}
+output = []
+files = {}
+heap = {}
+latchTable = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(x = 1; (
+; (y = 3; (
+; print((v * 10)))))), while(!v == 3) { (fork((print(v); v = (v - 1))); v = (v + 1)) }, (fork((print(v); v = (v - 1))); v = (v + 1))]
+symbolTable = {v=0, x=0, y=0}
+output = []
+files = {}
+heap = {}
+latchTable = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(x = 1; (
+; (y = 3; (
+; print((v * 10)))))), while(!v == 3) { (fork((print(v); v = (v - 1))); v = (v + 1)) }, v = (v + 1), fork((print(v); v = (v - 1)))]
+symbolTable = {v=0, x=0, y=0}
+output = []
+files = {}
+heap = {}
+latchTable = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(x = 1; (
+; (y = 3; (
+; print((v * 10)))))), while(!v == 3) { (fork((print(v); v = (v - 1))); v = (v + 1)) }, v = (v + 1)]
+symbolTable = {v=0, x=0, y=0}
+output = []
+files = {}
+heap = {}
+latchTable = {}
+status: running
+
+
+>>Program State:
+Thread ID: 5
+executionStack = [(print(v); v = (v - 1))]
+symbolTable = {v=0, x=0, y=0}
+output = []
+files = {}
+heap = {}
+latchTable = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(x = 1; (
+; (y = 3; (
+; print((v * 10)))))), while(!v == 3) { (fork((print(v); v = (v - 1))); v = (v + 1)) }]
+symbolTable = {v=1, x=0, y=0}
+output = []
+files = {}
+heap = {}
+latchTable = {}
+status: running
+
+
+>>Program State:
+Thread ID: 5
+executionStack = [v = (v - 1), print(v)]
+symbolTable = {v=0, x=0, y=0}
+output = []
+files = {}
+heap = {}
+latchTable = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(x = 1; (
+; (y = 3; (
+; print((v * 10)))))), while(!v == 3) { (fork((print(v); v = (v - 1))); v = (v + 1)) }, (fork((print(v); v = (v - 1))); v = (v + 1))]
+symbolTable = {v=1, x=0, y=0}
+output = [0]
+files = {}
+heap = {}
+latchTable = {}
+status: running
+
+
+>>Program State:
+Thread ID: 5
+executionStack = [v = (v - 1)]
+symbolTable = {v=0, x=0, y=0}
+output = [0]
+files = {}
+heap = {}
+latchTable = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(x = 1; (
+; (y = 3; (
+; print((v * 10)))))), while(!v == 3) { (fork((print(v); v = (v - 1))); v = (v + 1)) }, v = (v + 1), fork((print(v); v = (v - 1)))]
+symbolTable = {v=1, x=0, y=0}
+output = [0]
+files = {}
+heap = {}
+latchTable = {}
+status: running
+
+
+>>Program State:
+Thread ID: 5
+executionStack = []
+symbolTable = {v=-1, x=0, y=0}
+output = [0]
+files = {}
+heap = {}
+latchTable = {}
+status: finished
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(x = 1; (
+; (y = 3; (
+; print((v * 10)))))), while(!v == 3) { (fork((print(v); v = (v - 1))); v = (v + 1)) }, v = (v + 1)]
+symbolTable = {v=1, x=0, y=0}
+output = [0]
+files = {}
+heap = {}
+latchTable = {}
+status: running
+
+
+>>Program State:
+Thread ID: 6
+executionStack = [(print(v); v = (v - 1))]
+symbolTable = {v=1, x=0, y=0}
+output = [0]
+files = {}
+heap = {}
+latchTable = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(x = 1; (
+; (y = 3; (
+; print((v * 10)))))), while(!v == 3) { (fork((print(v); v = (v - 1))); v = (v + 1)) }]
+symbolTable = {v=2, x=0, y=0}
+output = [0]
+files = {}
+heap = {}
+latchTable = {}
+status: running
+
+
+>>Program State:
+Thread ID: 6
+executionStack = [v = (v - 1), print(v)]
+symbolTable = {v=1, x=0, y=0}
+output = [0]
+files = {}
+heap = {}
+latchTable = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(x = 1; (
+; (y = 3; (
+; print((v * 10)))))), while(!v == 3) { (fork((print(v); v = (v - 1))); v = (v + 1)) }, (fork((print(v); v = (v - 1))); v = (v + 1))]
+symbolTable = {v=2, x=0, y=0}
+output = [0, 1]
+files = {}
+heap = {}
+latchTable = {}
+status: running
+
+
+>>Program State:
+Thread ID: 6
+executionStack = [v = (v - 1)]
+symbolTable = {v=1, x=0, y=0}
+output = [0, 1]
+files = {}
+heap = {}
+latchTable = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(x = 1; (
+; (y = 3; (
+; print((v * 10)))))), while(!v == 3) { (fork((print(v); v = (v - 1))); v = (v + 1)) }, v = (v + 1), fork((print(v); v = (v - 1)))]
+symbolTable = {v=2, x=0, y=0}
+output = [0, 1]
+files = {}
+heap = {}
+latchTable = {}
+status: running
+
+
+>>Program State:
+Thread ID: 6
+executionStack = []
+symbolTable = {v=0, x=0, y=0}
+output = [0, 1]
+files = {}
+heap = {}
+latchTable = {}
+status: finished
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(x = 1; (
+; (y = 3; (
+; print((v * 10)))))), while(!v == 3) { (fork((print(v); v = (v - 1))); v = (v + 1)) }, v = (v + 1)]
+symbolTable = {v=2, x=0, y=0}
+output = [0, 1]
+files = {}
+heap = {}
+latchTable = {}
+status: running
+
+
+>>Program State:
+Thread ID: 7
+executionStack = [(print(v); v = (v - 1))]
+symbolTable = {v=2, x=0, y=0}
+output = [0, 1]
+files = {}
+heap = {}
+latchTable = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(x = 1; (
+; (y = 3; (
+; print((v * 10)))))), while(!v == 3) { (fork((print(v); v = (v - 1))); v = (v + 1)) }]
+symbolTable = {v=3, x=0, y=0}
+output = [0, 1]
+files = {}
+heap = {}
+latchTable = {}
+status: running
+
+
+>>Program State:
+Thread ID: 7
+executionStack = [v = (v - 1), print(v)]
+symbolTable = {v=2, x=0, y=0}
+output = [0, 1]
+files = {}
+heap = {}
+latchTable = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(x = 1; (
+; (y = 3; (
+; print((v * 10))))))]
+symbolTable = {v=3, x=0, y=0}
+output = [0, 1, 2]
+files = {}
+heap = {}
+latchTable = {}
+status: running
+
+
+>>Program State:
+Thread ID: 7
+executionStack = [v = (v - 1)]
+symbolTable = {v=2, x=0, y=0}
+output = [0, 1, 2]
+files = {}
+heap = {}
+latchTable = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(
+; (y = 3; (
+; print((v * 10))))), x = 1]
+symbolTable = {v=3, x=0, y=0}
+output = [0, 1, 2]
+files = {}
+heap = {}
+latchTable = {}
+status: running
+
+
+>>Program State:
+Thread ID: 7
+executionStack = []
+symbolTable = {v=1, x=0, y=0}
+output = [0, 1, 2]
+files = {}
+heap = {}
+latchTable = {}
+status: finished
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(
+; (y = 3; (
+; print((v * 10)))))]
+symbolTable = {v=3, x=1, y=0}
+output = [0, 1, 2]
+files = {}
+heap = {}
+latchTable = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(y = 3; (
+; print((v * 10)))), 
+]
+symbolTable = {v=3, x=1, y=0}
+output = [0, 1, 2]
+files = {}
+heap = {}
+latchTable = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(y = 3; (
+; print((v * 10))))]
+symbolTable = {v=3, x=1, y=0}
+output = [0, 1, 2]
+files = {}
+heap = {}
+latchTable = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(
+; print((v * 10))), y = 3]
+symbolTable = {v=3, x=1, y=0}
+output = [0, 1, 2]
+files = {}
+heap = {}
+latchTable = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(
+; print((v * 10)))]
+symbolTable = {v=3, x=1, y=3}
+output = [0, 1, 2]
+files = {}
+heap = {}
+latchTable = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [print((v * 10)), 
+]
+symbolTable = {v=3, x=1, y=3}
+output = [0, 1, 2]
+files = {}
+heap = {}
+latchTable = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [print((v * 10))]
+symbolTable = {v=3, x=1, y=3}
+output = [0, 1, 2]
+files = {}
+heap = {}
+latchTable = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = []
+symbolTable = {v=3, x=1, y=3}
+output = [0, 1, 2, 30]
+files = {}
+heap = {}
+latchTable = {}
+status: finished
+
+

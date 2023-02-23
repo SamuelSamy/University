@@ -1,0 +1,22 @@
+class Iterator
+!!!143874.cpp!!!	Iterator(inout ptr : Type)
+
+    this->ptr = ptr;
+!!!144002.cpp!!!	operator ++() : Vector::Iterator
+
+    this->ptr++;
+    return this->ptr;
+!!!144130.cpp!!!	operator ++(in  : int) : Vector::Iterator
+
+    Type* tempPtr = this->ptr;
+    this->ptr++;
+    return tempPtr;
+!!!144258.cpp!!!	operator *() : Type
+
+    return *this->ptr;
+!!!144386.cpp!!!	operator !=(in it : Vector::Iterator) : bool
+
+    return this->ptr != it.ptr;
+!!!144514.cpp!!!	operator ==(in it : Vector::Iterator) : bool
+
+    return this->ptr == it.ptr;

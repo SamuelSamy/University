@@ -1,0 +1,88 @@
+     1                                  ; Fatu Samuel
+     2                                  
+     3                                  ; A file name and a text (defined in data segment) are given. 
+     4                                  ; The text contains lowercase letters, uppercase letters, digits and special characters. 
+     5                                  ; Replace all spaces from the text with character 'S'. 
+     6                                  ; Create a file with the given name and write the generated text to file.
+     7                                  
+     8                                  bits 32 
+     9                                  
+    10                                  global start        
+    11                                  
+    12                                  extern exit, fopen, fprintf, fclose      
+    13                                  import exit msvcrt.dll  
+    14                                  import fopen msvcrt.dll
+    15                                  import fprintf msvcrt.dll
+    16                                  import fclose msvcrt.dll
+    17                                  
+    18                                  
+    19                                  segment data use32 class=data
+    20 00000000 6F75747075742E7478-         file_name           db  "output.txt", 0
+    20 00000009 7400               
+    21 0000000B FFFFFFFF                    file_descriptior    dd  -1 
+    22 0000000F 7700                        access_mode         db  "w", 0
+    23                                      
+    24 00000011 412076657279204C6F-         text        db  "A very Long text that c0nta1ns    a lot of characters!? @#", 0
+    24 0000001A 6E6720746578742074-
+    24 00000023 6861742063306E7461-
+    24 0000002C 316E73202020206120-
+    24 00000035 6C6F74206F66206368-
+    24 0000003E 617261637465727321-
+    24 00000047 3F20402300         
+    25                                      text_len    equ ($ - text)
+    26                                      
+    27 0000004C 00<rept>                    new_text    times text_len  db  0
+    28                                      
+    29                                      
+    30                                  segment code use32 class=code
+    31                                      start:
+    32                                          
+    33                                          ; replace all space characters from 'text' with 'S'
+    34                                          ; the result is stored in 'new_text'
+    35 00000000 B93B000000                      mov ecx, text_len  ; text_len 
+    36                                          
+    37 00000005 BE[11000000]                    mov esi, text
+    38 0000000A BF[4C000000]                    mov edi, new_text
+    39                                          
+    40                                          Loop_Start:
+    41                                                  
+    42 0000000F AC                                  lodsb
+    43                                              
+    44 00000010 3C20                                cmp al, ' '
+    45 00000012 7502                                jne After_if
+    46                                              
+    47 00000014 B053                                mov al, 'S'
+    48                                              
+    49                                              After_if:
+    50 00000016 AA                                  stosb
+    51                                              
+    52 00000017 E2F6                            loop Loop_Start
+    53                                          
+    54                                          ; try to create the new file
+    55                                          
+    56 00000019 68[0F000000]                    push dword access_mode
+    57 0000001E 68[00000000]                    push dword file_name
+    58 00000023 FF15[00000000]                  call [fopen]    ; the file descriptor will be stored in eax
+    59 00000029 83C408                          add esp, 4 * 2
+    60                                          
+    61 0000002C A3[0B000000]                    mov [file_descriptior], eax ; store the file descriptor
+    62                                          
+    63                                          ; check if the file was succesfully created (eax != 0)
+    64 00000031 83F800                          cmp eax, 0 
+    65 00000034 7423                            je Exit
+    66                                          
+    67                                          ; write the new text in the file
+    68 00000036 68[4C000000]                    push dword new_text
+    69 0000003B FF35[0B000000]                  push dword [file_descriptior]
+    70 00000041 FF15[00000000]                  call [fprintf]
+    71 00000047 83C408                          add esp, 4 * 2
+    72                                          
+    73                                          ; close the file
+    74 0000004A FF35[0B000000]                  push dword [file_descriptior]
+    75 00000050 FF15[00000000]                  call [fclose]
+    76 00000056 83C404                          add esp, 4 * 1
+    77                                          
+    78                                          
+    79                                          Exit:
+    80 00000059 6A00                            push    dword 0      
+    81 0000005B FF15[00000000]                  call    [exit]

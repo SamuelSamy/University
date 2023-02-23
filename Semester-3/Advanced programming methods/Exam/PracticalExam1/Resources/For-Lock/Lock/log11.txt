@@ -1,0 +1,814 @@
+>>Program State:
+Thread ID: 1
+executionStack = [(Ref(int) v2; (int x; (int q; (new(v1, 20); (new(v2, 30); (newLock(x); (fork((fork((lock(x); (writeHeap(v1, (readHeap(v1) - 1)); unlock(x)))); (lock(x); (writeHeap(v1, (readHeap(v1) * 10)); unlock(x))))); (newLock(q); (fork((fork((lock(q); (writeHeap(v2, (readHeap(v2) + 5)); unlock(q)))); (lock(q); (writeHeap(v2, (readHeap(v2) * 10)); unlock(q))))); (None; (None; (None; (None; (lock(x); (print(readHeap(v1)); (unlock(x); (lock(q); (print(readHeap(v2)); unlock(q))))))))))))))))))), Ref(int) v1]
+symbolTable = {}
+output = []
+files = {}
+heap = {}
+lockTable = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(Ref(int) v2; (int x; (int q; (new(v1, 20); (new(v2, 30); (newLock(x); (fork((fork((lock(x); (writeHeap(v1, (readHeap(v1) - 1)); unlock(x)))); (lock(x); (writeHeap(v1, (readHeap(v1) * 10)); unlock(x))))); (newLock(q); (fork((fork((lock(q); (writeHeap(v2, (readHeap(v2) + 5)); unlock(q)))); (lock(q); (writeHeap(v2, (readHeap(v2) * 10)); unlock(q))))); (None; (None; (None; (None; (lock(x); (print(readHeap(v1)); (unlock(x); (lock(q); (print(readHeap(v2)); unlock(q)))))))))))))))))))]
+symbolTable = {v1=(0, int)}
+output = []
+files = {}
+heap = {}
+lockTable = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(int x; (int q; (new(v1, 20); (new(v2, 30); (newLock(x); (fork((fork((lock(x); (writeHeap(v1, (readHeap(v1) - 1)); unlock(x)))); (lock(x); (writeHeap(v1, (readHeap(v1) * 10)); unlock(x))))); (newLock(q); (fork((fork((lock(q); (writeHeap(v2, (readHeap(v2) + 5)); unlock(q)))); (lock(q); (writeHeap(v2, (readHeap(v2) * 10)); unlock(q))))); (None; (None; (None; (None; (lock(x); (print(readHeap(v1)); (unlock(x); (lock(q); (print(readHeap(v2)); unlock(q)))))))))))))))))), Ref(int) v2]
+symbolTable = {v1=(0, int)}
+output = []
+files = {}
+heap = {}
+lockTable = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(int x; (int q; (new(v1, 20); (new(v2, 30); (newLock(x); (fork((fork((lock(x); (writeHeap(v1, (readHeap(v1) - 1)); unlock(x)))); (lock(x); (writeHeap(v1, (readHeap(v1) * 10)); unlock(x))))); (newLock(q); (fork((fork((lock(q); (writeHeap(v2, (readHeap(v2) + 5)); unlock(q)))); (lock(q); (writeHeap(v2, (readHeap(v2) * 10)); unlock(q))))); (None; (None; (None; (None; (lock(x); (print(readHeap(v1)); (unlock(x); (lock(q); (print(readHeap(v2)); unlock(q))))))))))))))))))]
+symbolTable = {v1=(0, int), v2=(0, int)}
+output = []
+files = {}
+heap = {}
+lockTable = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(int q; (new(v1, 20); (new(v2, 30); (newLock(x); (fork((fork((lock(x); (writeHeap(v1, (readHeap(v1) - 1)); unlock(x)))); (lock(x); (writeHeap(v1, (readHeap(v1) * 10)); unlock(x))))); (newLock(q); (fork((fork((lock(q); (writeHeap(v2, (readHeap(v2) + 5)); unlock(q)))); (lock(q); (writeHeap(v2, (readHeap(v2) * 10)); unlock(q))))); (None; (None; (None; (None; (lock(x); (print(readHeap(v1)); (unlock(x); (lock(q); (print(readHeap(v2)); unlock(q))))))))))))))))), int x]
+symbolTable = {v1=(0, int), v2=(0, int)}
+output = []
+files = {}
+heap = {}
+lockTable = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(int q; (new(v1, 20); (new(v2, 30); (newLock(x); (fork((fork((lock(x); (writeHeap(v1, (readHeap(v1) - 1)); unlock(x)))); (lock(x); (writeHeap(v1, (readHeap(v1) * 10)); unlock(x))))); (newLock(q); (fork((fork((lock(q); (writeHeap(v2, (readHeap(v2) + 5)); unlock(q)))); (lock(q); (writeHeap(v2, (readHeap(v2) * 10)); unlock(q))))); (None; (None; (None; (None; (lock(x); (print(readHeap(v1)); (unlock(x); (lock(q); (print(readHeap(v2)); unlock(q)))))))))))))))))]
+symbolTable = {x=0, v1=(0, int), v2=(0, int)}
+output = []
+files = {}
+heap = {}
+lockTable = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(new(v1, 20); (new(v2, 30); (newLock(x); (fork((fork((lock(x); (writeHeap(v1, (readHeap(v1) - 1)); unlock(x)))); (lock(x); (writeHeap(v1, (readHeap(v1) * 10)); unlock(x))))); (newLock(q); (fork((fork((lock(q); (writeHeap(v2, (readHeap(v2) + 5)); unlock(q)))); (lock(q); (writeHeap(v2, (readHeap(v2) * 10)); unlock(q))))); (None; (None; (None; (None; (lock(x); (print(readHeap(v1)); (unlock(x); (lock(q); (print(readHeap(v2)); unlock(q)))))))))))))))), int q]
+symbolTable = {x=0, v1=(0, int), v2=(0, int)}
+output = []
+files = {}
+heap = {}
+lockTable = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(new(v1, 20); (new(v2, 30); (newLock(x); (fork((fork((lock(x); (writeHeap(v1, (readHeap(v1) - 1)); unlock(x)))); (lock(x); (writeHeap(v1, (readHeap(v1) * 10)); unlock(x))))); (newLock(q); (fork((fork((lock(q); (writeHeap(v2, (readHeap(v2) + 5)); unlock(q)))); (lock(q); (writeHeap(v2, (readHeap(v2) * 10)); unlock(q))))); (None; (None; (None; (None; (lock(x); (print(readHeap(v1)); (unlock(x); (lock(q); (print(readHeap(v2)); unlock(q))))))))))))))))]
+symbolTable = {q=0, x=0, v1=(0, int), v2=(0, int)}
+output = []
+files = {}
+heap = {}
+lockTable = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(new(v2, 30); (newLock(x); (fork((fork((lock(x); (writeHeap(v1, (readHeap(v1) - 1)); unlock(x)))); (lock(x); (writeHeap(v1, (readHeap(v1) * 10)); unlock(x))))); (newLock(q); (fork((fork((lock(q); (writeHeap(v2, (readHeap(v2) + 5)); unlock(q)))); (lock(q); (writeHeap(v2, (readHeap(v2) * 10)); unlock(q))))); (None; (None; (None; (None; (lock(x); (print(readHeap(v1)); (unlock(x); (lock(q); (print(readHeap(v2)); unlock(q))))))))))))))), new(v1, 20)]
+symbolTable = {q=0, x=0, v1=(0, int), v2=(0, int)}
+output = []
+files = {}
+heap = {}
+lockTable = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(new(v2, 30); (newLock(x); (fork((fork((lock(x); (writeHeap(v1, (readHeap(v1) - 1)); unlock(x)))); (lock(x); (writeHeap(v1, (readHeap(v1) * 10)); unlock(x))))); (newLock(q); (fork((fork((lock(q); (writeHeap(v2, (readHeap(v2) + 5)); unlock(q)))); (lock(q); (writeHeap(v2, (readHeap(v2) * 10)); unlock(q))))); (None; (None; (None; (None; (lock(x); (print(readHeap(v1)); (unlock(x); (lock(q); (print(readHeap(v2)); unlock(q)))))))))))))))]
+symbolTable = {q=0, x=0, v1=(1, int), v2=(0, int)}
+output = []
+files = {}
+heap = {1=20}
+lockTable = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(newLock(x); (fork((fork((lock(x); (writeHeap(v1, (readHeap(v1) - 1)); unlock(x)))); (lock(x); (writeHeap(v1, (readHeap(v1) * 10)); unlock(x))))); (newLock(q); (fork((fork((lock(q); (writeHeap(v2, (readHeap(v2) + 5)); unlock(q)))); (lock(q); (writeHeap(v2, (readHeap(v2) * 10)); unlock(q))))); (None; (None; (None; (None; (lock(x); (print(readHeap(v1)); (unlock(x); (lock(q); (print(readHeap(v2)); unlock(q)))))))))))))), new(v2, 30)]
+symbolTable = {q=0, x=0, v1=(1, int), v2=(0, int)}
+output = []
+files = {}
+heap = {1=20}
+lockTable = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(newLock(x); (fork((fork((lock(x); (writeHeap(v1, (readHeap(v1) - 1)); unlock(x)))); (lock(x); (writeHeap(v1, (readHeap(v1) * 10)); unlock(x))))); (newLock(q); (fork((fork((lock(q); (writeHeap(v2, (readHeap(v2) + 5)); unlock(q)))); (lock(q); (writeHeap(v2, (readHeap(v2) * 10)); unlock(q))))); (None; (None; (None; (None; (lock(x); (print(readHeap(v1)); (unlock(x); (lock(q); (print(readHeap(v2)); unlock(q))))))))))))))]
+symbolTable = {q=0, x=0, v1=(1, int), v2=(2, int)}
+output = []
+files = {}
+heap = {1=20, 2=30}
+lockTable = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(fork((fork((lock(x); (writeHeap(v1, (readHeap(v1) - 1)); unlock(x)))); (lock(x); (writeHeap(v1, (readHeap(v1) * 10)); unlock(x))))); (newLock(q); (fork((fork((lock(q); (writeHeap(v2, (readHeap(v2) + 5)); unlock(q)))); (lock(q); (writeHeap(v2, (readHeap(v2) * 10)); unlock(q))))); (None; (None; (None; (None; (lock(x); (print(readHeap(v1)); (unlock(x); (lock(q); (print(readHeap(v2)); unlock(q))))))))))))), newLock(x)]
+symbolTable = {q=0, x=0, v1=(1, int), v2=(2, int)}
+output = []
+files = {}
+heap = {1=20, 2=30}
+lockTable = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(fork((fork((lock(x); (writeHeap(v1, (readHeap(v1) - 1)); unlock(x)))); (lock(x); (writeHeap(v1, (readHeap(v1) * 10)); unlock(x))))); (newLock(q); (fork((fork((lock(q); (writeHeap(v2, (readHeap(v2) + 5)); unlock(q)))); (lock(q); (writeHeap(v2, (readHeap(v2) * 10)); unlock(q))))); (None; (None; (None; (None; (lock(x); (print(readHeap(v1)); (unlock(x); (lock(q); (print(readHeap(v2)); unlock(q)))))))))))))]
+symbolTable = {q=0, x=1, v1=(1, int), v2=(2, int)}
+output = []
+files = {}
+heap = {1=20, 2=30}
+lockTable = {1=-1}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(newLock(q); (fork((fork((lock(q); (writeHeap(v2, (readHeap(v2) + 5)); unlock(q)))); (lock(q); (writeHeap(v2, (readHeap(v2) * 10)); unlock(q))))); (None; (None; (None; (None; (lock(x); (print(readHeap(v1)); (unlock(x); (lock(q); (print(readHeap(v2)); unlock(q)))))))))))), fork((fork((lock(x); (writeHeap(v1, (readHeap(v1) - 1)); unlock(x)))); (lock(x); (writeHeap(v1, (readHeap(v1) * 10)); unlock(x)))))]
+symbolTable = {q=0, x=1, v1=(1, int), v2=(2, int)}
+output = []
+files = {}
+heap = {1=20, 2=30}
+lockTable = {1=-1}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(newLock(q); (fork((fork((lock(q); (writeHeap(v2, (readHeap(v2) + 5)); unlock(q)))); (lock(q); (writeHeap(v2, (readHeap(v2) * 10)); unlock(q))))); (None; (None; (None; (None; (lock(x); (print(readHeap(v1)); (unlock(x); (lock(q); (print(readHeap(v2)); unlock(q))))))))))))]
+symbolTable = {q=0, x=1, v1=(1, int), v2=(2, int)}
+output = []
+files = {}
+heap = {1=20, 2=30}
+lockTable = {1=-1}
+status: running
+
+
+>>Program State:
+Thread ID: 2
+executionStack = [(fork((lock(x); (writeHeap(v1, (readHeap(v1) - 1)); unlock(x)))); (lock(x); (writeHeap(v1, (readHeap(v1) * 10)); unlock(x))))]
+symbolTable = {q=0, x=1, v1=(1, int), v2=(2, int)}
+output = []
+files = {}
+heap = {1=20, 2=30}
+lockTable = {1=-1}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(fork((fork((lock(q); (writeHeap(v2, (readHeap(v2) + 5)); unlock(q)))); (lock(q); (writeHeap(v2, (readHeap(v2) * 10)); unlock(q))))); (None; (None; (None; (None; (lock(x); (print(readHeap(v1)); (unlock(x); (lock(q); (print(readHeap(v2)); unlock(q))))))))))), newLock(q)]
+symbolTable = {q=0, x=1, v1=(1, int), v2=(2, int)}
+output = []
+files = {}
+heap = {1=20, 2=30}
+lockTable = {1=-1}
+status: running
+
+
+>>Program State:
+Thread ID: 2
+executionStack = [(lock(x); (writeHeap(v1, (readHeap(v1) * 10)); unlock(x))), fork((lock(x); (writeHeap(v1, (readHeap(v1) - 1)); unlock(x))))]
+symbolTable = {q=0, x=1, v1=(1, int), v2=(2, int)}
+output = []
+files = {}
+heap = {1=20, 2=30}
+lockTable = {1=-1}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(fork((fork((lock(q); (writeHeap(v2, (readHeap(v2) + 5)); unlock(q)))); (lock(q); (writeHeap(v2, (readHeap(v2) * 10)); unlock(q))))); (None; (None; (None; (None; (lock(x); (print(readHeap(v1)); (unlock(x); (lock(q); (print(readHeap(v2)); unlock(q)))))))))))]
+symbolTable = {q=2, x=1, v1=(1, int), v2=(2, int)}
+output = []
+files = {}
+heap = {1=20, 2=30}
+lockTable = {1=-1, 2=-1}
+status: running
+
+
+>>Program State:
+Thread ID: 2
+executionStack = [(lock(x); (writeHeap(v1, (readHeap(v1) * 10)); unlock(x)))]
+symbolTable = {q=0, x=1, v1=(1, int), v2=(2, int)}
+output = []
+files = {}
+heap = {1=20, 2=30}
+lockTable = {1=-1, 2=-1}
+status: running
+
+
+>>Program State:
+Thread ID: 3
+executionStack = [(lock(x); (writeHeap(v1, (readHeap(v1) - 1)); unlock(x)))]
+symbolTable = {q=0, x=1, v1=(1, int), v2=(2, int)}
+output = []
+files = {}
+heap = {1=20, 2=30}
+lockTable = {1=-1, 2=-1}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(None; (None; (None; (None; (lock(x); (print(readHeap(v1)); (unlock(x); (lock(q); (print(readHeap(v2)); unlock(q)))))))))), fork((fork((lock(q); (writeHeap(v2, (readHeap(v2) + 5)); unlock(q)))); (lock(q); (writeHeap(v2, (readHeap(v2) * 10)); unlock(q)))))]
+symbolTable = {q=2, x=1, v1=(1, int), v2=(2, int)}
+output = []
+files = {}
+heap = {1=20, 2=30}
+lockTable = {1=-1, 2=-1}
+status: running
+
+
+>>Program State:
+Thread ID: 2
+executionStack = [(writeHeap(v1, (readHeap(v1) * 10)); unlock(x)), lock(x)]
+symbolTable = {q=0, x=1, v1=(1, int), v2=(2, int)}
+output = []
+files = {}
+heap = {1=20, 2=30}
+lockTable = {1=-1, 2=-1}
+status: running
+
+
+>>Program State:
+Thread ID: 3
+executionStack = [(writeHeap(v1, (readHeap(v1) - 1)); unlock(x)), lock(x)]
+symbolTable = {q=0, x=1, v1=(1, int), v2=(2, int)}
+output = []
+files = {}
+heap = {1=20, 2=30}
+lockTable = {1=-1, 2=-1}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(None; (None; (None; (None; (lock(x); (print(readHeap(v1)); (unlock(x); (lock(q); (print(readHeap(v2)); unlock(q))))))))))]
+symbolTable = {q=2, x=1, v1=(1, int), v2=(2, int)}
+output = []
+files = {}
+heap = {1=20, 2=30}
+lockTable = {1=3, 2=-1}
+status: running
+
+
+>>Program State:
+Thread ID: 2
+executionStack = [(writeHeap(v1, (readHeap(v1) * 10)); unlock(x)), lock(x)]
+symbolTable = {q=0, x=1, v1=(1, int), v2=(2, int)}
+output = []
+files = {}
+heap = {1=20, 2=30}
+lockTable = {1=3, 2=-1}
+status: running
+
+
+>>Program State:
+Thread ID: 3
+executionStack = [(writeHeap(v1, (readHeap(v1) - 1)); unlock(x))]
+symbolTable = {q=0, x=1, v1=(1, int), v2=(2, int)}
+output = []
+files = {}
+heap = {1=20, 2=30}
+lockTable = {1=3, 2=-1}
+status: running
+
+
+>>Program State:
+Thread ID: 4
+executionStack = [(fork((lock(q); (writeHeap(v2, (readHeap(v2) + 5)); unlock(q)))); (lock(q); (writeHeap(v2, (readHeap(v2) * 10)); unlock(q))))]
+symbolTable = {q=2, x=1, v1=(1, int), v2=(2, int)}
+output = []
+files = {}
+heap = {1=20, 2=30}
+lockTable = {1=3, 2=-1}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(None; (None; (None; (lock(x); (print(readHeap(v1)); (unlock(x); (lock(q); (print(readHeap(v2)); unlock(q))))))))), None]
+symbolTable = {q=2, x=1, v1=(1, int), v2=(2, int)}
+output = []
+files = {}
+heap = {1=20, 2=30}
+lockTable = {1=3, 2=-1}
+status: running
+
+
+>>Program State:
+Thread ID: 2
+executionStack = [(writeHeap(v1, (readHeap(v1) * 10)); unlock(x)), lock(x)]
+symbolTable = {q=0, x=1, v1=(1, int), v2=(2, int)}
+output = []
+files = {}
+heap = {1=20, 2=30}
+lockTable = {1=3, 2=-1}
+status: running
+
+
+>>Program State:
+Thread ID: 3
+executionStack = [unlock(x), writeHeap(v1, (readHeap(v1) - 1))]
+symbolTable = {q=0, x=1, v1=(1, int), v2=(2, int)}
+output = []
+files = {}
+heap = {1=20, 2=30}
+lockTable = {1=3, 2=-1}
+status: running
+
+
+>>Program State:
+Thread ID: 4
+executionStack = [(lock(q); (writeHeap(v2, (readHeap(v2) * 10)); unlock(q))), fork((lock(q); (writeHeap(v2, (readHeap(v2) + 5)); unlock(q))))]
+symbolTable = {q=2, x=1, v1=(1, int), v2=(2, int)}
+output = []
+files = {}
+heap = {1=20, 2=30}
+lockTable = {1=3, 2=-1}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(None; (None; (None; (lock(x); (print(readHeap(v1)); (unlock(x); (lock(q); (print(readHeap(v2)); unlock(q)))))))))]
+symbolTable = {q=2, x=1, v1=(1, int), v2=(2, int)}
+output = []
+files = {}
+heap = {1=19, 2=30}
+lockTable = {1=3, 2=-1}
+status: running
+
+
+>>Program State:
+Thread ID: 2
+executionStack = [(writeHeap(v1, (readHeap(v1) * 10)); unlock(x)), lock(x)]
+symbolTable = {q=0, x=1, v1=(1, int), v2=(2, int)}
+output = []
+files = {}
+heap = {1=19, 2=30}
+lockTable = {1=3, 2=-1}
+status: running
+
+
+>>Program State:
+Thread ID: 3
+executionStack = [unlock(x)]
+symbolTable = {q=0, x=1, v1=(1, int), v2=(2, int)}
+output = []
+files = {}
+heap = {1=19, 2=30}
+lockTable = {1=3, 2=-1}
+status: running
+
+
+>>Program State:
+Thread ID: 4
+executionStack = [(lock(q); (writeHeap(v2, (readHeap(v2) * 10)); unlock(q)))]
+symbolTable = {q=2, x=1, v1=(1, int), v2=(2, int)}
+output = []
+files = {}
+heap = {1=19, 2=30}
+lockTable = {1=3, 2=-1}
+status: running
+
+
+>>Program State:
+Thread ID: 5
+executionStack = [(lock(q); (writeHeap(v2, (readHeap(v2) + 5)); unlock(q)))]
+symbolTable = {q=2, x=1, v1=(1, int), v2=(2, int)}
+output = []
+files = {}
+heap = {1=19, 2=30}
+lockTable = {1=3, 2=-1}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(None; (None; (lock(x); (print(readHeap(v1)); (unlock(x); (lock(q); (print(readHeap(v2)); unlock(q)))))))), None]
+symbolTable = {q=2, x=1, v1=(1, int), v2=(2, int)}
+output = []
+files = {}
+heap = {1=19, 2=30}
+lockTable = {1=2, 2=-1}
+status: running
+
+
+>>Program State:
+Thread ID: 2
+executionStack = [(writeHeap(v1, (readHeap(v1) * 10)); unlock(x))]
+symbolTable = {q=0, x=1, v1=(1, int), v2=(2, int)}
+output = []
+files = {}
+heap = {1=19, 2=30}
+lockTable = {1=2, 2=-1}
+status: running
+
+
+>>Program State:
+Thread ID: 3
+executionStack = []
+symbolTable = {q=0, x=1, v1=(1, int), v2=(2, int)}
+output = []
+files = {}
+heap = {1=19, 2=30}
+lockTable = {1=2, 2=-1}
+status: finished
+
+
+>>Program State:
+Thread ID: 4
+executionStack = [(writeHeap(v2, (readHeap(v2) * 10)); unlock(q)), lock(q)]
+symbolTable = {q=2, x=1, v1=(1, int), v2=(2, int)}
+output = []
+files = {}
+heap = {1=19, 2=30}
+lockTable = {1=2, 2=-1}
+status: running
+
+
+>>Program State:
+Thread ID: 5
+executionStack = [(writeHeap(v2, (readHeap(v2) + 5)); unlock(q)), lock(q)]
+symbolTable = {q=2, x=1, v1=(1, int), v2=(2, int)}
+output = []
+files = {}
+heap = {1=19, 2=30}
+lockTable = {1=2, 2=-1}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(None; (None; (lock(x); (print(readHeap(v1)); (unlock(x); (lock(q); (print(readHeap(v2)); unlock(q))))))))]
+symbolTable = {q=2, x=1, v1=(1, int), v2=(2, int)}
+output = []
+files = {}
+heap = {1=19, 2=30}
+lockTable = {1=2, 2=4}
+status: running
+
+
+>>Program State:
+Thread ID: 2
+executionStack = [unlock(x), writeHeap(v1, (readHeap(v1) * 10))]
+symbolTable = {q=0, x=1, v1=(1, int), v2=(2, int)}
+output = []
+files = {}
+heap = {1=19, 2=30}
+lockTable = {1=2, 2=4}
+status: running
+
+
+>>Program State:
+Thread ID: 4
+executionStack = [(writeHeap(v2, (readHeap(v2) * 10)); unlock(q))]
+symbolTable = {q=2, x=1, v1=(1, int), v2=(2, int)}
+output = []
+files = {}
+heap = {1=19, 2=30}
+lockTable = {1=2, 2=4}
+status: running
+
+
+>>Program State:
+Thread ID: 5
+executionStack = [(writeHeap(v2, (readHeap(v2) + 5)); unlock(q)), lock(q)]
+symbolTable = {q=2, x=1, v1=(1, int), v2=(2, int)}
+output = []
+files = {}
+heap = {1=19, 2=30}
+lockTable = {1=2, 2=4}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(None; (lock(x); (print(readHeap(v1)); (unlock(x); (lock(q); (print(readHeap(v2)); unlock(q))))))), None]
+symbolTable = {q=2, x=1, v1=(1, int), v2=(2, int)}
+output = []
+files = {}
+heap = {1=190, 2=30}
+lockTable = {1=2, 2=4}
+status: running
+
+
+>>Program State:
+Thread ID: 2
+executionStack = [unlock(x)]
+symbolTable = {q=0, x=1, v1=(1, int), v2=(2, int)}
+output = []
+files = {}
+heap = {1=190, 2=30}
+lockTable = {1=2, 2=4}
+status: running
+
+
+>>Program State:
+Thread ID: 4
+executionStack = [unlock(q), writeHeap(v2, (readHeap(v2) * 10))]
+symbolTable = {q=2, x=1, v1=(1, int), v2=(2, int)}
+output = []
+files = {}
+heap = {1=190, 2=30}
+lockTable = {1=2, 2=4}
+status: running
+
+
+>>Program State:
+Thread ID: 5
+executionStack = [(writeHeap(v2, (readHeap(v2) + 5)); unlock(q)), lock(q)]
+symbolTable = {q=2, x=1, v1=(1, int), v2=(2, int)}
+output = []
+files = {}
+heap = {1=190, 2=30}
+lockTable = {1=2, 2=4}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(None; (lock(x); (print(readHeap(v1)); (unlock(x); (lock(q); (print(readHeap(v2)); unlock(q)))))))]
+symbolTable = {q=2, x=1, v1=(1, int), v2=(2, int)}
+output = []
+files = {}
+heap = {1=190, 2=300}
+lockTable = {1=-1, 2=4}
+status: running
+
+
+>>Program State:
+Thread ID: 2
+executionStack = []
+symbolTable = {q=0, x=1, v1=(1, int), v2=(2, int)}
+output = []
+files = {}
+heap = {1=190, 2=300}
+lockTable = {1=-1, 2=4}
+status: finished
+
+
+>>Program State:
+Thread ID: 4
+executionStack = [unlock(q)]
+symbolTable = {q=2, x=1, v1=(1, int), v2=(2, int)}
+output = []
+files = {}
+heap = {1=190, 2=300}
+lockTable = {1=-1, 2=4}
+status: running
+
+
+>>Program State:
+Thread ID: 5
+executionStack = [(writeHeap(v2, (readHeap(v2) + 5)); unlock(q)), lock(q)]
+symbolTable = {q=2, x=1, v1=(1, int), v2=(2, int)}
+output = []
+files = {}
+heap = {1=190, 2=300}
+lockTable = {1=-1, 2=4}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(lock(x); (print(readHeap(v1)); (unlock(x); (lock(q); (print(readHeap(v2)); unlock(q)))))), None]
+symbolTable = {q=2, x=1, v1=(1, int), v2=(2, int)}
+output = []
+files = {}
+heap = {1=190, 2=300}
+lockTable = {1=-1, 2=-1}
+status: running
+
+
+>>Program State:
+Thread ID: 4
+executionStack = []
+symbolTable = {q=2, x=1, v1=(1, int), v2=(2, int)}
+output = []
+files = {}
+heap = {1=190, 2=300}
+lockTable = {1=-1, 2=-1}
+status: finished
+
+
+>>Program State:
+Thread ID: 5
+executionStack = [(writeHeap(v2, (readHeap(v2) + 5)); unlock(q)), lock(q)]
+symbolTable = {q=2, x=1, v1=(1, int), v2=(2, int)}
+output = []
+files = {}
+heap = {1=190, 2=300}
+lockTable = {1=-1, 2=-1}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(lock(x); (print(readHeap(v1)); (unlock(x); (lock(q); (print(readHeap(v2)); unlock(q))))))]
+symbolTable = {q=2, x=1, v1=(1, int), v2=(2, int)}
+output = []
+files = {}
+heap = {1=190, 2=300}
+lockTable = {1=-1, 2=5}
+status: running
+
+
+>>Program State:
+Thread ID: 5
+executionStack = [(writeHeap(v2, (readHeap(v2) + 5)); unlock(q))]
+symbolTable = {q=2, x=1, v1=(1, int), v2=(2, int)}
+output = []
+files = {}
+heap = {1=190, 2=300}
+lockTable = {1=-1, 2=5}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(print(readHeap(v1)); (unlock(x); (lock(q); (print(readHeap(v2)); unlock(q))))), lock(x)]
+symbolTable = {q=2, x=1, v1=(1, int), v2=(2, int)}
+output = []
+files = {}
+heap = {1=190, 2=300}
+lockTable = {1=-1, 2=5}
+status: running
+
+
+>>Program State:
+Thread ID: 5
+executionStack = [unlock(q), writeHeap(v2, (readHeap(v2) + 5))]
+symbolTable = {q=2, x=1, v1=(1, int), v2=(2, int)}
+output = []
+files = {}
+heap = {1=190, 2=300}
+lockTable = {1=-1, 2=5}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(print(readHeap(v1)); (unlock(x); (lock(q); (print(readHeap(v2)); unlock(q)))))]
+symbolTable = {q=2, x=1, v1=(1, int), v2=(2, int)}
+output = []
+files = {}
+heap = {1=190, 2=305}
+lockTable = {1=1, 2=5}
+status: running
+
+
+>>Program State:
+Thread ID: 5
+executionStack = [unlock(q)]
+symbolTable = {q=2, x=1, v1=(1, int), v2=(2, int)}
+output = []
+files = {}
+heap = {1=190, 2=305}
+lockTable = {1=1, 2=5}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(unlock(x); (lock(q); (print(readHeap(v2)); unlock(q)))), print(readHeap(v1))]
+symbolTable = {q=2, x=1, v1=(1, int), v2=(2, int)}
+output = []
+files = {}
+heap = {1=190, 2=305}
+lockTable = {1=1, 2=-1}
+status: running
+
+
+>>Program State:
+Thread ID: 5
+executionStack = []
+symbolTable = {q=2, x=1, v1=(1, int), v2=(2, int)}
+output = []
+files = {}
+heap = {1=190, 2=305}
+lockTable = {1=1, 2=-1}
+status: finished
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(unlock(x); (lock(q); (print(readHeap(v2)); unlock(q))))]
+symbolTable = {q=2, x=1, v1=(1, int), v2=(2, int)}
+output = [190]
+files = {}
+heap = {1=190, 2=305}
+lockTable = {1=1, 2=-1}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(lock(q); (print(readHeap(v2)); unlock(q))), unlock(x)]
+symbolTable = {q=2, x=1, v1=(1, int), v2=(2, int)}
+output = [190]
+files = {}
+heap = {1=190, 2=305}
+lockTable = {1=1, 2=-1}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(lock(q); (print(readHeap(v2)); unlock(q)))]
+symbolTable = {q=2, x=1, v1=(1, int), v2=(2, int)}
+output = [190]
+files = {}
+heap = {1=190, 2=305}
+lockTable = {1=-1, 2=-1}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(print(readHeap(v2)); unlock(q)), lock(q)]
+symbolTable = {q=2, x=1, v1=(1, int), v2=(2, int)}
+output = [190]
+files = {}
+heap = {1=190, 2=305}
+lockTable = {1=-1, 2=-1}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(print(readHeap(v2)); unlock(q))]
+symbolTable = {q=2, x=1, v1=(1, int), v2=(2, int)}
+output = [190]
+files = {}
+heap = {1=190, 2=305}
+lockTable = {1=-1, 2=1}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [unlock(q), print(readHeap(v2))]
+symbolTable = {q=2, x=1, v1=(1, int), v2=(2, int)}
+output = [190]
+files = {}
+heap = {1=190, 2=305}
+lockTable = {1=-1, 2=1}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [unlock(q)]
+symbolTable = {q=2, x=1, v1=(1, int), v2=(2, int)}
+output = [190, 305]
+files = {}
+heap = {1=190, 2=305}
+lockTable = {1=-1, 2=1}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = []
+symbolTable = {q=2, x=1, v1=(1, int), v2=(2, int)}
+output = [190, 305]
+files = {}
+heap = {1=190, 2=305}
+lockTable = {1=-1, 2=-1}
+status: finished
+
+

@@ -1,0 +1,22 @@
+     1                                  ;26. A file name (defined in data segment) is given. Create a file with the given name, then read words from the keyboard until character '$' is read. Write only the words that contain at least one uppercase letter 
+     2                                  bits 32
+     3                                  
+     4                                  global start
+     5                                  
+     6                                  ; declare external functions needed by our program
+     7                                  extern exit
+     8                                  import exit msvcrt.dll
+     9                                  
+    10                                  
+    11                                  ; our data is declared here (the variables needed by our program)
+    12                                  segment data use32 class=data
+    13 00000000 2B1A                        a dw 1a2bh
+    14 00000002 3C4D                        b db 3ch, 4dh
+    15 00000004 4D3C2B1A                    c dd 1a2b3c4dh
+    16                                      
+    17                                  ; our code starts here
+    18                                  segment code use32 class=code
+    19                                      start:
+    20 00000000 A1[01000000]                    mov eax, [a + 1]
+    21 00000005 6A00                            push dword 0
+    22 00000007 FF15[00000000]                  call [exit]

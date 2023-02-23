@@ -1,0 +1,220 @@
+>>Program State:
+Thread ID: 1
+executionStack = [(int v; (Ref(int) a; (v = 10; (new(a, 22); (fork((writeHeap(a, 30); (v = 32; (print(v); print(readHeap(a)))))); (print(v); print(readHeap(a))))))))]
+symbolTable = {}
+output = []
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(Ref(int) a; (v = 10; (new(a, 22); (fork((writeHeap(a, 30); (v = 32; (print(v); print(readHeap(a)))))); (print(v); print(readHeap(a))))))), int v]
+symbolTable = {}
+output = []
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(Ref(int) a; (v = 10; (new(a, 22); (fork((writeHeap(a, 30); (v = 32; (print(v); print(readHeap(a)))))); (print(v); print(readHeap(a)))))))]
+symbolTable = {v=0}
+output = []
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(v = 10; (new(a, 22); (fork((writeHeap(a, 30); (v = 32; (print(v); print(readHeap(a)))))); (print(v); print(readHeap(a)))))), Ref(int) a]
+symbolTable = {v=0}
+output = []
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(v = 10; (new(a, 22); (fork((writeHeap(a, 30); (v = 32; (print(v); print(readHeap(a)))))); (print(v); print(readHeap(a))))))]
+symbolTable = {a=(0, int), v=0}
+output = []
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(new(a, 22); (fork((writeHeap(a, 30); (v = 32; (print(v); print(readHeap(a)))))); (print(v); print(readHeap(a))))), v = 10]
+symbolTable = {a=(0, int), v=0}
+output = []
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(new(a, 22); (fork((writeHeap(a, 30); (v = 32; (print(v); print(readHeap(a)))))); (print(v); print(readHeap(a)))))]
+symbolTable = {a=(0, int), v=10}
+output = []
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(fork((writeHeap(a, 30); (v = 32; (print(v); print(readHeap(a)))))); (print(v); print(readHeap(a)))), new(a, 22)]
+symbolTable = {a=(0, int), v=10}
+output = []
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(fork((writeHeap(a, 30); (v = 32; (print(v); print(readHeap(a)))))); (print(v); print(readHeap(a))))]
+symbolTable = {a=(1, int), v=10}
+output = []
+files = {}
+heap = {1=22}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(print(v); print(readHeap(a))), fork((writeHeap(a, 30); (v = 32; (print(v); print(readHeap(a))))))]
+symbolTable = {a=(1, int), v=10}
+output = []
+files = {}
+heap = {1=22}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(print(v); print(readHeap(a)))]
+symbolTable = {a=(1, int), v=10}
+output = []
+files = {}
+heap = {1=22}
+status: running
+
+
+>>Program State:
+Thread ID: 2
+executionStack = [(writeHeap(a, 30); (v = 32; (print(v); print(readHeap(a)))))]
+symbolTable = {a=(1, int), v=10}
+output = []
+files = {}
+heap = {1=22}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [print(readHeap(a)), print(v)]
+symbolTable = {a=(1, int), v=10}
+output = []
+files = {}
+heap = {1=22}
+status: running
+
+
+>>Program State:
+Thread ID: 2
+executionStack = [(v = 32; (print(v); print(readHeap(a)))), writeHeap(a, 30)]
+symbolTable = {a=(1, int), v=10}
+output = []
+files = {}
+heap = {1=22}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [print(readHeap(a))]
+symbolTable = {a=(1, int), v=10}
+output = [10]
+files = {}
+heap = {1=30}
+status: running
+
+
+>>Program State:
+Thread ID: 2
+executionStack = [(v = 32; (print(v); print(readHeap(a))))]
+symbolTable = {a=(1, int), v=10}
+output = [10]
+files = {}
+heap = {1=30}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = []
+symbolTable = {a=(1, int), v=10}
+output = [10, 30]
+files = {}
+heap = {1=30}
+status: finished
+
+
+>>Program State:
+Thread ID: 2
+executionStack = [(print(v); print(readHeap(a))), v = 32]
+symbolTable = {a=(1, int), v=10}
+output = [10, 30]
+files = {}
+heap = {1=30}
+status: running
+
+
+>>Program State:
+Thread ID: 2
+executionStack = [(print(v); print(readHeap(a)))]
+symbolTable = {a=(1, int), v=32}
+output = [10, 30]
+files = {}
+heap = {1=30}
+status: running
+
+
+>>Program State:
+Thread ID: 2
+executionStack = [print(readHeap(a)), print(v)]
+symbolTable = {a=(1, int), v=32}
+output = [10, 30]
+files = {}
+heap = {1=30}
+status: running
+
+
+>>Program State:
+Thread ID: 2
+executionStack = [print(readHeap(a))]
+symbolTable = {a=(1, int), v=32}
+output = [10, 30, 32]
+files = {}
+heap = {1=30}
+status: running
+
+
+>>Program State:
+Thread ID: 2
+executionStack = []
+symbolTable = {a=(1, int), v=32}
+output = [10, 30, 32, 30]
+files = {}
+heap = {1=30}
+status: finished
+
+

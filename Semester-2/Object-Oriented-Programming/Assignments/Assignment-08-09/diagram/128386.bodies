@@ -1,0 +1,28 @@
+class UserRepository
+!!!140034.cpp!!!	UserRepository(inout repo : UserRepository)
+
+    this->basket = repo->basket;
+!!!140162.cpp!!!	operator [](in index : int) : std::pair<int, int>
+
+    return this->basket[index];
+!!!140290.cpp!!!	operator =(in v : UserRepository) : UserRepository
+
+    this->basket = v.basket;
+    return *this;
+!!!140418.cpp!!!	length() : int
+
+    return (int)this->basket.size();
+!!!140546.cpp!!!	add(in ID : int) : void
+
+    std::vector<std::pair<int, int>>::iterator it = std::find_if(this->basket.begin(), this->basket.end(), [ID](std::pair<int, int> entry) {return entry.first == ID; });
+    if (it == this->basket.end())
+    {
+        this->basket.push_back(std::make_pair(ID, 1));
+        return;
+    }
+    (*it).second++;
+!!!140930.cpp!!!	get_vector() : std::vector<std::pair<int, int>>
+
+    return this->basket;
+!!!141186.cpp!!!	~UserRepository()
+

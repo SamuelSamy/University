@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Assignment1">
+      <UniqueIdentifier>{68a4f623-68a9-4616-bfb2-e4a60c37dff2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Assignment2">
+      <UniqueIdentifier>{367f4c40-7fc7-4afc-838b-1e7366b5d085}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Assignment3">
+      <UniqueIdentifier>{58b54814-a09e-4c94-9e3b-9c33c09a10d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Assignment4">
+      <UniqueIdentifier>{9abd12c9-282f-4c34-9cc3-5d87542964a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Assignment5">
+      <UniqueIdentifier>{877bf3d7-e467-49e9-8df5-aeb6faf50f0e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="exam.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="assignment1_2.c">
+      <Filter>Source Files\Assignment1</Filter>
+    </ClCompile>
+    <ClCompile Include="assignment1_3.c">
+      <Filter>Source Files\Assignment1</Filter>
+    </ClCompile>
+    <ClCompile Include="assignemnt2.c">
+      <Filter>Source Files\Assignment2</Filter>
+    </ClCompile>
+    <ClCompile Include="assignemnt3.c">
+      <Filter>Source Files\Assignment3</Filter>
+    </ClCompile>
+    <ClCompile Include="assignemnt5_2.c">
+      <Filter>Source Files\Assignment5</Filter>
+    </ClCompile>
+    <ClCompile Include="assignment4_1.c">
+      <Filter>Source Files\Assignment4</Filter>
+    </ClCompile>
+    <ClCompile Include="assignment4_2.c">
+      <Filter>Source Files\Assignment4</Filter>
+    </ClCompile>
+    <ClCompile Include="assignment1_1.c">
+      <Filter>Source Files\Assignment1</Filter>
+    </ClCompile>
+    <ClCompile Include="test.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="assignment5_3.c">
+      <Filter>Source Files\Assignment5</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="file.txt">
+      <Filter>Source Files\Assignment5</Filter>
+    </None>
+  </ItemGroup>
+</Project>

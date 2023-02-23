@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.Controllers.StartAppController">
+   <children>
+      <Button fx:id="newQuizButton" blendMode="EXCLUSION" layoutY="200.0" mnemonicParsing="false" onAction="#newQuizButton_onAction" prefHeight="199.0" prefWidth="301.0" text="New Quiz">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Button>
+      <Button fx:id="exitButton" blendMode="EXCLUSION" layoutX="300.0" layoutY="200.0" mnemonicParsing="false" onAction="#exitButton_onAction" prefHeight="199.0" prefWidth="301.0" text="Exit">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Button>
+      <Label layoutX="38.0" layoutY="88.0" prefHeight="56.0" prefWidth="262.0" text="No. of questions:">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="noOfQuestionsTextArea" layoutX="301.0" layoutY="88.0" prefHeight="56.0" prefWidth="88.0">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </TextArea>
+   </children>
+</AnchorPane>

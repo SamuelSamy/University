@@ -1,0 +1,190 @@
+>>Program State:
+Thread ID: 1
+executionStack = [(int b; (int c; (c = 5; (b = 2; (a = 1; (switch ((a * 10)) (case (b * c): (print(a); print(b))) (case 10: (print(b); print(c))) (default: print(300)); print(300))))))), int a]
+symbolTable = {}
+output = []
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(int b; (int c; (c = 5; (b = 2; (a = 1; (switch ((a * 10)) (case (b * c): (print(a); print(b))) (case 10: (print(b); print(c))) (default: print(300)); print(300)))))))]
+symbolTable = {a=0}
+output = []
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(int c; (c = 5; (b = 2; (a = 1; (switch ((a * 10)) (case (b * c): (print(a); print(b))) (case 10: (print(b); print(c))) (default: print(300)); print(300)))))), int b]
+symbolTable = {a=0}
+output = []
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(int c; (c = 5; (b = 2; (a = 1; (switch ((a * 10)) (case (b * c): (print(a); print(b))) (case 10: (print(b); print(c))) (default: print(300)); print(300))))))]
+symbolTable = {a=0, b=0}
+output = []
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(c = 5; (b = 2; (a = 1; (switch ((a * 10)) (case (b * c): (print(a); print(b))) (case 10: (print(b); print(c))) (default: print(300)); print(300))))), int c]
+symbolTable = {a=0, b=0}
+output = []
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(c = 5; (b = 2; (a = 1; (switch ((a * 10)) (case (b * c): (print(a); print(b))) (case 10: (print(b); print(c))) (default: print(300)); print(300)))))]
+symbolTable = {a=0, b=0, c=0}
+output = []
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(b = 2; (a = 1; (switch ((a * 10)) (case (b * c): (print(a); print(b))) (case 10: (print(b); print(c))) (default: print(300)); print(300)))), c = 5]
+symbolTable = {a=0, b=0, c=0}
+output = []
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(b = 2; (a = 1; (switch ((a * 10)) (case (b * c): (print(a); print(b))) (case 10: (print(b); print(c))) (default: print(300)); print(300))))]
+symbolTable = {a=0, b=0, c=5}
+output = []
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(a = 1; (switch ((a * 10)) (case (b * c): (print(a); print(b))) (case 10: (print(b); print(c))) (default: print(300)); print(300))), b = 2]
+symbolTable = {a=0, b=0, c=5}
+output = []
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(a = 1; (switch ((a * 10)) (case (b * c): (print(a); print(b))) (case 10: (print(b); print(c))) (default: print(300)); print(300)))]
+symbolTable = {a=0, b=2, c=5}
+output = []
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(switch ((a * 10)) (case (b * c): (print(a); print(b))) (case 10: (print(b); print(c))) (default: print(300)); print(300)), a = 1]
+symbolTable = {a=0, b=2, c=5}
+output = []
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(switch ((a * 10)) (case (b * c): (print(a); print(b))) (case 10: (print(b); print(c))) (default: print(300)); print(300))]
+symbolTable = {a=1, b=2, c=5}
+output = []
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [print(300), switch ((a * 10)) (case (b * c): (print(a); print(b))) (case 10: (print(b); print(c))) (default: print(300))]
+symbolTable = {a=1, b=2, c=5}
+output = []
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [print(300), ( if ((a * 10) == (b * c)) then ((print(a); print(b))) else (( if ((a * 10) == 10) then ((print(b); print(c))) else (print(300)) )) )]
+symbolTable = {a=1, b=2, c=5}
+output = []
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [print(300), (print(a); print(b))]
+symbolTable = {a=1, b=2, c=5}
+output = []
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [print(300), print(b), print(a)]
+symbolTable = {a=1, b=2, c=5}
+output = []
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [print(300), print(b)]
+symbolTable = {a=1, b=2, c=5}
+output = [1]
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [print(300)]
+symbolTable = {a=1, b=2, c=5}
+output = [1, 2]
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = []
+symbolTable = {a=1, b=2, c=5}
+output = [1, 2, 300]
+files = {}
+heap = {}
+status: finished
+
+

@@ -1,0 +1,165 @@
+.           -   any single character
+\           -   change meaning between normal and special
+[abc]       -   any one character from the list [abc0-9], [a-z]
+[^0-9]      -   matches any character except what's in the list (digits)
+^           -   begining of line
+$           -   end of the line
+\<          -   begining of a word
+\>          -   the end of the word
+()          -   group some characters
+*           -   previous expression 0 or more times
++           -   previous expression 1 or more times
+?           -   previous expression 0 or once
+{n, m}      -   previous expression at least n times and at most m times
+|           -   logical or
+
+
+Examples:
+
+.*              -   can be: - empty
+                            - non-empty
+[a-ZA-Z02468]   -   one character that is a letter or even digit
+[ !]+
+^[^0-9]+$       -   a line (non-empty) containing one or more characters that are not digits
+([Nn][Oo])*     -   NOnoNonO
+                -   empty
+
+
+        Grep
+
+grep    "word"      filepath
+    - prints all the lines taht contain the search pattern / word / regex
+
+-v  :   prints lines that do not match
+-i  :   case insensitive
+-q  :   does not display lines, but sets exitcode: - 0 if found, 1 otherwise
+-E  :   use extended regex
+-c  :   count matching lines
+-o  :   only the matching part
+    --color
+
+a) Display all lines containing `dan`
+
+/etc/passwd
+
+username:passwrod:user_id:group_id:user_info:home_directory:shell
+abie0007:x       :       :grup912 :         :/home/scs/../abie007:bash
+
+b) only username dan
+
+grep "^dan:" /etc/passwd
+
+c) display the lines of users that do not have digits in their usernames
+
+grep -E "^[^0-9:]+:" etc/passwd
+
+
+d) users with 2 vovels in the username (at least 2)
+
+grep -E -i "^[^:]*[aeiou][^:]*[aeiou]:" etc/passwd
+grep -E -i "^([^:]*[aeiou]){2,}:" etc/passwd
+
+e) users that don't have bash as teir shell
+
+grep -v ":/bash$" /etc/passwd
+
+f) Lines of users named Ion (user-info field)
+
+grep -E "^([^:]*:){4}\<Ion\>:
+
+g) Non-empty lines
+
+grep .
+
+h) Empty lines
+
+grep -v . /etc/passwd
+grep "^$" /etc/passwd
+
+
+i) odd number of characters in a line
+
+grup "^(..)*.$" /etc/passwd
+
+
+j) lines containing an ocean name
+
+grep -E -i "/<pacific/>|/<atlantic/>" /etc/passwd
+
+
+Lines that contain an email:
+1. username - any character except @, *, !, ?
+2. @
+3. hostname - 2 or more elemennts separated by a dot (yahoo.com, gmail.com, etc)
+                    - can contain: letters, digits, -, _
+
+grep -E -i "\<[^@*!?]+@[a-z0-9_-]+(\.[a-z0-9_-]+)+\>" etc/passwd
+
+
+
+        Sed
+
+- search and replace 
+
+sed "s/regex/replacement/gi" filepath
+    gi: g - gobal replacement, i - case insensitie
+
+
+sed "s/a/A/g"   
+    without g replaces only the first occurenece
+    print lines with regex replaced with replacement
+
+a) Replace vowels with spaces
+
+sed "s/[aeiou]/ /gi" /etc/passwd
+
+b) Delete lines that contain 5 or more digits
+
+
+c) Swap pair of letters
+sed -E -i "s/([a-z])([a-z])/\2\1/gi" /etc/passwd
+
+d) Duplicate vowels 
+sed -E "s/([aeiou])/\1\1/gi" /etc/passwd
+
+
+
+sed "y/abcd/XYZT" /etc/passwd
+
+a - X
+b - Y
+c - Z
+d - T
+
+a) Convert all vowels to uppercase
+sed "y/aeiou/AEIOU" /etc/passwd
+sed "s/[aeiou]/\u&" 
+
+
+sed -E "/regex/d" /etc/passwd (deletes the line containing the specified regex)
+
+a) Delete lines that contain 5 or more digits
+sed -E "/[0-9]{5,}/d" etc/passwd
+grep -v "[0-9]{5,}" etc/passwd
+
+
+
+alina    Alina CALIN             pts/3       3  Mar 17 14:11                           (alina-lenovo-ideapad-y580.cs.ubbcluj.ro)
+bradut   Cristian BRAD           pts/1      36  Mar 17 13:06                           (172.30.0.4)
+dbota    Daniel BOTA             pts/0    1:34  Mar 17 11:58                           (78.96.82.156)
+dbota    Daniel BOTA             pts/2    1:34  Mar 17 11:58                           (78.96.82.156)
+ex872    bmie3069 - 911 - Bosta  pts/32         Mar 17 14:16                           (desktop-7eogd26.cs.ubbcluj.ro)
+ex873    cmie3074 - 911 - Cance  pts/30         Mar 17 14:15                           (desktop-mqbhea6.cs.ubbcluj.ro)
+ex874    daie3101 - 912 - Draga  pts/14         Mar 17 14:13                           (desktop-2qarnhv.cs.ubbcluj.ro)
+ex875    ddie3098 - 912 - Dobri  pts/24         Mar 17 14:13                           (david-pc.cs.ubbcluj.ro)
+ex876    dgie3104 - 912 - Dunca  pts/12         Mar 17 14:13                           (desktop-pdrhpcb.cs.ubbcluj.ro)
+ex877    dhie3105 - 912 - Dutes  pts/18         Mar 17 14:13                           (desktop-o7jkcoh.cs.ubbcluj.ro)
+ex878    dmie3100 - 912 - Doszl  pts/10         Mar 17 14:13                           (desktop-gqhnh6u.cs.ubbcluj.ro)
+ex879    drie3099 - 912 - Dospi  pts/4       1  Mar 17 14:13                           (desktop-p17ehjh.cs.ubbcluj.ro)
+ex880    faie3106 - 912 - Farca  pts/28      1  Mar 17 14:14                           (desktop-lsa033i.cs.ubbcluj.ro)
+ex881    fsie3107 - 912 - Fatu   pts/8          Mar 17 14:13                           (desktop-0hendfh.cs.ubbcluj.ro)
+ex881    fsie3107 - 912 - Fatu   pts/26      2  Mar 17 14:14                           (desktop-0hendfh.cs.ubbcluj.ro)
+ex883    glie3109 - 912 - Gagyi  pts/16         Mar 17 14:13                           (desktop-8v7o8o8.cs.ubbcluj.ro)
+ex884    gmie3110 - 912 - Gheor  pts/22         Mar 17 14:13                           (desktop-dcpgpjn.cs.ubbcluj.ro)
+ex885    gpie3111 - 912 - Gherm  pts/6          Mar 17 14:13                           (desktop-b77gf39.cs.ubbcluj.ro)
+ex886    prie2985 - 925 - Patru  pts/20         Mar 17 14:13                           (172.30.0.4)

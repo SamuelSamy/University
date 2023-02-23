@@ -1,0 +1,57 @@
+     1                                  ; Fatu Samuel
+     2                                  
+     3                                  ; Read a string of signed numbers in base 10 from keyboard. 
+     4                                  ; Determine the minimum value of the string and write it in the file min.txt (it will be created) in 16 base.
+     5                                  
+     6                                  bits 32 
+     7                                  
+     8                                  global start        
+     9                                  
+    10                                  import exit msvcrt.dll  
+    11                                  import scanf msvcrt.dll
+    12                                  import printf msvcrt.dll
+    13                                  
+    14                                  extern exit, scanf, printf
+    15                                  extern read_string, validate_input
+    16                                  
+    17                                  
+    18                                  segment data use32 class=data
+    19 00000000 6D696E2E74787400            file_name           db  "min.txt", 0
+    20 00000008 256300                      read_format         db  "%c", 0
+    21 0000000B 257800                      b16_format          db  "%x", 0
+    22 0000000E 257300                      print_format        db  "%s", 0
+    23 00000011 546865207370656369-         invalid_input_text  db  "The specified input is not valid!", 0
+    23 0000001A 6669656420696E7075-
+    23 00000023 74206973206E6F7420-
+    23 0000002C 76616C69642100     
+    24                                      
+    25 00000033 FFFFFF0F                    minimum     dd  0FFFFFFFh
+    26                                      
+    27 00000037 00<rept>                    text        times 128 db 0
+    28                                    
+    29                                      
+    30                                      
+    31                                  segment code use32 class=code
+    32                                      start:
+    33                                          
+    34 00000000 68[37000000]                    push dword text
+    35 00000005 E8(00000000)                    call read_string
+    36                                          
+    37 0000000A 68[37000000]                    push dword text
+    38 0000000F E8(00000000)                    call validate_input
+    39                                          
+    40 00000014 83F800                          cmp eax, 0  ; the input is not valid
+    41 00000017 7412                            je Invalid_Input
+    42                                          
+    43 00000019 68[37000000]                    push dword text
+    44 0000001E 68[0E000000]                    push dword print_format
+    45 00000023 FF15[00000000]                  call [printf]
+    46                                          
+    47                                          
+    48 00000029 EB0B                            jmp _End
+    49                                          Invalid_Input:
+    50 0000002B 68[11000000]                    push invalid_input_text
+    51 00000030 FF15[00000000]                  call [printf]
+    52                                          _End:
+    53 00000036 6A00                            push    dword 0      
+    54 00000038 FF15[00000000]                  call    [exit]

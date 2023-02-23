@@ -1,0 +1,21 @@
+[2022-03-16 18:34:15] [info] Start Program:
+Path:"D:\___Uni\Sem2\OOP\Assignments\Assignemnt-3-4\Assignment34\Debug\Assignment34.exe"
+Arguments:
+Working directory: "D:\___Uni\Sem2\OOP\Assignments\Assignemnt-3-4\Assignment34\Assignment34\"
+Modules: Selected: D:\___Uni\Sem2\OOP\Assignments\Assignemnt-3-4\Assignment34\Debug\Assignment34.exe Excluded: 
+Sources: Selected: D:\___Uni\Sem2\OOP\Assignments\Assignemnt-3-4\Assignment34\Assignment34 Excluded: UI.c App.c 
+Log Level: Normal
+Cover Children: 0
+Aggregate by file: 1
+Continue after C++ exception: 0
+Optimized build support: 0
+Export: Binary C:\Users\Asus\AppData\Local\Temp\3iwoturk.ldn 
+Input coverage: 
+Unified diff: 
+Excluded line regular expressions: 
+Substitute pdb source paths: 
+
+[2022-03-16 18:34:15] [info] Module: D:\___Uni\Sem2\OOP\Assignments\Assignemnt-3-4\Assignment34\Debug\Assignment34.exe is selected because it matches selected pattern: D:\___Uni\Sem2\OOP\Assignments\Assignemnt-3-4\Assignment34\Debug\Assignment34.exe
+[2022-03-16 18:34:16] [info] ----------------------------------------------------
+[2022-03-16 18:34:16] [info] Coverage binary generated in file: C:\Users\Asus\AppData\Local\Temp\3iwoturk.ldn
+[2022-03-16 18:34:16] [info] ----------------------------------------------------

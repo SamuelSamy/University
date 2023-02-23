@@ -1,0 +1,68 @@
+class AdminService
+!!!133122.cpp!!!	AdminService(inout repo : Repository)
+
+    this->repository = repo;
+    this->lastID = repo->length();
+!!!133250.cpp!!!	AdminService(in service : AdminService)
+
+    this->repository = service.repository;
+    this->lastID = service.lastID;
+!!!133378.cpp!!!	add(in size : int, in price : int, in quantity : int, in color : std::string, in photo : std::string) : void
+
+    Coat coat{ this->lastID, size, price, quantity, color, photo };
+
+    CoatValidator::validate(&coat);
+
+    this->repository->add(coat);
+    this->lastID++;
+!!!133506.cpp!!!	remove(in ID : int) : void
+
+    this->repository->remove(ID);
+!!!133634.cpp!!!	get_coat_by_ID(in ID : int) : Coat
+
+    return this->repository->get_coat_by_ID(ID);
+!!!133762.cpp!!!	get_coats_by_size(in size : int) : std::vector<Coat>
+
+    return this->repository->get_coats_by_size(size);
+!!!133890.cpp!!!	update(in ID : int, in size : int, in price : int, in quantity : int, in color : std::string, in photo : std::string, in changes : int) : void
+
+    Coat oldCoat = this->get_coat_by_ID(ID);
+
+    if ((changes & 1) == 0)
+    {
+        size = oldCoat.get_size();
+    }
+
+    if ((changes & 2) == 0)
+    {
+        price = oldCoat.get_price();
+    }
+
+    if ((changes & 4) == 0)
+    {
+        quantity = oldCoat.get_quantity();
+    }
+
+    if ((changes & 8) == 0)
+    {
+        color = oldCoat.get_color();
+    }
+
+    if ((changes & 16) == 0)
+    {
+        photo = oldCoat.get_photo();
+    }
+
+    Coat newCoat{ ID, size, price, quantity, color, photo };
+    CoatValidator::validate(&newCoat);
+
+    this->repository->update(ID, newCoat);
+!!!134018.cpp!!!	get_repo() : Repository
+
+    return this->repository;
+!!!134146.cpp!!!	~AdminService()
+
+!!!134274.cpp!!!	operator <<(inout os : std::ostream, in service : AdminService) : std::ostream
+
+    os << *service.repository;
+    return os;

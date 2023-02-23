@@ -1,0 +1,160 @@
+1.1 
+Consider the following function defition in prolog:
+(defun F (l)
+    (cond
+        ((null l) 0)
+        ((> (F (car l)) 2) (+ (car l) (F (cdr l))))
+        (t (F (car l)))
+    )
+)
+
+Solution:
+(defun F (l)
+    (
+        (lambda (x)
+            (cond
+                ((null l) 0)
+                ((> x 2) (+ (car l) (F (cdr l))))
+                (t x)
+            )
+        )  
+    )
+)
+
+Justify: We use a lambda function (that "stores" the result of (F (car l))) in order to avoid the double recursive call
+
+
+1.2
+flow model(i, o)
+
+f([], 0).
+f([H | T], S) :-
+    f(T, S1),
+    H < S1, !,
+    S is H + S1.
+
+f([_ | T], S) :-
+    f(T, S1),
+    S is S1 + 2.
+
+Solution:
+
+f([], 0).
+f([H | T], S) :-
+    f(T, S1),
+    faux(H, S1, S).
+
+faux(H, S1, S) :-
+    H < S1, !,
+    S is S1 + H.
+
+faux(_, S1, S) :-
+    S is S1 + 2.
+
+Justify: In order to avoid the double recursive call of f(T, S1) we use an auxiliary predicate that checks which of the 2 condtions (H < S1 or not) is true.
+
+
+
+
+1.3
+(defun F (x &rest y)
+    (cond
+        ((null y) x)
+        (t (append x (mapcar #'car y)))
+    )
+)
+
+Evaluate: (append (F '(1 2)) (F '(3 4)) (F '(5 6)) (F '(7 8)))
+
+F '(1 2) => x is '(1 2) and y is null, therefore the function returns the list '(1 2)
+F '(3 4), F '(5 6)and F '(7 8) are the same as above, therefore they will return '(3 4), '(5 6) and '(7 8) respectfully
+
+=> (append '(1 2) '(3 4) '(5 6) '(7 8)) will return the list '(1 2 3 4 5 6 7 8)
+
+
+1.4
+p(1).
+p(2).
+q(1).
+q(2).
+r(1).
+r(2).
+
+s :-
+    !, 
+    p(X),
+    q(Y),
+    r(Z),
+    write(X, Y, Z),
+    nl.
+
+Find result of: s (and justify)
+
+Result: 
+111
+112
+121
+122
+211
+212
+221
+222
+
+Justify: X, Y, and Z will be 1 or 2. 
+X takes value 1. Y takes value 1. Z takes value 1. It prints them and the predicate backtracks to r(Z). Z will take value 2 and it will print them again. It backtracks once again to r(Z), but r(Z) returns false therefore it backtracks to q(Y). Y will take value 2 and the predicate will continue with r(Z), and so on and so forth.
+
+X = 1 -> Y = 1 -> Z = 1
+               -> Z = 2
+      -> Y = 2 -> Z = 1
+               -> Z = 2
+X = 2 -> Y = 1 -> Z = 1
+               -> Z = 2
+      -> Y = 2 -> Z = 1
+               -> Z = 2
+
+
+
+
+2.1
+
+sum([], 0).
+sum([H | T], R) :-
+    sum(T, R1),
+    R is R1 + H.
+
+verify(L) :-
+    sum(L, S),
+    M is S mod 3,
+    M =:= 0.
+
+subsets([], []).
+subsets([H | T], [H | R]) :-
+    subsets(T, R).
+
+subsets([_ | T], R) :-
+    subsets(T, R).
+
+myLength([], 0).
+myLength([_ | T], N) :-
+    myLength(T, N1),
+    N is N1 + 1.
+
+generate(L, N, R) :-
+    subsets(L, R),
+    myLength(R, RN),
+    RN >= N,
+    verify(R).
+
+
+
+
+2.2
+
+(defun replace (vector k &optional (currentLevel 0))
+    (cond
+        ((null vector) nil)
+        ((and (atom vector) (= k currentLevel)) 0)
+        ((atom vector) vector)
+        (t (mapcar #'(lambda (x) (replace x k (+ 1 currentLevel))) vector))
+    )
+)

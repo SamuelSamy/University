@@ -1,0 +1,34 @@
+class FileCoat
+!!!136834.cpp!!!	operator <<(inout os : std::ostream, in coat : FileCoat) : std::ostream
+
+    os << coat.ID << "," << coat.size << "," << coat.price << "," << coat.quantity << "," << coat.color << "," << coat.photo;
+    return os;
+!!!136962.cpp!!!	operator >>(inout is : std::istream, inout coat : FileCoat) : std::istream
+
+    if (is.eof())
+    {
+        is.setstate(std::ios_base::failbit);
+        return is;
+    }
+
+        
+    std::string id;
+    std::getline(is, id, ',');
+    coat.ID = atoi(id.c_str());
+
+    std::string size;
+    std::getline(is, size, ',');
+    coat.size = atoi(size.c_str());
+
+    std::string price;
+    std::getline(is, price, ',');
+    coat.price = atoi(price.c_str());
+
+    std::string quantity;
+    std::getline(is, quantity, ',');
+    coat.quantity = atoi(quantity.c_str());
+
+    std::getline(is, coat.color, ',');
+    std::getline(is, coat.photo, '\n');
+    
+    return is;

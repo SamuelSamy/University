@@ -1,0 +1,21 @@
+[2022-03-23 17:01:09] [info] Start Program:
+Path:"D:\___Uni\Sem2\DSA\Assignments\Assignment01\Stack\x64\Debug\Stack.exe"
+Arguments:
+Working directory: "D:\___Uni\Sem2\DSA\Assignments\Assignment01\Stack\"
+Modules: Selected: D:\___Uni\Sem2\DSA\Assignments\Assignment01\Stack\x64\Debug\Stack.exe Excluded: 
+Sources: Selected: D:\___Uni\Sem2\DSA\Assignments\Assignment01\Stack Excluded: 
+Log Level: Normal
+Cover Children: 0
+Aggregate by file: 1
+Continue after C++ exception: 0
+Optimized build support: 0
+Export: Binary C:\Users\Asus\AppData\Local\Temp\vdf40zpo.fer 
+Input coverage: 
+Unified diff: 
+Excluded line regular expressions: 
+Substitute pdb source paths: 
+
+[2022-03-23 17:01:09] [info] Module: D:\___Uni\Sem2\DSA\Assignments\Assignment01\Stack\x64\Debug\Stack.exe is selected because it matches selected pattern: D:\___Uni\Sem2\DSA\Assignments\Assignment01\Stack\x64\Debug\Stack.exe
+[2022-03-23 17:01:09] [info] ----------------------------------------------------
+[2022-03-23 17:01:09] [info] Coverage binary generated in file: C:\Users\Asus\AppData\Local\Temp\vdf40zpo.fer
+[2022-03-23 17:01:09] [info] ----------------------------------------------------

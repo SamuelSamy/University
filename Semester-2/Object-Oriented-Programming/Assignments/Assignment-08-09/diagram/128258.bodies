@@ -1,0 +1,43 @@
+class CSVRepository
+!!!130178.cpp!!!	write() : void
+
+    std::ofstream fout(fileName);
+
+    for (std::pair<int, int> p : this->basket)
+    {
+        Coat c = this->repo->get_coat_by_ID(p.first);
+
+        fout << c.get_size() << ",";
+        fout << c.get_price() << ",";
+        fout << p.second << ",";
+        fout << c.get_color() << ",";
+        fout << c.get_photo() << "\n";
+    }
+
+    fout.close();
+!!!130306.cpp!!!	operator [](in index : int) : std::pair<int, int>
+
+    return this->UserRepository::operator[](index);
+!!!130434.cpp!!!	length() : int
+
+    return this->UserRepository::length();
+!!!130562.cpp!!!	add(in ID : int) : void
+
+    this->UserRepository::add(ID);
+
+    this->write();
+!!!130690.cpp!!!	get_total_price() : int
+
+    int total = 0;
+
+    for (const auto& element : this->basket)
+    {
+        const Coat coat = this->repo->get_coat_by_ID(element.first);
+        total += coat.get_price() * element.second;
+    }
+
+    return total;
+
+!!!130818.cpp!!!	get_file_name() : std::string
+
+    return this->fileName;

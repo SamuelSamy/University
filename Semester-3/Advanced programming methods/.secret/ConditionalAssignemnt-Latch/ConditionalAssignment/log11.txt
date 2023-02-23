@@ -1,0 +1,250 @@
+>>Program State:
+Thread ID: 1
+executionStack = [(Ref(int) b; (int v; (new(a, 0); (new(b, 0); (writeHeap(a, 1); (writeHeap(b, 2); (v = readHeap(a) < readHeap(b) ? 100 : 200; (print(v); (v = (readHeap(b) - 2) > readHeap(a) ? 100 : 200; print(v)))))))))), Ref(int) a]
+symbolTable = {}
+output = []
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(Ref(int) b; (int v; (new(a, 0); (new(b, 0); (writeHeap(a, 1); (writeHeap(b, 2); (v = readHeap(a) < readHeap(b) ? 100 : 200; (print(v); (v = (readHeap(b) - 2) > readHeap(a) ? 100 : 200; print(v))))))))))]
+symbolTable = {a=(0, int)}
+output = []
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(int v; (new(a, 0); (new(b, 0); (writeHeap(a, 1); (writeHeap(b, 2); (v = readHeap(a) < readHeap(b) ? 100 : 200; (print(v); (v = (readHeap(b) - 2) > readHeap(a) ? 100 : 200; print(v))))))))), Ref(int) b]
+symbolTable = {a=(0, int)}
+output = []
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(int v; (new(a, 0); (new(b, 0); (writeHeap(a, 1); (writeHeap(b, 2); (v = readHeap(a) < readHeap(b) ? 100 : 200; (print(v); (v = (readHeap(b) - 2) > readHeap(a) ? 100 : 200; print(v)))))))))]
+symbolTable = {a=(0, int), b=(0, int)}
+output = []
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(new(a, 0); (new(b, 0); (writeHeap(a, 1); (writeHeap(b, 2); (v = readHeap(a) < readHeap(b) ? 100 : 200; (print(v); (v = (readHeap(b) - 2) > readHeap(a) ? 100 : 200; print(v)))))))), int v]
+symbolTable = {a=(0, int), b=(0, int)}
+output = []
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(new(a, 0); (new(b, 0); (writeHeap(a, 1); (writeHeap(b, 2); (v = readHeap(a) < readHeap(b) ? 100 : 200; (print(v); (v = (readHeap(b) - 2) > readHeap(a) ? 100 : 200; print(v))))))))]
+symbolTable = {a=(0, int), b=(0, int), v=0}
+output = []
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(new(b, 0); (writeHeap(a, 1); (writeHeap(b, 2); (v = readHeap(a) < readHeap(b) ? 100 : 200; (print(v); (v = (readHeap(b) - 2) > readHeap(a) ? 100 : 200; print(v))))))), new(a, 0)]
+symbolTable = {a=(0, int), b=(0, int), v=0}
+output = []
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(new(b, 0); (writeHeap(a, 1); (writeHeap(b, 2); (v = readHeap(a) < readHeap(b) ? 100 : 200; (print(v); (v = (readHeap(b) - 2) > readHeap(a) ? 100 : 200; print(v)))))))]
+symbolTable = {a=(1, int), b=(0, int), v=0}
+output = []
+files = {}
+heap = {1=0}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(writeHeap(a, 1); (writeHeap(b, 2); (v = readHeap(a) < readHeap(b) ? 100 : 200; (print(v); (v = (readHeap(b) - 2) > readHeap(a) ? 100 : 200; print(v)))))), new(b, 0)]
+symbolTable = {a=(1, int), b=(0, int), v=0}
+output = []
+files = {}
+heap = {1=0}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(writeHeap(a, 1); (writeHeap(b, 2); (v = readHeap(a) < readHeap(b) ? 100 : 200; (print(v); (v = (readHeap(b) - 2) > readHeap(a) ? 100 : 200; print(v))))))]
+symbolTable = {a=(1, int), b=(2, int), v=0}
+output = []
+files = {}
+heap = {1=0, 2=0}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(writeHeap(b, 2); (v = readHeap(a) < readHeap(b) ? 100 : 200; (print(v); (v = (readHeap(b) - 2) > readHeap(a) ? 100 : 200; print(v))))), writeHeap(a, 1)]
+symbolTable = {a=(1, int), b=(2, int), v=0}
+output = []
+files = {}
+heap = {1=0, 2=0}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(writeHeap(b, 2); (v = readHeap(a) < readHeap(b) ? 100 : 200; (print(v); (v = (readHeap(b) - 2) > readHeap(a) ? 100 : 200; print(v)))))]
+symbolTable = {a=(1, int), b=(2, int), v=0}
+output = []
+files = {}
+heap = {1=1, 2=0}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(v = readHeap(a) < readHeap(b) ? 100 : 200; (print(v); (v = (readHeap(b) - 2) > readHeap(a) ? 100 : 200; print(v)))), writeHeap(b, 2)]
+symbolTable = {a=(1, int), b=(2, int), v=0}
+output = []
+files = {}
+heap = {1=1, 2=0}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(v = readHeap(a) < readHeap(b) ? 100 : 200; (print(v); (v = (readHeap(b) - 2) > readHeap(a) ? 100 : 200; print(v))))]
+symbolTable = {a=(1, int), b=(2, int), v=0}
+output = []
+files = {}
+heap = {1=1, 2=2}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(print(v); (v = (readHeap(b) - 2) > readHeap(a) ? 100 : 200; print(v))), v = readHeap(a) < readHeap(b) ? 100 : 200]
+symbolTable = {a=(1, int), b=(2, int), v=0}
+output = []
+files = {}
+heap = {1=1, 2=2}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(print(v); (v = (readHeap(b) - 2) > readHeap(a) ? 100 : 200; print(v))), ( if (readHeap(a) < readHeap(b)) then (v = 100) else (v = 200) )]
+symbolTable = {a=(1, int), b=(2, int), v=0}
+output = []
+files = {}
+heap = {1=1, 2=2}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(print(v); (v = (readHeap(b) - 2) > readHeap(a) ? 100 : 200; print(v))), v = 100]
+symbolTable = {a=(1, int), b=(2, int), v=0}
+output = []
+files = {}
+heap = {1=1, 2=2}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(print(v); (v = (readHeap(b) - 2) > readHeap(a) ? 100 : 200; print(v)))]
+symbolTable = {a=(1, int), b=(2, int), v=100}
+output = []
+files = {}
+heap = {1=1, 2=2}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(v = (readHeap(b) - 2) > readHeap(a) ? 100 : 200; print(v)), print(v)]
+symbolTable = {a=(1, int), b=(2, int), v=100}
+output = []
+files = {}
+heap = {1=1, 2=2}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(v = (readHeap(b) - 2) > readHeap(a) ? 100 : 200; print(v))]
+symbolTable = {a=(1, int), b=(2, int), v=100}
+output = [100]
+files = {}
+heap = {1=1, 2=2}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [print(v), v = (readHeap(b) - 2) > readHeap(a) ? 100 : 200]
+symbolTable = {a=(1, int), b=(2, int), v=100}
+output = [100]
+files = {}
+heap = {1=1, 2=2}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [print(v), ( if ((readHeap(b) - 2) > readHeap(a)) then (v = 100) else (v = 200) )]
+symbolTable = {a=(1, int), b=(2, int), v=100}
+output = [100]
+files = {}
+heap = {1=1, 2=2}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [print(v), v = 200]
+symbolTable = {a=(1, int), b=(2, int), v=100}
+output = [100]
+files = {}
+heap = {1=1, 2=2}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [print(v)]
+symbolTable = {a=(1, int), b=(2, int), v=200}
+output = [100]
+files = {}
+heap = {1=1, 2=2}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = []
+symbolTable = {a=(1, int), b=(2, int), v=200}
+output = [100, 200]
+files = {}
+heap = {1=1, 2=2}
+status: finished
+
+

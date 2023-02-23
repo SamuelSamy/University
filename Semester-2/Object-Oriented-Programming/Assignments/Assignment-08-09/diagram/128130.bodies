@@ -1,0 +1,84 @@
+class Coat
+!!!134402.cpp!!!	Coat()
+
+    this->ID = -1;
+    this->size = -1;
+    this->price = -1;
+    this->quantity = -1;
+    this->color = "";
+    this->photo = "";
+!!!134530.cpp!!!	Coat(in ID : int, in size : int, in price : int, in quantity : int, in color : std::string, in photo : std::string)
+
+    this->set_ID(ID);
+    this->set_size(size);
+    this->set_price(price);
+    this->set_quantity(quantity);
+    this->set_color(color);
+    this->set_photo(photo);
+!!!134658.cpp!!!	Coat(in c : Coat)
+
+    this->ID = c.ID;
+    this->size = c.size;
+    this->price = c.price;
+    this->quantity = c.quantity;
+    this->color = c.color;
+    this->photo = c.photo;
+!!!134786.cpp!!!	operator ==(in coat : Coat) : bool
+
+    return this->ID == coat.ID;
+!!!134914.cpp!!!	get_ID() : int
+
+    return this->ID;
+!!!135042.cpp!!!	get_size() : int
+
+    return this->size;
+!!!135170.cpp!!!	get_price() : int
+
+    return this->price;
+!!!135298.cpp!!!	get_quantity() : int
+
+    return this->quantity;
+!!!135426.cpp!!!	get_color() : std::string
+
+    return this->color;
+!!!135554.cpp!!!	get_photo() : std::string
+
+    return this->photo;
+!!!135682.cpp!!!	set_ID(in newID : int) : void
+
+    this->ID = newID;
+!!!135810.cpp!!!	set_size(in newSize : int) : void
+
+    this->size = newSize;
+!!!135938.cpp!!!	set_price(in newPrice : int) : void
+
+    this->price = newPrice;
+!!!136066.cpp!!!	set_quantity(in newQuantity : int) : void
+
+    this->quantity = newQuantity;
+!!!136194.cpp!!!	set_color(in newColor : std::string) : void
+
+    this->color = newColor;
+!!!136322.cpp!!!	set_photo(in newPhoto : std::string) : void
+
+    this->photo = newPhoto;
+!!!136450.cpp!!!	~Coat()
+
+!!!136578.cpp!!!	operator <<(inout os : std::ostream, in coat : Coat) : std::ostream
+
+    os << "ID: " << std::setw(10) << std::left << coat.ID << " ";
+    os << "Size: " << std::setw(10) << std::left << coat.size << " ";
+    os << "Price: " << std::setw(10) << std::left << std::to_string(coat.price) + "$" << " ";
+    os << "Quantity: " << std::setw(10) << std::left << coat.quantity << " ";
+    os << "Color: " << std::setw(12) << std::left << coat.color << " ";
+    os << "Photo: " << std::setw(20) << std::left << coat.photo;
+    return os;
+!!!136706.cpp!!!	operator <<(inout os : std::ostream, inout coat : Coat) : std::ostream
+
+    os << "ID: " << std::setw(10) << std::left << coat->ID << " ";
+    os << "Size: " << std::setw(10) << std::left << coat->size << " ";
+    os << "Price: " << std::setw(10) << std::left << std::to_string(coat->price) + "$" << " ";
+    os << "Quantity: " << std::setw(10) << std::left << coat->quantity << " ";
+    os << "Color: " << std::setw(12) << std::left << coat->color << " ";
+    os << "Photo: " << std::setw(20) << std::left << coat->photo;
+    return os;

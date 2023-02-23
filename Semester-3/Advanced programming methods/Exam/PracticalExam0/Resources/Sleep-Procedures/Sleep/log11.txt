@@ -1,0 +1,250 @@
+>>Program State:
+Thread ID: 1
+executionStack = [(v = 10; (fork((v = (v - 1); (v = (v - 1); print(v)))); (sleep(10); print((v * 10))))), int v]
+symbolTable = {}
+output = []
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(v = 10; (fork((v = (v - 1); (v = (v - 1); print(v)))); (sleep(10); print((v * 10)))))]
+symbolTable = {v=0}
+output = []
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(fork((v = (v - 1); (v = (v - 1); print(v)))); (sleep(10); print((v * 10)))), v = 10]
+symbolTable = {v=0}
+output = []
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(fork((v = (v - 1); (v = (v - 1); print(v)))); (sleep(10); print((v * 10))))]
+symbolTable = {v=10}
+output = []
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(sleep(10); print((v * 10))), fork((v = (v - 1); (v = (v - 1); print(v))))]
+symbolTable = {v=10}
+output = []
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(sleep(10); print((v * 10)))]
+symbolTable = {v=10}
+output = []
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 2
+executionStack = [(v = (v - 1); (v = (v - 1); print(v)))]
+symbolTable = {v=10}
+output = []
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [print((v * 10)), sleep(10)]
+symbolTable = {v=10}
+output = []
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 2
+executionStack = [(v = (v - 1); print(v)), v = (v - 1)]
+symbolTable = {v=10}
+output = []
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [print((v * 10)), sleep(9)]
+symbolTable = {v=10}
+output = []
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 2
+executionStack = [(v = (v - 1); print(v))]
+symbolTable = {v=9}
+output = []
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [print((v * 10)), sleep(8)]
+symbolTable = {v=10}
+output = []
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 2
+executionStack = [print(v), v = (v - 1)]
+symbolTable = {v=9}
+output = []
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [print((v * 10)), sleep(7)]
+symbolTable = {v=10}
+output = []
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 2
+executionStack = [print(v)]
+symbolTable = {v=8}
+output = []
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [print((v * 10)), sleep(6)]
+symbolTable = {v=10}
+output = [8]
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 2
+executionStack = []
+symbolTable = {v=8}
+output = [8]
+files = {}
+heap = {}
+status: finished
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [print((v * 10)), sleep(5)]
+symbolTable = {v=10}
+output = [8]
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [print((v * 10)), sleep(4)]
+symbolTable = {v=10}
+output = [8]
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [print((v * 10)), sleep(3)]
+symbolTable = {v=10}
+output = [8]
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [print((v * 10)), sleep(2)]
+symbolTable = {v=10}
+output = [8]
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [print((v * 10)), sleep(1)]
+symbolTable = {v=10}
+output = [8]
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [print((v * 10)), sleep(0)]
+symbolTable = {v=10}
+output = [8]
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [print((v * 10))]
+symbolTable = {v=10}
+output = [8]
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = []
+symbolTable = {v=10}
+output = [8, 100]
+files = {}
+heap = {}
+status: finished
+
+

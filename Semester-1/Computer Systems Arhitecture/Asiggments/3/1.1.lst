@@ -1,0 +1,81 @@
+     1                                  ; Fatu Samuel
+     2                                  ; (a + b - c) + (a + b + d) - (a + b)
+     3                                  ;      r1     +     r2      -    r3
+     4                                  
+     5                                  ; a - byte, b - word, c - double word, d - qword
+     6                                  
+     7                                  bits 32 
+     8                                  
+     9                                  global start        
+    10                                  
+    11                                  extern exit               
+    12                                  import exit msvcrt.dll  
+    13                                  
+    14                                  
+    15                                  segment data use32 class=data
+    16 00000000 05                          a   db  5
+    17 00000001 0A00                        b   dw  10
+    18 00000003 1E000000                    _c  dd  30
+    19 00000007 0A00000000000000            d   dq  10
+    20                                      
+    21 0000000F <res 00000004>              r1 resw 2
+    22 00000013 <res 00000002>              r2 resw 1
+    23                                  
+    24                                      
+    25                                  segment code use32 class=code
+    26                                      start:
+    27                                         
+    28                                         ; r1 = (a + b - c)
+    29                                         
+    30 00000000 A0[00000000]                    mov AL, [a]
+    31 00000005 6698                            cbw ; AX = [a]
+    32                                          
+    33 00000007 660305[01000000]                add AX, [b]
+    34 0000000E 6699                            cwd ; DX:AX = [a] + [b]
+    35                                          
+    36 00000010 662B05[03000000]                sub AX, word [_c] ; AX = AX - word [_c]
+    37 00000017 661B15[05000000]                sbb DX, word [_c + 2] ; DX = DX - word [_c + 2]
+    38                                          
+    39 0000001E 6652                            push DX
+    40 00000020 6650                            push AX
+    41 00000022 8F05[0F000000]                  pop dword [r1]
+    42                                             
+    43                                          
+    44                                          ; EBX:ECX = (a + b + d)
+    45                                          
+    46 00000028 A0[00000000]                    mov AL, [a]
+    47 0000002D 6698                            cbw
+    48                                          
+    49 0000002F 660305[01000000]                add AX, [b]
+    50 00000036 98                              cwde
+    51 00000037 99                              cdq ; EDX:EAX
+    52                                          
+    53 00000038 0305[07000000]                  add EAX, [d]
+    54 0000003E 1315[0B000000]                  adc EDX, [d + 4]
+    55                                          
+    56 00000044 89D3                            mov EBX, EDX
+    57 00000046 89C1                            mov ECX, EAX
+    58                                          
+    59                                          ; r2 = (a + b)
+    60                                          
+    61 00000048 A0[00000000]                    mov AL, [a]
+    62 0000004D 6698                            cbw
+    63                                          
+    64 0000004F 660305[01000000]                add AX, [b]
+    65                                          
+    66 00000056 6650                            push AX
+    67 00000058 668F05[13000000]                pop word [r2]
+    68                                          
+    69 0000005F A1[0F000000]                    mov EAX, dword [r1]
+    70 00000064 99                              cdq
+    71                                          
+    72 00000065 01C8                            add EAX, ECX
+    73 00000067 11DA                            adc EDX, EBX
+    74                                          
+    75 00000069 2B05[13000000]                  sub EAX, [r2]
+    76                                          
+    77 0000006F 6A00                            push    dword 0      
+    78 00000071 FF15[00000000]                  call    [exit]
+    79                                  
+    80                                          
+    81                                          

@@ -1,0 +1,110 @@
+>>Program State:
+Thread ID: 1
+executionStack = [(v = 1; (fork(v = 2); fork(v = 3))), int v]
+symbolTable = {}
+output = []
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(v = 1; (fork(v = 2); fork(v = 3)))]
+symbolTable = {v=0}
+output = []
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(fork(v = 2); fork(v = 3)), v = 1]
+symbolTable = {v=0}
+output = []
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(fork(v = 2); fork(v = 3))]
+symbolTable = {v=1}
+output = []
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [fork(v = 3), fork(v = 2)]
+symbolTable = {v=1}
+output = []
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [fork(v = 3)]
+symbolTable = {v=1}
+output = []
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 2
+executionStack = [v = 2]
+symbolTable = {v=1}
+output = []
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = []
+symbolTable = {v=1}
+output = []
+files = {}
+heap = {}
+status: finished
+
+
+>>Program State:
+Thread ID: 2
+executionStack = []
+symbolTable = {v=2}
+output = []
+files = {}
+heap = {}
+status: finished
+
+
+>>Program State:
+Thread ID: 3
+executionStack = [v = 3]
+symbolTable = {v=1}
+output = []
+files = {}
+heap = {}
+status: running
+
+
+>>Program State:
+Thread ID: 3
+executionStack = []
+symbolTable = {v=3}
+output = []
+files = {}
+heap = {}
+status: finished
+
+

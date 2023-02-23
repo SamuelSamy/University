@@ -1,0 +1,103 @@
+     1                                  ; Fatu Samuel
+     2                                  
+     3                                  
+     4                                  ; Read two numbers a and b (in base 10) from the keyboard and determine the order relation between them (either a < b, or a = b, or a > b). 
+     5                                  ; Display the result in the following format: "<a> < <b>, <a> = <b> or <a> > <b>".
+     6                                  
+     7                                  bits 32 
+     8                                  
+     9                                  global start        
+    10                                  
+    11                                  extern exit, printf, scanf               
+    12                                  import exit msvcrt.dll  
+    13                                  import printf msvcrt.dll
+    14                                  import scanf msvcrt.dll
+    15                                  
+    16                                  
+    17                                  segment data use32 class=data
+    18 00000000 00000000                    a   dd  0
+    19 00000004 00000000                    b   dd  0
+    20                                      
+    21 00000008 61203D2000                  print_format_a   db  "a = ", 0
+    22 0000000D 62203D2000                  print_format_b   db  "b = ", 0
+    23 00000012 3C25643E202573203C-         print_format db "<%d> %s <%d>", 0
+    23 0000001B 25643E00           
+    24                                      
+    25 0000001F 256400                      decimal_scan_format  db "%d", 0
+    26                                         
+    27 00000022 3E00                        greater db  ">", 0
+    28 00000024 3D00                        equal   db  "=", 0
+    29 00000026 3C00                        less    db  "<", 0
+    30                                    
+    31                                    
+    32                                  segment code use32 class=code
+    33                                      start:
+    34                                          
+    35                                          ; read a
+    36 00000000 68[08000000]                    push dword print_format_a ; push the print format on the stack
+    37 00000005 FF15[00000000]                  call [printf]
+    38                                          
+    39 0000000B 83C404                          add esp, 4 * 1 ; increment the esp
+    40                                          
+    41                                          
+    42 0000000E 68[00000000]                    push dword a ; push a on the stack
+    43 00000013 68[1F000000]                    push dword decimal_scan_format ; push the scan format on the stack
+    44                                          
+    45 00000018 FF15[00000000]                  call [scanf]
+    46                                          
+    47 0000001E 83C408                          add esp, 4 * 2 ; increment the esp
+    48                                          
+    49                                          
+    50                                          
+    51                                          ; read b
+    52 00000021 68[0D000000]                    push dword print_format_b ; ; push the print format on the stack
+    53 00000026 FF15[00000000]                  call [printf]
+    54                                          
+    55 0000002C 83C404                          add esp, 4 * 1 ; increment the esp
+    56                                          
+    57 0000002F 68[04000000]                    push dword b ; push b on the stack
+    58 00000034 68[1F000000]                    push dword decimal_scan_format ; push the scan format on the stack
+    59                                          
+    60 00000039 FF15[00000000]                  call [scanf]
+    61                                          
+    62 0000003F 83C408                          add esp, 4 * 2 ; increment the esp
+    63                                          
+    64                                          
+    65                                          ; print result
+    66                                          
+    67 00000042 FF35[04000000]                  push dword [b] ; push b on the stack
+    68                                  
+    69 00000048 A1[00000000]                    mov eax, [a] ; eax = [a]
+    70 0000004D 8B1D[04000000]                  mov ebx, [b] ; ebx = [b]
+    71 00000053 39D8                            cmp eax, ebx 
+    72                                          
+    73 00000055 7F04                            jg Greater  ; a > b
+    74 00000057 7409                            je Equal    ; a = b
+    75 00000059 7C0E                            jl Less     ; a < b
+    76                                                      
+    77                                              
+    78                                          Greater:
+    79 0000005B 68[22000000]                        push dword greater ; push the '>' sign on the stack
+    80 00000060 EB0C                                jmp Print
+    81                                  
+    82                                             
+    83                                          Equal:
+    84 00000062 68[24000000]                        push dword equal ; puush the '=' sign on the stack
+    85 00000067 EB05                                jmp Print
+    86                                                  
+    87                                                  
+    88                                          Less:
+    89 00000069 68[26000000]                        push dword less ; push the '<' sign on the stack
+    90                                              
+    91                                              
+    92                                          Print:
+    93                                  
+    94 0000006E FF35[00000000]                  push dword [a] ; push a on the stack
+    95 00000074 68[12000000]                    push dword print_format ; push the print format on the stack
+    96                                          
+    97 00000079 FF15[00000000]                  call [printf]
+    98                                          
+    99 0000007F 83C410                          add esp, 4 * 4 ; increment the esp
+   100                                          
+   101 00000082 6A00                            push    dword 0      
+   102 00000084 FF15[00000000]                  call    [exit]

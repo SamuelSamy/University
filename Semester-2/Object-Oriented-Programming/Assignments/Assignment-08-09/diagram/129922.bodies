@@ -1,0 +1,93 @@
+class Vector
+!!!142338.cpp!!!	resize() : void
+
+    Type* temp = new Type[this->capacity * 2];
+
+    for (int i = 0; i < this->size(); i++)
+    {
+        temp[i] = this->elements[i];
+    }
+
+    delete[] this->elements;
+    this->elements = temp;
+    this->capacity *= 2;
+!!!142466.cpp!!!	Vector()
+
+    this->_size = 0;
+    this->capacity = 1;
+    this->elements = new Type[this->capacity];
+!!!142594.cpp!!!	Vector(in v : Vector)
+
+    this->_size = v._size;
+    this->capacity = v.capacity;
+    this->elements = new Type[this->capacity];
+
+    for (int i = 0; i < v._size; i++)
+    {
+        this->elements[i] = v.elements[i];
+    }
+!!!142722.cpp!!!	operator [](in index : int) : Type
+
+    return this->elements[index];
+!!!142850.cpp!!!	operator =(in v : Vector) : Vector
+
+    if (this == &v)
+    {
+        return *this;
+    }
+
+    this->_size = v._size;
+    this->capacity = v.capacity;
+
+    Type* aux = new Type[this->capacity];
+    delete[] this->elements;
+    this->elements = aux;
+    
+    for (int i = 0; i < this->_size; i++)
+    {
+        this->elements[i] = v.elements[i];
+    }
+
+    return *this;
+!!!142978.cpp!!!	operator +(in elem : Type) : Vector
+
+    this->push_back(elem);
+    return *this;
+!!!143106.cpp!!!	operator +=(in elem : Type) : Vector
+
+    this->push_back(elem);
+    return *this;
+!!!143234.cpp!!!	push_back(in element : Type) : void
+
+    if (this->_size >= this->capacity)
+    {
+        this->resize();
+    }
+
+    this->elements[this->_size++] = element;
+!!!143362.cpp!!!	remove(in index : int) : void
+
+    if (index < 0 || index >= this->size())
+    {
+        throw Errors().IndexOutOfBounds;
+    }
+
+    for (int i = index; i < this->size() - 1; i++)
+    {
+        this->elements[i] = this->elements[i + 1];
+    }
+
+    this->_size--;
+!!!143490.cpp!!!	size() : int
+
+    return this->_size;
+!!!143618.cpp!!!	~Vector()
+
+    delete[] this->elements;
+!!!143746.cpp!!!	operator <<(inout os : std::ostream, in vector : Vector) : std::ostream
+
+    for (int i = 0; i < vector._size; i++)
+    {
+        os << vector.elements[i] << '\n';
+    }
+    return os;

@@ -1,0 +1,66 @@
+DHCP: Dynamic Host Configuration Protocol
+ip dhcp pool <pool_name>
+network <network_address> <network_mask>
+default-router <default_router_address>
+dns-server <dns_server_address>
+exit
+ip dhcp excluded-address <excluded_address>
+
+
+RIP: Routing Information Protocol
+route rip
+version 2
+no auto-summary
+network <network_address>
+
+
+
+In order to config NAT on a router on needs to specify one or multiple inside (local LAN) interfaces and one or multiple outside (WAN) interfaces. After setting up NAT all packets travelling from an inside interface to an outside
+interface are NAT-ted (their IP addresses are changed according to the NAT policy in place).
+Suppose in our case that FastEthernet 0/0 (192.168.0.0/24 range) is inside and Serial 0/0/0 (193.226.40.1) is outside.
+In order to accomplish NAT we do the following:
+
+Router:
+
+enable
+conf t
+interface FastEthernet 0/0
+#specify that this is an inside interface. The interface needs to have an IP Address
+ip nat inside
+exit
+
+#define Serial 0/0/0 as WAN (outside) interface
+interface Serial 0/0/0
+ip nat outside
+exit
+
+ 
+
+Define an Access list with the addresses from the inside that can be nat-ted. The 0.0.0.31 specify the masks of bits from the IP Address that can vary. In our example bellow all addresses between 192.168.0.1 – 192.168.0.31 would pass !
+# thease are simple one liner lists
+
+access-list 1 permit 192.168.0.1 0.0.0.31
+
+#or extended lists that are defined as lists of rules – these allow the actions where they are going to be applied from source (192.168.0.0 0.0.0.255 -equiv to 192.168.0.0/24 to destination 193.231.20.0/24)
+ip access-list extended nat-internet
+
+permit ip 192.168.0.0 0.0.0.255 193.231.20.0 0.0.0.255
+permit ip 192.168.1.0 0.0.0.255 193.231.20.0 0.0.0.255
+permit ip 192.168.2.0 0.0.0.255 193.231.20.0 0.0.0.255
+permit ip 192.168.3.0 0.0.0.255 193.231.20.0 0.0.0.255
+
+ 
+
+#define a pool of addresses to be allocated to the clients when NAT-ted. First IP – last IP netmask for those IPs
+ip nat pool ISP 193.226.40.1 193.226.40.1 netmask 255.255.255.252
+
+
+Define the NAT policy. The NAT policy applies NAT by selecting a source and a NAT pool or single IP (which replace the private range)
+Overload allows to use a single outside IP from the defined pool for multiple clients – by altering the port. One port is allocated on that IP for each outgoing client. Overload allows this behavior.
+
+ip nat inside source list 1 pool ISP overload
+
+or
+
+#choose an interface that will provide the public IP and you do not need to define a pool !:
+ip nat inside source list 1 interface Serial0/1/1 overload

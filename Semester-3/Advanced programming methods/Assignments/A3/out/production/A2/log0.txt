@@ -1,0 +1,42 @@
+>>Program State:
+executionStack = [(int v; (v = 2; print(v)))]
+symbolTable = {}
+output = []
+files = {}
+
+
+>>Program State:
+executionStack = [(v = 2; print(v)), int v]
+symbolTable = {}
+output = []
+files = {}
+
+
+>>Program State:
+executionStack = [(v = 2; print(v))]
+symbolTable = {v=0}
+output = []
+files = {}
+
+
+>>Program State:
+executionStack = [print(v), v = 2]
+symbolTable = {v=0}
+output = []
+files = {}
+
+
+>>Program State:
+executionStack = [print(v)]
+symbolTable = {v=2}
+output = []
+files = {}
+
+
+>>Program State:
+executionStack = []
+symbolTable = {v=2}
+output = [2]
+files = {}
+
+

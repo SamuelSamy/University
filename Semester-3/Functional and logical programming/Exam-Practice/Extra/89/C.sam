@@ -1,0 +1,19 @@
+; C. Se consideră o listă neliniară. Să se scrie o funcţie care să aibă ca
+;    rezultat lista iniţială in care atomii de pe nivelurile pare au
+;    fost înlocuiți cu 0 (nivelul superficial se consideră 1). 
+;    Se va folosi o funcție MAP.
+
+; Exemplu pentru lista (a (1 (2 b)) (c (d))) se obține (a (0 (2 b)) (0 (d)))
+
+
+(defun main (vector &optional (currentLevel 0))
+    (cond
+        ((atom vector)
+            (cond
+                ((= (mod currentLevel 2) 0) 0)
+                (t vector)
+            )
+        )
+        (t (mapcar #'(lambda (x) (main x (+ 1 currentLevel))) vector))
+    )
+)

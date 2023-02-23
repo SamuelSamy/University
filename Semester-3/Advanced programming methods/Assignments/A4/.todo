@@ -1,0 +1,9 @@
+1. Heap Management
+- Add a new Type class, that we called RefType.
+- Add a new Value class, that we called RefValue
+- Implement Heap table to manage the heap memory
+- Heap Allocation: Define and integrate the following statement which allocates heap memory:new(var_name, expression)
+- Heap Reading: Define and integrate the following expression rH(expression)
+- Heap Writing: Define and integrate the following statement wH(expression, expression)
+- Garbage Collector
+- While Statement: Define and integrate the following While statement: while (expression) statement

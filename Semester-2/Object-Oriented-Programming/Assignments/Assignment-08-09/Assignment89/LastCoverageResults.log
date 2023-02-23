@@ -1,0 +1,21 @@
+[2022-04-13 18:55:18] [info] Start Program:
+Path:"D:\___Uni\Sem2\OOP\Assignments\Assignment89\x64\Debug\Assignment89.exe"
+Arguments:
+Working directory: "D:\___Uni\Sem2\OOP\Assignments\Assignment89\Assignment89\"
+Modules: Selected: D:\___Uni\Sem2\OOP\Assignments\Assignment89\x64\Debug\Assignment89.exe Excluded: 
+Sources: Selected: D:\___Uni\Sem2\OOP\Assignments\Assignment89\Assignment89 Excluded: ui.cpp tests.cpp 
+Log Level: Normal
+Cover Children: 0
+Aggregate by file: 1
+Continue after C++ exception: 0
+Optimized build support: 0
+Export: Binary C:\Users\Asus\AppData\Local\Temp\udfu3j2x.bhy 
+Input coverage: 
+Unified diff: 
+Excluded line regular expressions: 
+Substitute pdb source paths: 
+
+[2022-04-13 18:55:18] [info] Module: D:\___Uni\Sem2\OOP\Assignments\Assignment89\x64\Debug\Assignment89.exe is selected because it matches selected pattern: D:\___Uni\Sem2\OOP\Assignments\Assignment89\x64\Debug\Assignment89.exe
+[2022-04-13 18:55:19] [info] ----------------------------------------------------
+[2022-04-13 18:55:19] [info] Coverage binary generated in file: C:\Users\Asus\AppData\Local\Temp\udfu3j2x.bhy
+[2022-04-13 18:55:19] [info] ----------------------------------------------------

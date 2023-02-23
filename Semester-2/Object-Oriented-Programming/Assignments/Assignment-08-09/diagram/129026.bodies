@@ -1,0 +1,13 @@
+class ConsoleCoat
+!!!137090.cpp!!!	operator <<(inout os : std::ostream, in coat : ConsoleCoat) : std::ostream
+
+    os << "ID: "        << std::setw(10)    << std::left   << coat.ID                           << " ";
+    os << "Size: "      << std::setw(10)    << std::left   << coat.size                         << " ";
+    os << "Price: "     << std::setw(10)    << std::left   << std::to_string(coat.price) + "$"  << " ";
+    os << "Quantity: "  << std::setw(10)    << std::left   << coat.quantity                     << " ";
+    os << "Color: "     << std::setw(12)    << std::left   << coat.color                        << " ";
+    os << "Photo: "     << std::setw(20)    << std::left   << coat.photo;
+    return os;
+!!!137218.cpp!!!	operator >>(inout is : std::istream, in coat : ConsoleCoat) : std::istream
+
+    return is;

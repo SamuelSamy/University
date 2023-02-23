@@ -1,0 +1,28 @@
+3 (3p). Given the following four classes in Java:
+
+    class A implements D{...}   
+    class B extends A implements D {...}   
+    class C extends A implements D {...}   interface D {...}
+
+
+class Amain{
+    D  method1(ArrayList<? extends D/A> list) {  if list.isEmpty() return null; else return list.get(1);}
+    
+    void method2(ArrayList<...>  list, C elem) {  list.add(elem);}
+
+    void method3(C elem){
+        ArrayList<A> listA=new ArrayList<A>(); listA.add(new A());listA.add(new A());
+        ArrayList<B> listB = new ArrayList<B>(); listB.add(new B());listB.add(new B());
+        ArrayList<C> listC = new ArrayList<C>(); listC.add(new C()); listC.add(new C());
+        this.method1(listA); this.method1(listB); this.method1(listC);
+        this.method2(listA,elem); this.method2(listB,elem); this.method2(listC,elem);
+    }
+}
+
+-- For method1 we use an upper bound wildcard (ArrayList<? extends D>) because we only want to read objects from the list.
+-- We use `? extends D` because method1 is called for each type of lists (listA, listB and listC) and all (A, B and C) implement the interface D
+
+-- We can not use a wildcard or method2 because we want to write in all lists (listA, listB and listC) an element of type C
+-- If we use the wildcard `? super B` we will not be able to give listC as a parameter beacuse C is not a supertype of B.
+-- If we use the wildcard `? super C` we will not be able to give listB as a parameter because B is not a supertype of C.
+-- We also can not use an unbounded wildcard `?` since we want to write an element of type C and not null.

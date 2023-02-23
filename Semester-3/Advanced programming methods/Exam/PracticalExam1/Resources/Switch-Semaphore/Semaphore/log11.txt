@@ -1,0 +1,506 @@
+>>Program State:
+Thread ID: 1
+executionStack = [(int cnt; (new(v1, 1); (CreateSemaphore(cnt, readHeap(v1)); (fork((acquire(cnt); (writeHeap(v1, (readHeap(v1) * 10)); (print(readHeap(v1)); release(cnt))))); (fork((acquire(cnt); (writeHeap(v1, (readHeap(v1) * 10)); (writeHeap(v1, (readHeap(v1) * 2)); (print(readHeap(v1)); release(cnt)))))); (acquire(cnt); (print((readHeap(v1) - 1)); release(cnt)))))))), Ref(int) v1]
+symbolTable = {}
+output = []
+files = {}
+heap = {}
+semaphoreTable = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(int cnt; (new(v1, 1); (CreateSemaphore(cnt, readHeap(v1)); (fork((acquire(cnt); (writeHeap(v1, (readHeap(v1) * 10)); (print(readHeap(v1)); release(cnt))))); (fork((acquire(cnt); (writeHeap(v1, (readHeap(v1) * 10)); (writeHeap(v1, (readHeap(v1) * 2)); (print(readHeap(v1)); release(cnt)))))); (acquire(cnt); (print((readHeap(v1) - 1)); release(cnt))))))))]
+symbolTable = {v1=(0, int)}
+output = []
+files = {}
+heap = {}
+semaphoreTable = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(new(v1, 1); (CreateSemaphore(cnt, readHeap(v1)); (fork((acquire(cnt); (writeHeap(v1, (readHeap(v1) * 10)); (print(readHeap(v1)); release(cnt))))); (fork((acquire(cnt); (writeHeap(v1, (readHeap(v1) * 10)); (writeHeap(v1, (readHeap(v1) * 2)); (print(readHeap(v1)); release(cnt)))))); (acquire(cnt); (print((readHeap(v1) - 1)); release(cnt))))))), int cnt]
+symbolTable = {v1=(0, int)}
+output = []
+files = {}
+heap = {}
+semaphoreTable = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(new(v1, 1); (CreateSemaphore(cnt, readHeap(v1)); (fork((acquire(cnt); (writeHeap(v1, (readHeap(v1) * 10)); (print(readHeap(v1)); release(cnt))))); (fork((acquire(cnt); (writeHeap(v1, (readHeap(v1) * 10)); (writeHeap(v1, (readHeap(v1) * 2)); (print(readHeap(v1)); release(cnt)))))); (acquire(cnt); (print((readHeap(v1) - 1)); release(cnt)))))))]
+symbolTable = {cnt=0, v1=(0, int)}
+output = []
+files = {}
+heap = {}
+semaphoreTable = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(CreateSemaphore(cnt, readHeap(v1)); (fork((acquire(cnt); (writeHeap(v1, (readHeap(v1) * 10)); (print(readHeap(v1)); release(cnt))))); (fork((acquire(cnt); (writeHeap(v1, (readHeap(v1) * 10)); (writeHeap(v1, (readHeap(v1) * 2)); (print(readHeap(v1)); release(cnt)))))); (acquire(cnt); (print((readHeap(v1) - 1)); release(cnt)))))), new(v1, 1)]
+symbolTable = {cnt=0, v1=(0, int)}
+output = []
+files = {}
+heap = {}
+semaphoreTable = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(CreateSemaphore(cnt, readHeap(v1)); (fork((acquire(cnt); (writeHeap(v1, (readHeap(v1) * 10)); (print(readHeap(v1)); release(cnt))))); (fork((acquire(cnt); (writeHeap(v1, (readHeap(v1) * 10)); (writeHeap(v1, (readHeap(v1) * 2)); (print(readHeap(v1)); release(cnt)))))); (acquire(cnt); (print((readHeap(v1) - 1)); release(cnt))))))]
+symbolTable = {cnt=0, v1=(1, int)}
+output = []
+files = {}
+heap = {1=1}
+semaphoreTable = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(fork((acquire(cnt); (writeHeap(v1, (readHeap(v1) * 10)); (print(readHeap(v1)); release(cnt))))); (fork((acquire(cnt); (writeHeap(v1, (readHeap(v1) * 10)); (writeHeap(v1, (readHeap(v1) * 2)); (print(readHeap(v1)); release(cnt)))))); (acquire(cnt); (print((readHeap(v1) - 1)); release(cnt))))), CreateSemaphore(cnt, readHeap(v1))]
+symbolTable = {cnt=0, v1=(1, int)}
+output = []
+files = {}
+heap = {1=1}
+semaphoreTable = {}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(fork((acquire(cnt); (writeHeap(v1, (readHeap(v1) * 10)); (print(readHeap(v1)); release(cnt))))); (fork((acquire(cnt); (writeHeap(v1, (readHeap(v1) * 10)); (writeHeap(v1, (readHeap(v1) * 2)); (print(readHeap(v1)); release(cnt)))))); (acquire(cnt); (print((readHeap(v1) - 1)); release(cnt)))))]
+symbolTable = {cnt=0, v1=(1, int)}
+output = []
+files = {}
+heap = {1=1}
+semaphoreTable = {0=1=[]}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(fork((acquire(cnt); (writeHeap(v1, (readHeap(v1) * 10)); (writeHeap(v1, (readHeap(v1) * 2)); (print(readHeap(v1)); release(cnt)))))); (acquire(cnt); (print((readHeap(v1) - 1)); release(cnt)))), fork((acquire(cnt); (writeHeap(v1, (readHeap(v1) * 10)); (print(readHeap(v1)); release(cnt)))))]
+symbolTable = {cnt=0, v1=(1, int)}
+output = []
+files = {}
+heap = {1=1}
+semaphoreTable = {0=1=[]}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(fork((acquire(cnt); (writeHeap(v1, (readHeap(v1) * 10)); (writeHeap(v1, (readHeap(v1) * 2)); (print(readHeap(v1)); release(cnt)))))); (acquire(cnt); (print((readHeap(v1) - 1)); release(cnt))))]
+symbolTable = {cnt=0, v1=(1, int)}
+output = []
+files = {}
+heap = {1=1}
+semaphoreTable = {0=1=[]}
+status: running
+
+
+>>Program State:
+Thread ID: 2
+executionStack = [(acquire(cnt); (writeHeap(v1, (readHeap(v1) * 10)); (print(readHeap(v1)); release(cnt))))]
+symbolTable = {cnt=0, v1=(1, int)}
+output = []
+files = {}
+heap = {1=1}
+semaphoreTable = {0=1=[]}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(acquire(cnt); (print((readHeap(v1) - 1)); release(cnt))), fork((acquire(cnt); (writeHeap(v1, (readHeap(v1) * 10)); (writeHeap(v1, (readHeap(v1) * 2)); (print(readHeap(v1)); release(cnt))))))]
+symbolTable = {cnt=0, v1=(1, int)}
+output = []
+files = {}
+heap = {1=1}
+semaphoreTable = {0=1=[]}
+status: running
+
+
+>>Program State:
+Thread ID: 2
+executionStack = [(writeHeap(v1, (readHeap(v1) * 10)); (print(readHeap(v1)); release(cnt))), acquire(cnt)]
+symbolTable = {cnt=0, v1=(1, int)}
+output = []
+files = {}
+heap = {1=1}
+semaphoreTable = {0=1=[]}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(acquire(cnt); (print((readHeap(v1) - 1)); release(cnt)))]
+symbolTable = {cnt=0, v1=(1, int)}
+output = []
+files = {}
+heap = {1=1}
+semaphoreTable = {0=1=[2]}
+status: running
+
+
+>>Program State:
+Thread ID: 2
+executionStack = [(writeHeap(v1, (readHeap(v1) * 10)); (print(readHeap(v1)); release(cnt)))]
+symbolTable = {cnt=0, v1=(1, int)}
+output = []
+files = {}
+heap = {1=1}
+semaphoreTable = {0=1=[2]}
+status: running
+
+
+>>Program State:
+Thread ID: 3
+executionStack = [(acquire(cnt); (writeHeap(v1, (readHeap(v1) * 10)); (writeHeap(v1, (readHeap(v1) * 2)); (print(readHeap(v1)); release(cnt)))))]
+symbolTable = {cnt=0, v1=(1, int)}
+output = []
+files = {}
+heap = {1=1}
+semaphoreTable = {0=1=[2]}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(print((readHeap(v1) - 1)); release(cnt)), acquire(cnt)]
+symbolTable = {cnt=0, v1=(1, int)}
+output = []
+files = {}
+heap = {1=1}
+semaphoreTable = {0=1=[2]}
+status: running
+
+
+>>Program State:
+Thread ID: 2
+executionStack = [(print(readHeap(v1)); release(cnt)), writeHeap(v1, (readHeap(v1) * 10))]
+symbolTable = {cnt=0, v1=(1, int)}
+output = []
+files = {}
+heap = {1=1}
+semaphoreTable = {0=1=[2]}
+status: running
+
+
+>>Program State:
+Thread ID: 3
+executionStack = [(writeHeap(v1, (readHeap(v1) * 10)); (writeHeap(v1, (readHeap(v1) * 2)); (print(readHeap(v1)); release(cnt)))), acquire(cnt)]
+symbolTable = {cnt=0, v1=(1, int)}
+output = []
+files = {}
+heap = {1=1}
+semaphoreTable = {0=1=[2]}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(print((readHeap(v1) - 1)); release(cnt)), acquire(cnt)]
+symbolTable = {cnt=0, v1=(1, int)}
+output = []
+files = {}
+heap = {1=10}
+semaphoreTable = {0=1=[2]}
+status: running
+
+
+>>Program State:
+Thread ID: 2
+executionStack = [(print(readHeap(v1)); release(cnt))]
+symbolTable = {cnt=0, v1=(1, int)}
+output = []
+files = {}
+heap = {1=10}
+semaphoreTable = {0=1=[2]}
+status: running
+
+
+>>Program State:
+Thread ID: 3
+executionStack = [(writeHeap(v1, (readHeap(v1) * 10)); (writeHeap(v1, (readHeap(v1) * 2)); (print(readHeap(v1)); release(cnt)))), acquire(cnt)]
+symbolTable = {cnt=0, v1=(1, int)}
+output = []
+files = {}
+heap = {1=10}
+semaphoreTable = {0=1=[2]}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(print((readHeap(v1) - 1)); release(cnt)), acquire(cnt)]
+symbolTable = {cnt=0, v1=(1, int)}
+output = []
+files = {}
+heap = {1=10}
+semaphoreTable = {0=1=[2]}
+status: running
+
+
+>>Program State:
+Thread ID: 2
+executionStack = [release(cnt), print(readHeap(v1))]
+symbolTable = {cnt=0, v1=(1, int)}
+output = []
+files = {}
+heap = {1=10}
+semaphoreTable = {0=1=[2]}
+status: running
+
+
+>>Program State:
+Thread ID: 3
+executionStack = [(writeHeap(v1, (readHeap(v1) * 10)); (writeHeap(v1, (readHeap(v1) * 2)); (print(readHeap(v1)); release(cnt)))), acquire(cnt)]
+symbolTable = {cnt=0, v1=(1, int)}
+output = []
+files = {}
+heap = {1=10}
+semaphoreTable = {0=1=[2]}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(print((readHeap(v1) - 1)); release(cnt)), acquire(cnt)]
+symbolTable = {cnt=0, v1=(1, int)}
+output = [10]
+files = {}
+heap = {1=10}
+semaphoreTable = {0=1=[2]}
+status: running
+
+
+>>Program State:
+Thread ID: 2
+executionStack = [release(cnt)]
+symbolTable = {cnt=0, v1=(1, int)}
+output = [10]
+files = {}
+heap = {1=10}
+semaphoreTable = {0=1=[2]}
+status: running
+
+
+>>Program State:
+Thread ID: 3
+executionStack = [(writeHeap(v1, (readHeap(v1) * 10)); (writeHeap(v1, (readHeap(v1) * 2)); (print(readHeap(v1)); release(cnt)))), acquire(cnt)]
+symbolTable = {cnt=0, v1=(1, int)}
+output = [10]
+files = {}
+heap = {1=10}
+semaphoreTable = {0=1=[2]}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(print((readHeap(v1) - 1)); release(cnt)), acquire(cnt)]
+symbolTable = {cnt=0, v1=(1, int)}
+output = [10]
+files = {}
+heap = {1=10}
+semaphoreTable = {0=1=[]}
+status: running
+
+
+>>Program State:
+Thread ID: 2
+executionStack = []
+symbolTable = {cnt=0, v1=(1, int)}
+output = [10]
+files = {}
+heap = {1=10}
+semaphoreTable = {0=1=[]}
+status: finished
+
+
+>>Program State:
+Thread ID: 3
+executionStack = [(writeHeap(v1, (readHeap(v1) * 10)); (writeHeap(v1, (readHeap(v1) * 2)); (print(readHeap(v1)); release(cnt)))), acquire(cnt)]
+symbolTable = {cnt=0, v1=(1, int)}
+output = [10]
+files = {}
+heap = {1=10}
+semaphoreTable = {0=1=[]}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [(print((readHeap(v1) - 1)); release(cnt))]
+symbolTable = {cnt=0, v1=(1, int)}
+output = [10]
+files = {}
+heap = {1=10}
+semaphoreTable = {0=1=[1]}
+status: running
+
+
+>>Program State:
+Thread ID: 3
+executionStack = [(writeHeap(v1, (readHeap(v1) * 10)); (writeHeap(v1, (readHeap(v1) * 2)); (print(readHeap(v1)); release(cnt)))), acquire(cnt)]
+symbolTable = {cnt=0, v1=(1, int)}
+output = [10]
+files = {}
+heap = {1=10}
+semaphoreTable = {0=1=[1]}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [release(cnt), print((readHeap(v1) - 1))]
+symbolTable = {cnt=0, v1=(1, int)}
+output = [10]
+files = {}
+heap = {1=10}
+semaphoreTable = {0=1=[1]}
+status: running
+
+
+>>Program State:
+Thread ID: 3
+executionStack = [(writeHeap(v1, (readHeap(v1) * 10)); (writeHeap(v1, (readHeap(v1) * 2)); (print(readHeap(v1)); release(cnt)))), acquire(cnt)]
+symbolTable = {cnt=0, v1=(1, int)}
+output = [10]
+files = {}
+heap = {1=10}
+semaphoreTable = {0=1=[1]}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = [release(cnt)]
+symbolTable = {cnt=0, v1=(1, int)}
+output = [10, 9]
+files = {}
+heap = {1=10}
+semaphoreTable = {0=1=[1]}
+status: running
+
+
+>>Program State:
+Thread ID: 3
+executionStack = [(writeHeap(v1, (readHeap(v1) * 10)); (writeHeap(v1, (readHeap(v1) * 2)); (print(readHeap(v1)); release(cnt)))), acquire(cnt)]
+symbolTable = {cnt=0, v1=(1, int)}
+output = [10, 9]
+files = {}
+heap = {1=10}
+semaphoreTable = {0=1=[1]}
+status: running
+
+
+>>Program State:
+Thread ID: 1
+executionStack = []
+symbolTable = {cnt=0, v1=(1, int)}
+output = [10, 9]
+files = {}
+heap = {1=10}
+semaphoreTable = {0=1=[3]}
+status: finished
+
+
+>>Program State:
+Thread ID: 3
+executionStack = [(writeHeap(v1, (readHeap(v1) * 10)); (writeHeap(v1, (readHeap(v1) * 2)); (print(readHeap(v1)); release(cnt))))]
+symbolTable = {cnt=0, v1=(1, int)}
+output = [10, 9]
+files = {}
+heap = {1=10}
+semaphoreTable = {0=1=[3]}
+status: running
+
+
+>>Program State:
+Thread ID: 3
+executionStack = [(writeHeap(v1, (readHeap(v1) * 2)); (print(readHeap(v1)); release(cnt))), writeHeap(v1, (readHeap(v1) * 10))]
+symbolTable = {cnt=0, v1=(1, int)}
+output = [10, 9]
+files = {}
+heap = {1=10}
+semaphoreTable = {0=1=[3]}
+status: running
+
+
+>>Program State:
+Thread ID: 3
+executionStack = [(writeHeap(v1, (readHeap(v1) * 2)); (print(readHeap(v1)); release(cnt)))]
+symbolTable = {cnt=0, v1=(1, int)}
+output = [10, 9]
+files = {}
+heap = {1=100}
+semaphoreTable = {0=1=[3]}
+status: running
+
+
+>>Program State:
+Thread ID: 3
+executionStack = [(print(readHeap(v1)); release(cnt)), writeHeap(v1, (readHeap(v1) * 2))]
+symbolTable = {cnt=0, v1=(1, int)}
+output = [10, 9]
+files = {}
+heap = {1=100}
+semaphoreTable = {0=1=[3]}
+status: running
+
+
+>>Program State:
+Thread ID: 3
+executionStack = [(print(readHeap(v1)); release(cnt))]
+symbolTable = {cnt=0, v1=(1, int)}
+output = [10, 9]
+files = {}
+heap = {1=200}
+semaphoreTable = {0=1=[3]}
+status: running
+
+
+>>Program State:
+Thread ID: 3
+executionStack = [release(cnt), print(readHeap(v1))]
+symbolTable = {cnt=0, v1=(1, int)}
+output = [10, 9]
+files = {}
+heap = {1=200}
+semaphoreTable = {0=1=[3]}
+status: running
+
+
+>>Program State:
+Thread ID: 3
+executionStack = [release(cnt)]
+symbolTable = {cnt=0, v1=(1, int)}
+output = [10, 9, 200]
+files = {}
+heap = {1=200}
+semaphoreTable = {0=1=[3]}
+status: running
+
+
+>>Program State:
+Thread ID: 3
+executionStack = []
+symbolTable = {cnt=0, v1=(1, int)}
+output = [10, 9, 200]
+files = {}
+heap = {1=200}
+semaphoreTable = {0=1=[]}
+status: finished
+
+

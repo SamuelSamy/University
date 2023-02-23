@@ -1,0 +1,43 @@
+
+% B. Scrieţi un program PROLOG care determină dintr-o listă formată din numere întregi lista
+%    subşirurilor cu cel puțin 2 elemente, formate din elemente în ordine strict crescătoare.
+%    Se vor scrie modelele matematice și modelele de flux pentru predicatele folosite.
+% Exemplu- pentru lista [1, 8, 6, 4] ⇒ [[1,8],[1,6],[1,4],[6,8],[4,8],[4,6],[1,4,6],
+%                                      [1,4,8],[1,6,8],[4,6,8],[1,4,6,8]] (nu neapărat în această ordine)
+
+
+insert(E, [], [E]).
+insert(E, [H | T], [E, H | T]) :-
+    E < H, !.
+
+insert(E, [H | T], [H | R]) :-
+    insert(E, T, R).
+
+mySort([], []).
+mySort([H | T], R) :-
+    mySort(T, R1),
+    insert(H, R1, R).
+
+
+subsets([], []).
+subsets([_ | T], R) :-
+    subsets(T, R).
+
+subsets([H | T], [H | R]) :-
+    subsets(T, R).
+
+
+getLen([], 0).
+getLen([_ | T], N) :-
+    getLen(T, N1),
+    N is N1 + 1.
+
+
+oneSolution(L, R) :-
+    subsets(L, R),
+    getLen(L, N),
+    N > 1.
+
+main(L, R) :-
+    mySort(L, SL),
+    findall(R1, oneSolution(SL, R1), R).

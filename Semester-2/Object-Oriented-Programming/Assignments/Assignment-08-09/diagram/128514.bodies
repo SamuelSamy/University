@@ -1,0 +1,43 @@
+class FileRepository
+!!!131202.cpp!!!	write() : void
+
+    std::ofstream fout(fileName);
+    fout << *this;
+!!!131330.cpp!!!	read() : void
+
+    std::ifstream fin(fileName);
+    fin >> *this;
+!!!131458.cpp!!!	add(in element : Coat) : void
+
+    this->Repository::add(element);
+    this->write();
+!!!131586.cpp!!!	remove(in ID : int) : void
+
+    this->Repository::remove(ID);
+    this->write();
+!!!131714.cpp!!!	update(in ID : int, in newData : Coat) : void
+
+    this->Repository::update(ID, newData);
+    this->write();
+!!!131842.cpp!!!	operator >>(inout is : std::istream, inout repo : FileRepository) : std::istream
+
+    FileCoat coat;
+
+    while (is >> coat)
+    {
+        FileCoat* dynamicCoat = new FileCoat{ coat };
+        Coat* newCoat = (Coat*)dynamicCoat;
+        repo.Repository::add(*newCoat);
+        delete dynamicCoat;
+    }
+
+    return is;
+!!!131970.cpp!!!	operator <<(inout os : std::ostream, in repo : FileRepository) : std::ostream
+
+    for (Coat* coat : repo.data)
+    {
+        FileCoat* fileCoat = (FileCoat*)coat;
+        os << *fileCoat << '\n';
+    }
+
+    return os;

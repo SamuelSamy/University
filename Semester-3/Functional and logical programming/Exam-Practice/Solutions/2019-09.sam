@@ -1,0 +1,112 @@
+1.1
+
+f([], 0).
+f([H | T], S) :-
+    f(T, S1),
+    S1 is S - H.
+
+Correct program:
+f([], 0).
+f([H | T], S) :-
+    f(T, S1),
+    S is S1 - H.
+
+Justify: S1 is S - H. is a logical error because S is not sufficiently instantiated. S will never have a value. In order to correct this issue we replace it with 'S is S1 - H.'
+
+
+
+1.2
+append([], E, [E]).
+append([H | T], E, [H | R]) :- 
+    append(T, E, R).
+
+reverse([], []).
+reverse([H | T], R) :-
+    reverse(T, R1),
+    append(R1, H, R).
+
+
+reverseAll([], []).
+reverseAll([H | T], R) :-
+    is_list(H), !,
+    reverseAll(H, R1), % reverse the head list
+    reverseAll(T, R2), % reverse the tail
+    append(R2, R1, R). % append the reversed head to the reversed tail
+
+reverseAll([H | T], R) :-
+    reverseAll(T, R1), % same as simple reverse
+    append(R1, H, R). 
+
+
+reverseAll is the main function. It takes as parameters 2 values, the initial list and the return list.
+The function checks if the head of the list is a list, if it is a list we call reverseAll on the tail list and concatenate the result
+to with reverseAll of the head list.
+If the head is not a list, we simply call reverseAll on the tail and append the head to the result. 
+
+
+
+1.3
+subsets([], []).
+subsets([H | T], [H | R]) :-
+    subsets(T, R).
+
+subsets([_ | T], R) :-
+    subsets(T, R).
+
+len([], 0).
+len([_ | T], N) :-
+    len(T, N1),
+    N is N1 + 1.
+
+
+oneSolution(L, N, R) :-
+    subsets(L, R),
+    len(R, N1),
+    N =:= N1.
+
+main(L, N, R) :-
+    findall(R1, oneSolution(L, N, R1), R).
+
+
+The program generates all subsets of the given list and checks whenever the length of the generated subset is equal to the given size.
+
+
+
+1.4
+(defun removeElement (vector element)   
+    (cond
+        ((null vector) nil)
+        ((and (atom (car vector)) (equal element (car vector))) (removeElement (cdr vector) element))
+        ((atom (car vector)) (cons (car vector) (removeElement (cdr vector) element)))
+        (t (append (list (removeElement (car vector) element)) (removeElement (cdr vector) element))) ;; is a list
+    )
+)
+
+
+
+1.5
+
+(defun lastIsNumeric (vector)
+    (cond
+        ((null vector) nil)
+        ((null (cdr vector))
+            (cond 
+                ((listp (car vector)) (lastIsNumeric (car vector)))
+                (t (numberp (car vector)))
+            )
+        )
+        (t (lastIsNumeric (cdr vector)))
+    )
+)
+
+(defun transformInNumber (value)
+    ((null value) 0)
+    (t 1)
+)
+
+(defun countSpecialSublists (vector)
+    (cond
+        ((or (null vector) (atom vector)) 0)
+        (t (+ (transformInNumber (lastIsNumeric (vector))) (apply #'+ (mapcar #'countSpecialSublists vector))))
+    )
+)

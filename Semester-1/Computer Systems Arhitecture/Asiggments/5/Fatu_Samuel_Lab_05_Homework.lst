@@ -1,0 +1,81 @@
+     1                                  ; Fatu Samuel
+     2                                  
+     3                                  ; Two character strings S1 and S2 are given. 
+     4                                  ; Obtain the string D which contains all the elements of S1 that do not appear in S2.
+     5                                  
+     6                                  ; S1: '+', '4', '2', 'a', '8', '4', 'X', '5'
+     7                                  ; S2: 'a', '4', '5'
+     8                                  ;  D: '+', '2', '8', 'X'
+     9                                  
+    10                                  bits 32 
+    11                                  
+    12                                  global start        
+    13                                  
+    14                                  extern exit               
+    15                                  import exit msvcrt.dll  
+    16                                  
+    17                                  
+    18                                  segment data use32 class=data
+    19 00000000 2B34326138345835            s1 db  '+', '4', '2', 'a', '8', '4', 'X', '5'
+    20                                      l_s1 equ $-s1 ; length of s1
+    21                                      
+    22 00000008 613435                      s2 db 'a', '4', '5'
+    23                                      l_s2 equ $-s2 ; length of s2
+    24                                      
+    25 0000000B 00<rept>                    d times l_s1 db 0
+    26                                      
+    27                                  
+    28                                  segment code use32 class=code
+    29                                      start:
+    30                                          
+    31 00000000 BF00000000                      mov edi, 0
+    32                                          
+    33 00000005 B908000000                      mov ecx, l_s1 ; ecx = len(s1)
+    34 0000000A E339                            jecxz end_outer_loop ; jumps to 'end_outer_loop' if len(s1) == 0
+    35                                          
+    36 0000000C B900000000                      mov ecx, 0 ; ecx = len(s1)
+    37                                          
+    38                                          outer_loop:
+    39                                              
+    40 00000011 BB03000000                          mov ebx, l_s2 ; ebx = len(s2)
+    41 00000016 BE00000000                          mov esi, 0
+    42 0000001B 8A81[00000000]                      mov al, [s1 + ecx] ; al = (edx)th element of s1
+    43                                              
+    44 00000021 83FB00                              cmp ebx, 0 ; compares len(s2) with 0
+    45 00000024 7419                                je end_inner_loop ; jumps to 'end_inner_loop' if len(s2) == 0
+    46                                              
+    47                                              inner_loop:
+    48                                                  
+    49 00000026 8A96[08000000]                          mov dl, [s2 + esi] ; dl = [s2 + esi]
+    50                                                  
+    51 0000002C 38D0                                    cmp al, dl ; compares al with dl
+    52                                                  
+    53 0000002E 740F                                    je end_inner_loop ; if al == dl jumps to 'end_inner_loop' (we do not store the charcter)
+    54                                                  
+    55 00000030 46                                      inc esi ; esi += 1
+    56                                                  
+    57 00000031 83FE03                                  cmp esi, l_s2 ; compares esi with the length of the second string (zf == 1 <=> we looped over all the elements from s2)
+    58                                                  
+    59 00000034 7402                                    je store_character ; if zf == 1 (esi == len(s2)) -> jump to 'store_character' ([s2 + esi] is not in s1
+    60                                                  
+    61 00000036 EBEE                                    jmp inner_loop
+    62                                                  
+    63                                                  
+    64                                              store_character:
+    65                                                  
+    66 00000038 8887[0B000000]                          mov [d + edi], al ; [d + dsi] = al (stores the charcater if it's not in s1)
+    67                                                  
+    68 0000003E 47                                      inc edi ; edi += 1
+    69                                              
+    70                                              end_inner_loop:
+    71                                                              
+    72                                          
+    73 0000003F 41                              inc ecx ; ecx += 1
+    74                                          
+    75 00000040 83F908                          cmp ecx, l_s1 ; compares ecx with len(s1)
+    76 00000043 72CC                            jb outer_loop ; jumps to 'outer_loop' if ecx < len(s1)
+    77                                          
+    78                                          end_outer_loop:
+    79                                         
+    80 00000045 6A00                            push    dword 0      
+    81 00000047 FF15[00000000]                  call    [exit]

@@ -1,0 +1,32 @@
+3 (3p). Given the following four classes in Java:
+
+class A {...}   
+class B extends A {...}   
+class C extends B {...}
+
+
+
+class Amain{
+    A method1(ArrayList<? extends A> list) {  if list.isEmpty() return null; else return list.get(1);}
+
+    void method2(ArrayList<? super C>  list, C elem) {  list.add(elem);}
+
+    void method3(C elem){
+        ArrayList<A> listA=new ArrayList<A>(); listA.add(new A());
+        ArrayList<B> listB = new ArrayList<B>(); listB.add(new B());
+        ArrayList<C> listC = new ArrayList<C>(); listC.add(new C());
+        this.method1(listA); this.method1(listB); this.method1(listC);
+        this.method2(listA,elem); this.method2(listB,elem); this.method2(listC,elem);
+    }
+}
+
+-- For method1 we use an upper bound wildcard (? extends A) because we only read objects from the lists.
+-- Upper bound wildcards allow us to provide any class that is a subtype of the specified class (In our case A)
+-- We use `? extends A` because we call method1 for each type of list (A, B and C). 
+-- A is the class itself, B is a subtype of A and C is a subtype of B which is a subtype of A.
+
+
+-- For method2 we use a lower bound wildcard (? super C) because we want to add elements (of type C) to the list.
+-- Lower bound wilcards allow us to provide any class that is a supertype of the specified class (In our case C)
+-- We use `? super C` because we call method2 for each type of list (A, B, and C) and we want to add an element of type C in them.
+-- C is the class itself, B is a supertype of C and A is supertype of B which is a supertype of C.

@@ -1,0 +1,21 @@
+class UserService
+!!!141442.cpp!!!	UserService(in service : UserService)
+
+    this->repository = service.repository;
+    this->lastID = service.lastID;
+!!!141570.cpp!!!	add(in ID : int) : void
+
+    this->repository->add(ID);
+    this->lastID++;
+!!!141698.cpp!!!	get_repo() : UserRepository
+
+    return this->repository;
+!!!141826.cpp!!!	get_file_name() : std::string
+
+    return this->repository->get_file_name();
+!!!141954.cpp!!!	get_total_price() : int
+
+    return this->repository->get_total_price();
+!!!142082.cpp!!!	~UserService()
+
+

@@ -1,0 +1,2745 @@
+MAC means Media Access Control
+2
+A. True
+B. False
+0
+A
+1
+The MAC address has 6 groups of 2 hexadecimal numbers
+2
+A. True
+B. False
+0
+A
+1
+UDP guarantees datagram delivery
+2
+A. True
+B. False
+0
+B
+1
+The socket type used by TCP is SOCK_STREAM
+2
+A. True
+B. False
+0
+A
+1
+The connect system call is normally called by the client process in order to connect to a server process.
+2
+A. True
+B. False
+0
+A
+1
+The listen system call indicates to the protocol that the client process is ready to accept new incoming connections on the socket.
+2
+A. True
+B. False
+0
+B
+1
+At the level of a TCP client, the bind system call is mandatory
+2
+A. True
+B. False
+0
+B
+1
+The high order bits of an IP Address represent the host part.
+2
+A. True
+B. False
+0
+B
+1
+All the hosts from the same network can physically reach each other without an intervening router
+2
+A. True
+B. False
+0
+A
+1
+A network address can be determined based on a IP Address from the network and the netmask.
+2
+A. True
+B. False
+0
+A
+1
+Always, in a class of addresses, the first and last IP addresses are reserved.
+2
+A. True
+B. False
+0
+A
+1
+For connecting a host with a private address to the Internet, it has to be translated to a public address, process named ARP.
+2
+A. True
+B. False
+0
+B
+1
+172.16.0.0/12 refers to a private address space.
+2
+A. True
+B. False
+0
+A
+1
+A DNS server is responsible with translating numerical IP addresses to domain names.
+2
+A. True
+B. False
+0
+B
+1
+The network address can be obtained from an IP address and the netmask using the logical operation “OR”
+2
+A. True
+B. False
+0
+B
+1
+When NAT is involved, the local network uses just one IP address as far as outside world is concerned
+2
+A. True
+B. False
+0
+A
+1
+The number of IP addreses allocated for each subnet block has to be a power of 4.
+2
+A. True
+B. False
+0
+B
+1
+209.220.186.8/255.255.255.248 is a invalid IP/Netmask combination
+2
+A. True
+B. False
+0
+B
+1
+The default gateway serves as an access point or IP router that a networked computer uses to send information to a computer in the same network or the Internet.
+2
+A. True
+B. False
+0
+B
+1
+A 255.255.255.240 netmask is capable of supporting 16 hosts.
+2
+A. True
+B. False
+0
+B
+1
+A computer uses HTTP to look up domain names and get the associated IP address.
+2
+A. True
+B. False
+0
+B
+1
+There is no routing based on MAC addresses
+2
+A. True
+B. False
+0
+A
+1
+A proxy server acts as an intermediary for requests from clients seeking resources from other servers.
+2
+A. True
+B. False
+0
+A
+1
+The combination DNS server = Default Gateway is not possible
+2
+A. True
+B. False
+0
+B
+1
+A collection of computers (PCs, Workstations) and other devices interconnected represent a computer network.
+2
+A. True
+B. False
+0
+A
+1
+Hosts (computers), links (coaxial cable, twisted pair, optical fiber, radio, satellite), switches/routers (intermediate systems) are all components of a computer system.
+2
+A. True
+B. False
+0
+B
+1
+Big Endian means 'most significant byte first' while little endian means 'least significant byte first.
+2
+A. True
+B. False
+0
+A
+1
+SOCK_STREAM is used for UDP connections.
+2
+A. True
+B. False
+0
+B
+1
+SOCK_DGRAM is used for UDP connections.
+2
+A. True
+B. False
+0
+A
+1
+The optical fiber cable theoretically has unlimited bandwith.
+2
+A. True
+B. False
+0
+A
+1
+Every domain name that is not already in use is free to claim as your own.
+2
+A. True
+B. False
+0
+B
+1
+255.255.255.128 starts with 1 zero and ends with 7 zeroes.
+2
+A. True
+B. False
+0
+B
+1
+255.255.255.128 ends with 7 zeroes.
+2
+A. True
+B. False
+0
+A
+1
+Port forwarding is a use of NAT.
+2
+A. True
+B. False
+0
+A
+1
+Mac addresses are not guaranteed to be unique.
+2
+A. True
+B. False
+0
+B
+1
+When can a DHCP server relay IP addresses to clients on a network segment separated from the server's location?
+4
+A. DHCP server can only relay IP addresses to the clients found on the same network segment
+B. when the router separating them acts as a relay agent
+C. when the dhcp server uses the same IP address as the router that supports the network segment where the clients are located
+D. when there are more logical routes between the dhcp server and the subnetwork clients
+0
+B
+2
+Choose the correct use of the Straight through and the Cross over cable
+4
+A. cross cable to connect a PC to a PC and straight through to connect a switch to a hub
+B. cross cable to connect a router to a PC and straight through to connect a switch to a server
+C. cross cable to connect a switch to a hub and straight through to connect a router to a switch
+D. cross cable to connect a switch to a switch and straight through to connect a hub to a switch
+0
+C
+2
+Choose the correct use of the following cables:
+4
+A. straight through to connect a hub to a switch or a hub to a PC
+B. cross cable to connect a PC to a server or a PC to a router
+C. straight through to connect a PC to a PC or a switch to a router
+D. cross cable to connect a router to a router or a hub to a switch
+0
+B,D
+2
+In what situation is a PC unable to ping another PC ?
+4
+A. PCs are on two different network segments on the same network
+B. firewall is disabled on both of the PCs
+C. one of the PCs is connected to the router by cross over cable
+D. firewall is enabled on both computers
+0
+D
+2
+Which of the following is not a characteristic of the IP protocol?
+4
+A. It affects packet routing
+B. Is considered an unreliable protocol
+C. Is a connection-oriented protocol
+D. It defines the Internet addressing system
+0
+C
+2
+Having more than one DHCP server on the same subnet of a network is :
+4
+A.possible , if all server besides one are offline , so that the client requests for IP addresses only reach that server
+B. possible, as long as they share the same address pool to give to the clients
+C. possible only if each of them has a different pool of addresses, without sharing any address
+D. not possible
+0
+C
+2
+What is the main function of DNS?
+4
+A. maps a known IP address to a MAC layer address
+B. provides host names to TCP/IP address resolution
+C. automatically assigns IP addresses to the devices across the network
+D. provides network connectivity to a computer
+0
+B
+2
+Gateways are used for:
+4
+A. providing connectivity between two or more network segments
+B. providing network connectivity to a computer
+C. tracing the route taken by data from the router to the destination network
+D. transfer files between different platforms
+0
+A
+2
+What is the maximum number of hosts for a class C network ?
+4
+A. 65.534
+B. 65.535
+C. 128
+D. 254
+0
+D
+2
+What is the maximum number of networks in a class A network ?
+4
+A. 126
+B. 128
+C. 16,384
+D. 254
+0
+A
+2
+Determine how many subnets are found in the above given network :
+4
+A. 7
+B. 9
+C. 5
+D. 11
+1
+1.png
+A
+5
+Which one of the following addresses is a public IP address ?
+4
+A. 10.0.0.0/8
+B. 207.46.130.0/24
+C. 172.16.0.0/12
+D. 1.0.0.0/8
+0
+D
+3
+NAT is :
+4
+A. a connection between computers and other network devices that are located within a small physical location
+B. a protocol providing a way for multiple computers on a common network to share single connection to the Internet
+C. a protocol used by routers to send data from one network to another
+D. a set of protocol layers designed to make data exchange possible on different types of computer networks
+0
+B
+1
+Which one is not true about classless routing protocols :
+4
+A. RIPv1 supports classless routing protocols
+B. RIPv2 supports classless routing protocols
+C. It is allowed to a use a variable length mask
+D. It is allowed to use discontiguous network
+0
+A
+1
+Which one of these is a RIPv2 characteristic ?
+4
+A. maintains a routing table as in RIPv1 without the mask information
+B. is a classful routing protocol
+C. supports maximum metric(hop count ) value up to 15 . Any router further than 15 hops is considered unreachable
+D. does not support triggered updates or authentication of ripv2 update messages
+0
+C
+1
+Which one is true about RIPv1?
+4
+A. It is easier to configure than RIPv2
+B. It maintains a routing table as in RIPv2 , including mask information
+C. It has a lower administrative distance than RIPv2
+D. It has the same timers ad RIPv2
+0
+D
+1
+An IP address is :
+4
+A. 64 bits
+B. 32 bytes
+C. 128 bytes
+D. 32 bits
+0
+D
+1
+Which of the following are valid IP addresses to mark a sub network ?
+4
+A. 177.91.107.144/29
+B. 177.91.107.0/32
+C. 177.91.107.1/25
+D. 177.91.154.2/30
+0
+A
+5
+What is the range of network IPs in which the following given IP resides :194.168.19.65/28 ?
+4
+A. 194.168.19.64 – 194.168.19.87
+B. 194.168.19.64 – 194.168.19.79
+C. 194.167.19.62 – 194 .167.19.87
+D. 194.168.19.0 - 194.168.19.64
+0
+B
+5
+Which of the following is the correct host range for the subnet in which we can find the IP address 192.168.168.188 255.255.255.192 ?
+4
+A. 192.168.168.129-191
+B. 192.168.168.128-190
+C. 192.168.168.128-192
+D. 192.168.168.129-190
+0
+D
+5
+Which protocol does DHCP use at the Transport Layer ?
+4
+A. IP
+B. UDP
+C. TCP
+D. ARP
+0
+B
+1
+Which class of IP address has the most host addresses available by default?
+4
+A. A
+B. B
+C. C
+D. A and C
+0
+A
+1
+Which protocol does Ping use?
+4
+A. TCP
+B. ARP
+C. ICMP
+D. IP
+0
+C,D
+1
+Which of the following does not use TCP?
+4
+A. HTTP
+B. DHCP
+C. FTP
+D. SMTP
+0
+B
+1
+Which of the following is a private IP address ?
+4
+A. 12.0.0.2
+B. 168.172.19.40
+C. 172.15.14.36
+D. 192.168.24.43
+0
+D
+2
+Which class of IP address provides a maximum of only 254 host addresses per network ID?
+4
+A. class A
+B. class B
+C. class C
+D. class B and C
+0
+C
+1
+Which one is true about ICMP packets ?
+4
+A. They are encapsulated within IP datagrams.
+B. ICMP is encapsulated within UDP datagrams.
+C. They do not provide hosts with information about network problems.
+D. They guarantee datagram delivery.
+0
+A
+1
+Which of the following is considered to be the destination host before translation?
+4
+A. Inside local host
+B. Outside local host
+C. Inside global host
+D. Outside global host
+0
+B
+1
+Which of the following is considered to be the address after translation?
+4
+A. Inside local host
+B. Outside local host
+C. Inside global host
+D. Outside global host
+0
+C
+1
+Which of the following is not a way to configure NAT ?
+4
+A. IP NAT pool
+B. Static
+C. Dynamic
+D. NAT overload
+0
+A
+1
+Which one of the following is not an advantage of using NAT?
+4
+A. Conserves legally registered addresses.
+B. Translation introduces switching path delays
+C. Increases flexibility when connecting to the Internet
+D. Reduces address overlap occurrence
+0
+B
+1
+Which one is true about NAT ?
+4
+A. Causes loss of end-to-end IP traceability
+B. Does not conserve legally registered addresses
+C. Decreases flexibility when connecting to the Internet and certain applications will not function with NAT enabled
+D. Increases address overlap occurrence
+0
+A
+1
+Which of the following is true about the IP address 10.16.3.65/23?
+4
+A. The subnet address is 10.16.3.0 255.255.254.0
+B. The last valid host address in the subnet is 10.16.2.254 255.255.254.0
+C. The broadcast address of the subnet is 10.16.3.0 255.255.254.0
+D. The lowest host address in the subnet is 10.16.2.1 255.255.254.0
+0
+D
+5
+Which of the following are valid subnet addresses ?
+4
+A. 177.91.107.0, 177.92.107.97, 177.92.107.144
+B. 177.91.107.0, 1.0.0.0, 0.0.0.0
+C. 191.91.168.1, 177.91.107.152, 177.91.168.127
+D. 177.91.107.0, 177.91.107.144, 1.0.0.112
+0
+D
+5
+What does a mask /28 mean?
+4
+A. the maximum number of IP addresses that can be assigned to hosts is 16
+B. the maximum number of IP addresses that can be assigned to hosts is 14
+C. the maximum number of IP addresses that can be assigned to hosts is 8
+D. the maximum number of IP addresses that can be assigned to hosts is 30
+0
+B
+1
+A submask /30 can be given to:
+4
+A. a subnet with 3 PC’s, connected to a router by a switch
+B. a subnet with 2 PC’s and a Server , connected to a router by a switch
+C. a subnet with 2 PC’s connected directly to the router
+D. a subnet with 2 routers connected
+0
+D
+2
+You need to subnet a network that has 7 subnets, each with at least 16 hosts. Which classful subnet mask would you use?
+4
+A. 255.255.255.192
+B. 255.255.255.224
+C. 255.255.255.240
+D. 255.255.255.252
+0
+B
+3
+You have an interface on a router with the IP address of 192.168.192.10/29. Including the router interface, how many hosts can have IP addresses on the LAN attached to the router interface?
+4
+A. 6
+B. 7
+C. 8
+D. 14
+0
+A
+3
+The network address of 172.16.0.0/19 provides how many subnets and hosts?
+4
+A. 7 subnets, 30 hosts each
+B. 8 subnets, 8,190 hosts each
+C. 8 subnets, 2,046 hosts each
+D. 7 subnets, 2,046 hosts each
+0
+B
+3
+Given the network above , choose which of the next are correct IP addresses for each subnet in the picture (N1,N2,N3,N4):
+4
+A. N1 -> 1.168.19.72/30 , N2->1.168.19.0/24, N3 ->1.168.19.84/26 , N4->1.168.19.80/30
+B. N1-> 1.168.19.72/29 , N2->1.168.18.0/24 , N3->1.168.19.0/26, N4->1.168.19.80/30
+C. N1-> 1.168.19.72/29 , N2->1.168.18.0/26 , N3->1.168.19.0/26 ,N4->1.168.19.80/30
+D. N1-> 1.168.19.72/29 , N2->1.168.18.0/24 , N3 ->1.168.18.144/26 , N4 ->1.168.19.80/30
+1
+2.png
+B
+5
+Which of the following affirmations about UDP is not true ?
+4
+A. Writes packets of bytes
+B. No read bytes from a packet are lost
+C. Neither party can overflow the other. Traffic is controlled by the OS
+D. Not read bytes from a packet are lost
+0
+C
+2
+Which one is not a principle to the OSI model?
+4
+A. A layer should be created where a different abstraction is needed.
+B. Each layer should perform a well-defined function.
+C. The layer boundaries should be chosen to maximize the information flow across the interfaces.
+D. The function of each layer should be chosen with an eye toward defining internationally standardized protocols.
+0
+C
+2
+Which of the following layers, controls the operation of a subnet and handles how packets are routed from source to destination ?
+4
+A. The Network Layer
+B. The Transport Layer
+C. The Session Layer
+D. The Presentation Layer
+0
+A
+2
+Which protocol handles mail exchange?
+4
+A. FTP
+B. TELNET
+C. SSH
+D. SMTP
+0
+D
+1
+Which one of the following is a Natural Mask?
+4
+A. 255.255.255.255
+B. 255.255.255.0
+C. 255.255.255.128
+D. 255.255.255.64
+0
+B
+5
+IP - best effort protocol - does its best effort to transfort datagram from one machine to another with no guarantee of an
+4
+A. Successful delivery
+B. Duplication/Unicity
+C. Data integrity
+D. All of the above
+0
+D
+2
+Which affirmation is not true about The Network Address Translation:
+4
+A. No need to be allocated range of addresses from ISP:- just one IP address is used for all devices
+B. Can change addresses of devices in local network without notifying outside world
+C. Can change ISP only by changing addresses of devices in local network
+D. devices inside local net not explicitly addressable, visible by outside world
+0
+C
+2
+Which of the following affirmations about TCP is not true?
+4
+A. Client process must first be running
+B. Server must have created socket that welcomes clientís contact
+C. Allows server to talk with multiple clients
+D. Source port numbers are used to distinguish clients
+0
+A
+3
+IP Routing is based on the:
+4
+A. Source IP
+B. Destination IP
+C. Network Address
+D. Broadcast Address
+0
+B
+1
+Which is not a Service of a Data Link Layer?
+4
+A. Framing and link access
+B. Flow Control
+C. Error Correction
+D. Traffic isolation
+0
+D
+1
+What are the protocols involved in sending an email?
+5
+A. FTP
+B. SMTP
+C. TCP
+D. POP3
+E. HTTP
+0
+B,D,E
+3
+TCP stands for...
+4
+A. Transfer Control Protocol
+B. Transmission Connection Protocol
+C. Transformation Central Protocol
+D. Transmission Control Protocol
+0
+D
+1
+What is a datagram?
+4
+A. A structure used to get data from the user in order to synchronize the server
+B. A basic transfer unit used in packet-switched networks, providing a connectionless comunnication service
+C. Information that can harm your computer if you're not careful with it
+D. Millions of bytes configured in a big cluster which can be easily transferred
+0
+B
+1
+ARP can be used for...
+4
+A. Mapping network addresses to physical (MAC) addresses
+B. Mapping public virtual addresses to private ip addresses
+C. Publishing websites to the internet
+D. Sending emails very fast
+0
+A
+1
+TCP, UDP and SCTP are part of
+4
+A. Application Layer
+B. Internet Layer
+C. Transport Layer
+D. Link Layer
+0
+C
+1
+TCP Header contains the following entries:
+4
+A. Source Port, Destination Port, Sequence Number, Acknowledgement Number, Flags, Data Offset, Checksum, Urgent Pointer
+B. Source IP, Destination IP, Pointer to MAC address, Connection unique identifier, Router IP, NAT tables
+C. Source Port, Destination Port, Length, Checksum
+D. Source Mac, Destination Mac, Connection object, Checksum, Data hash
+0
+A
+1
+What would be a network security recommandation?
+4
+A. Forwarding all traffic from the router ports to computer ports
+B. Activate firewall and use good firewall rules
+C. Use the default router password, everybody will expect that you change it, so not changing it is a good strategy
+D. Allow RDP connections on your computers
+0
+B
+1
+What is DSL and what it is used for?
+4
+A. Digital Subscriber Line; used to give access to internet through telephone lines
+B. Digital Supplier Limit; verifies if the maximum connected users in a wi-fi network has been reached
+C. Describer Serial Link; used for serial cables to assure their connectivity in a network
+D. Destination Source Limit; limits the number of packets sent and received, used for security reasons
+0
+A
+1
+What is the difference between a switch and a hub?
+4
+A. The hub sends a packet specifically to an end point or more, the switch broadcasts the message to all the network
+B. The switch sends a packet specifically to an end point or more, the hub broadcasts the message to all the network
+C. The hub can send packets on large distances, but the switch is generally for home usage
+D. There is no difference
+0
+B
+1
+The last address of IP address represents?
+4
+A. Broadcast
+B. Network
+C. Unicast address
+D. Multicast
+0
+A
+1
+Which of the following IP addresses class is multicast?
+4
+A. Class A
+B. Class B
+C. Class C
+D. Class D
+0
+D
+1
+Which of the following is correct regarding Class B address of IP address
+5
+A. Network 18 , Host 16
+B. Network 14 , Host 16
+C. Network 16 , Host 14
+D. Network 12 , Host 14
+E.
+0
+B
+1
+How many layers are in TCP/IP ?
+4
+A. 7 layers
+B. 4 layers
+C. 6 layers
+D. 5 layers
+0
+B
+1
+IPv4 Address is
+4
+A. 64 bit
+B. 16 bit
+C. 48 bit
+D. 32 bit
+0
+D
+1
+DNS is the abreviation for
+4
+A. Dynamic Network System
+B. Domain Name System
+C. Domain Network Server
+D. Dynamic Name System
+0
+B
+1
+What is the size of a MAC address?
+4
+A. 16 bits
+B. 32 bits
+C. 48 bits
+D. 64 bits
+0
+C
+1
+MAC address is the example of?
+4
+A. Transport layer
+B. Data link layer
+C. Application layer
+D. Physical layer
+0
+B
+1
+For error detection in TCP/IP we use?
+4
+A. Bit sum
+B. Check sum
+C. Error Flag
+D. Error bit
+0
+B
+1
+The mount of data that can be carried in a given time is called?
+4
+A. Capacity
+B. Scope
+C. Bandwidth
+D. Limitation
+0
+C
+1
+What is the size of Host in Class B of an IP address?
+4
+A. 4
+B. 8
+C. 16
+D. 32
+0
+C
+1
+What is the use of the ping command?
+4
+A. To test if your connection is wired or wireless
+B. To test a device on the network is reachable
+C. To get your MAC address
+D. To get your IP address
+0
+B
+1
+What is a normal mask for a Class C network?
+4
+A. 255.255.255.1
+B. 255.255.255.128
+C. 255.255.0.0
+D. 255.255.255.0
+0
+D
+1
+What does a protocol defines?
+5
+A. What data is communicated
+B. How data is communicated
+C. When data is communicated
+D. None of the above
+E.
+0
+A,B,C
+3
+What is the use of Subnetting?
+4
+A. It divides one network into several smaller networks
+B. It divides a network into network classes
+C. It speeds up the network
+D. All of the above
+0
+A
+2
+............. provides a connection oriented reliable service for sending data.
+0
+0
+TCP
+2
+What is TTL?
+4
+A. Time To Leave
+B. Total Time Limit
+C. Time To Live
+D. Time Tracking Limit
+0
+C
+1
+The following system calls are/is optional at the level of a TCP client:
+4
+A. socket()
+B. listen()
+C. bind()
+D. connect()
+0
+C
+1
+Which one/ones of the following addresses have to be identical for all computers located in the same local network(from a physical and logic point of view)
+4
+A. Network address
+B. Broadcast address
+C. IP address
+D. MAC address
+0
+A,B
+3
+The ARP protocol helps with:
+3
+A. Determining the IP address when the MAC address is known
+B. Determining the MAC address when the IP address is known
+C. Determining the IP address when the DNS server is known
+0
+B
+1
+DHCP is a client/server protocol that automatically provides an Internet Protocol host with
+4
+A. IP address
+B. Subnet mask
+C. MAC address
+D. Default gateway
+0
+A,B,D
+5
+The maximum number of hosts a network with the netmask 255.255.255.224 is capable of supporting is:
+4
+A. 2^(number of zeros in netmask)
+B. 32
+C. 30
+D. 16
+0
+C
+3
+The natural mask for a class A address is :
+4
+A. 255.255.255.0
+B. 255.226.255.0
+C. 255.0.0.0
+D. 255.255.0.0
+0
+C
+2
+Consider the following netmask: 255.255.0.0, the network part(network length) is formed by a number of bits equal to:
+4
+A. 24
+B. 16
+C. 8
+D. Impossible to determine
+0
+B
+1
+Which of the following describes 'big endian'?
+5
+A. most significant byte first
+B. most significant byte last
+C. least significant byte in the middle
+D. most significant byte in the middle
+E. None of the above.
+0
+A
+1
+Which of the following describes 'little endian'?
+5
+A. least significant byte first
+B. least significant byte last
+C. least significant byte in the middle
+D. most significant byte in the middle
+E. None of the above.
+0
+A
+1
+What is the in-memory representation of 56E2 in little endian?
+4
+A. 56E2
+B. E256
+C. 2E65
+D. 652E
+0
+B
+2
+What is the in-memory representation of 56E2 in big endian?
+4
+A. 56E2
+B. E256
+C. 2E65
+D. 652E
+0
+A
+1
+What is the in-memory representation of 56E2 in big endian?
+4
+A. 56E2
+B. E256
+C. 2E65
+D. 652E
+0
+C
+1
+How many bytes does 'float' use?
+4
+A. 1 byte
+B. 4 bytes
+C. 8 bytes
+D. 16 bytes
+0
+B
+1
+What does TCP/IP stand for?
+4
+A. Transport Control Protocol/Internet Protocol
+B. Transmission Check Protocol/Internet Protocol
+C. Transmission Control Protocol/Inverse Protocol
+D. Transmission Control Protocol/Internet Protocol
+0
+D
+1
+What type of connection does SOCK_STREAM indicate?
+4
+A. TCP connection
+B. UDP connection
+C. Closed connection
+D. Open connection
+0
+A
+1
+What type of connection does SOCK_DGRAM indicate?
+4
+A. TCP connection
+B. UDP connection
+C. Closed connection
+D. Open connection
+0
+B
+1
+What does UDP stand for?
+4
+A. User Defined Protocol
+B. User Datalink Protocol
+C. User Datagram Protocol
+D. Utility Datagram Protocol
+0
+C
+1
+What does DNS stand for?
+4
+A. Dynamic Name Server
+B. Dynamic Name System
+C. Domain Name Server
+D. Domain Name System
+0
+D
+1
+How many different network layers are there (according to the OSI Reference Model)?
+5
+A. 7 layers
+B. 4 layers
+C. 5 layers
+D. 9 layers
+E. The number of layers can vary.
+0
+A
+1
+The 4 bottom network layer (according to the OSI Refererence Model), in order, are the following:
+4
+A. Physical, Data link, Network, Transport
+B. Physical, Network, Data link, Transport
+C. Physical, Data link, Transport, Network
+D. Data link, Physical, Network, Transport
+0
+A
+1
+What does FTP stand for?
+4
+A. File Transmission Protocol
+B. File Transfer Protocol
+C. File Translocation Protocol
+D. Folder Transmission Protocol
+0
+B
+1
+What is FTP used for?
+4
+A. It is a protocol used to check if the datalink layer is working proberly.
+B. Transfering files over a network.
+C. It is a protocol used by mail servers.
+D. Accessing the WEB, sending HTML pages.
+0
+B
+1
+What does SSH stand for?
+4
+A. Secure Shell Hook
+B. Structured Shell Hook
+C. Secure Shell
+D. Structured Shell
+0
+C
+1
+What is SSH used for?
+4
+A. Remote connection to the terminal / command line of another computer (remote command).
+B. Transfering files over a network.
+C. It is a protocol used by mail servers.
+D. Accessing the WEB, sending HTML pages.
+0
+A
+1
+What is SMTP used for?
+4
+A. Remote connection to the terminal / command line of another computer (remote command).
+B. Transfering files over a network.
+C. It is a protocol used by mail servers (mail Excahange).
+D. Accessing the WEB, sending HTML pages.
+0
+C
+1
+What does P2P stand for?
+4
+A. Peer to Peer.
+B. Point to Point.
+C. Point to Peer.
+D. Peer to Point.
+0
+A
+1
+What is the maximum bandwith, the maximum amount of data that the optical fiber can carry?
+4
+A. 100 Mb/s
+B. 1000 Mb/s
+C. 100 000 Mb/s
+D. There is no maximum.
+0
+D
+1
+Since optical fiber has no limit in bandwith, what is a plausible reason for your lower internet speed?
+5
+A. There is a limit to how much end devices can send an receive.
+B. Your router/modem is limited.
+C. You don't use fiber.
+D. The contract with your ISP limits your bandwith.
+E. All answers are correct.
+0
+E
+1
+If I have a zip of size 1024 bytes and a connection of 32 bits/second to the computer I want to send the zip to, how long would it take for the zip to be sent?
+4
+A. 256 seconds
+B. 1 second
+C. 10 seconds
+D. 1024 seconds
+0
+A
+1
+What kind of signal flows through the optical fiber cable have?
+4
+A. Electro-magnetic waves
+B. Light waves
+C. Both are of the above
+D. Electric current
+0
+B
+1
+What type of physical signal does the wireless transmission use?
+4
+A. Electro-magnetic waves
+B. Light waves
+C. Both are of the above
+D. Electric current
+0
+A
+1
+How long is an IPv4 address?
+4
+A. 4 bytes
+B. 32 bytes
+C. 16 bytes
+D. 8 bytes
+0
+A
+1
+What does TLD stand for?
+4
+A. Total Level Domain
+B. Total Level Distribution
+C. Top Level Domain
+D. Top Level Distribution
+0
+C
+1
+What does ISP stand for?
+4
+A. Internet Server Protocol
+B. Inverse Service Protocol
+C. Internet Service Provider
+D. Internet Server Provider
+0
+C
+1
+Which of the following is a valid domain name?
+4
+A. nontendo.com
+B. nds.nontendo.com
+C. nds.nontendo.ro
+D. All anssers are correct
+0
+D
+1
+What does ROTLD stand for?
+4
+A. Romanian Top Level Domain
+B. Russian Overview Top Level Domain
+C. Romanian Total Level Domain
+D. Romanian Top Level Distribution
+0
+A
+1
+What is the 'Whois Query' used for?
+4
+A. Checking if a domain name is already bought or not.
+B. Checking if a domain name has a server active and running.
+C. Checking if an IP is present on a network.
+D. Getting the IP of a domain name.
+0
+A
+1
+Which of the following represents an FTP (File Transfer Protocol)?
+4
+A. The TCP/IP
+B. The SMB or SAMBA Protocol
+C. The SSH Protocol
+D. The SMTP
+0
+B
+1
+What is HTML?
+4
+A. HTML is a langauge that is used to descirbe web pages.
+B. HTML is a language used for server programming.
+C. HTML is a language used for browser programming.
+D. All of the above are true.
+0
+A
+1
+Which of the following is a correct mac address?
+4
+A. 12-34-56-78-90-AB-CD
+B. G2-H3-24-13-12-3E
+C. G2-H3-24-13-12-3E-CD
+D. 12-34-56-78-90-AB
+0
+D
+1
+What command would you use to find your network adapter's mac address if you are on windows?
+4
+A. ipconfig
+B. arp /d
+C. ipconfig /all
+D. All of the above would work.
+0
+C
+1
+What does ARP stand for?
+4
+A. Address Resolution Protocol
+B. Address Refresh Protocol
+C. Address Reconstructuion Protocol
+D. Address Read Protocol
+0
+A
+1
+What dose LAN stand for?
+4
+A. Local Address Network
+B. Local Address Name
+C. Local Area Network
+D. Local Area Name
+0
+C
+1
+What command would you use to test the Datalink Layer to see if it works (on Windows)?
+5
+A. arp /a
+B. ipconfig /all
+C. ipconfig
+D. arp /d
+E. All answers are correct.
+0
+A
+1
+Which of the following IP sets belong to 209.220.186.12/255.255.255.252 ip class?
+4
+A. 209.220.186.12, 209.220.186.13, 209.220.186.14, 209.220.186.15
+B. 209.220.186.13, 209.220.186.14, 209.220.186.15, 209.220.186.16
+C. 209.220.186.12, 209.220.186.13, 209.220.186.14, 209.220.186.15, 209.220.186.16,209.220.186.17, 209.220.186.14, 209.220.186.18
+D. 209.220.186.10, 209.220.186.11, 209.220.186.12, 209.220.186.13, 209.220.186.14,209.220.186.15, 209.220.186.16, 209.220.186.17
+0
+A
+5
+Which of the following is a valid IP/Netmask combination?
+5
+A. 209.220.186.8/255.255.255.240
+B. 209.220.186.8/255.255.255.0
+C. 209.220.186.8/255.255.255.248
+D. 209.220.186.8/255.255.255.252
+E. C and D are both correct.
+0
+A,B,C,D,E
+3
+How many bits of zero does the following netmask have? 255.255.255.248
+4
+A. 2 bits
+B. 3 bits
+C. 4 bits
+D. 8 bits
+0
+B
+2
+Which is the correct binary representation of the following netmask? 255.255.255.128
+4
+A. 11111111 11111111 11111111 10000000.
+B. 11111111 11111111 11111111 11110000.
+C. 11111111 11111111 11111111 11000000.
+D. 11111111 11111111 11111111 00000000.
+0
+A
+3
+What is the netmask for the following IP class? 192.168.0.0/24
+5
+A. 255.255.255.128
+B. 255.255.255.0
+C. 255.255.0.0
+D. 255.0.0.0
+E. All netmasks are correct.
+0
+B
+2
+What is the netmask for the following IP class? 10.10.0.0/17
+5
+A. 255.255.255.128
+B. 255.255.255.0
+C. 255.255.128.0
+D. 255.255.0.0
+E. All netmasks are correct.
+0
+C
+3
+How do you find the network address if you have the network mask and one random IP address in the network?
+4
+A. You 'and' the netmask and the random IP
+B. You 'or' the netmask and the random IP
+C. You add the netmask and the random IP
+D. You 'xor' the netmask and the random IP
+0
+A
+1
+What will you get if you 'or' together the netmaks of a network and one random IP in the network?
+4
+A. The IP class.
+B. The first IP in the class of the random IP.
+C. The last IP in the class of the random IP.
+D. Nothing significant.
+0
+D
+1
+What does NAT stand for?
+5
+A. Network Address Translation
+B. Name Address Translocation
+C. Network Area Translation
+D. Network Area Translocation
+E. Name Area Translocation
+0
+A
+1
+Which of the following involve NAT?
+3
+A. Port forwarding.
+B. Accessing the web from an internal network. Your PC's network will be translated to your public IP (i. e. home network)
+C. Both answers involve NAT.
+0
+C
+1
+Are mac addressed guaranteed to be unique?
+4
+A. No, buying the same type of a network adapter twice (from an online store) means you get the same mac address.
+B. No, the mac address is software related.
+C. Depends on the network adapter you have.
+D. Yes, because mac addresses are burned into the ROM of the network adapter.
+0
+D
+1
+What is a private IP address?
+4
+A) It's an IP address that does not have a netmask;
+B) It's an IP address that is reserved for internal use behind a router or NAT device, apart from the public;
+C) It's an IP address that your device receives when connecting to public networks;
+D) It's an IP address that has the following form: 127.0.x.x.
+0
+B
+1
+Which is the range for an IP address of class B?
+4
+A. 191-220
+B. 127-190
+C. 128-191
+D. 128-192
+0
+C
+1
+What is the broadcast address of the following IP address 221.17.123.9 that has in its network 42 computers?
+4
+A. 221.17.123.255
+B. 255.255.255.255
+C. 221.17.123.63
+D. 221.17.123.65
+0
+C
+5
+What is the use of the ARP protocol?
+4
+A. To determine the IP address when we know the MAC address;
+B. To determine the MAC address when we know the IP address;
+C. To determine the IP address when we know the IP address of the DNS server;
+D. To determine the MAC address when we know the default gateway.
+0
+B
+1
+What does UDP stand for?
+4
+A. User Datagram Protocol;
+B. Universal Datagram Packets;
+C. Unique Destination Protocol;
+D. Undefined Destination Packets.
+0
+A
+1
+What is the subdomain for the top level domain for the following DNS address: "linux.scs.ubbcluj.ro"?
+4
+A. "linux";
+B. "scs";
+C. "ubbcluj";
+D. "ro".
+0
+C
+1
+Which is the difference between bandwidth and throughput?
+3
+A. The bandwidth is the physical property of the transmission medium, while throughput represents the amount of data which we transmit
+B. There is no difference between them;
+C. The bandwidth represents the amount of data which we transmit, while throughput is the physical property of the transmission medium.
+0
+A
+1
+What is a broadcast MAC address?
+3
+A. It's a logical address which identifies only one recipient;
+B. It's a logical address which is used to identify all the computers within a network;
+C. It's a logical identifier for a group of hosts in a computer network that are available to process data-grams.
+0
+B
+1
+In how many subclasses with the netmask 255.192.0.0 can the class of minimal dimension containing both IP addresses: 78.79.80.81 and 79.80.81.82, be divided?
+4
+A. 7;
+B. 10;
+C. 8;
+D. 9.
+0
+C
+1
+Which are the layers of the TCP/IP model?
+4
+A. Application layer, transport layer, session layer, network access layer;
+B. Application layer, transport layer, internet layer, network access layer;
+C. Application layer, presentation layer, session layer, transport layer, network layer, data-link layer, physical layer;
+D. Application layer, internet layer.
+0
+B
+1
+Which of the following does not describe a socket?
+3
+A. an internal endpoint for sending or receiving data at a single node ina computer.
+B. a door between the application process and end-to-end transport protocol
+C. a process that sends and receives data at a single node in a computer
+0
+C
+1
+How do we obtain the starting address of a network from a given IP?
+3
+A. OR logic between IP given and NOT netmask
+B. AND logic between IP given and NOT netmask
+C. AND logic between IP given and netmask
+0
+C
+1
+Which is the order of the five-layer Internet protocol stack ?
+3
+A. Application, Transport, Network, Link, Physical
+B. Network, Transport, Application, Link, Physical
+C. Application, Transport, Link, Network, Physical
+0
+A
+1
+UDP vs. TCP flow control: Which statement is false?
+3
+a. UDP: one part can overflow, which results in lost packets
+b. TCP: Traffic is controlled by the OS
+c. TCP: one part can overflow but there are no lost packets
+0
+C
+1
+What is the length of the TCP header?
+3
+a. 32
+b. 64
+c. 20
+0
+C
+1
+What does a routing table contain?
+3
+A. source address, destination address, gateway, interface
+B. interface, netmask, destination address, gateway
+C. source address, destination address, netmask, gateway
+0
+B
+1
+What is Throughput?
+3
+A. quantity of data which we send at some point through a transmission channel
+B. quantity of data over quantity of time which we send at a given time through a transmission channel
+C. the capacity of data transportation that we send through a transmission channel
+0
+B
+1
+What does traceroute?
+3
+A. shows all IPs of the routers parsed until the current IP
+B. shows all IPs parsed until the current router IP
+C. shows the IP route of the last 5 parsed
+0
+A
+1
+What is a congestion window?
+3
+A. a sender impose window implemented to avoid overrunning some routers in the middle of the network path
+B. a window managed by the receiver; that grows when each segment is sent
+C. a window that controls flow moving of the sender
+0
+A
+1
+Which of these addresses is not private?
+3
+A. 10.255.189.255
+B. 172.168.0.1
+C. 192.168.255.255
+0
+B
+2
+What is checksum?
+3
+A. is a 16-bit field used on the header and data to check for errors.
+B. is a 32-bit field used for error checking of data and IP address
+C. is a 16-bit flag used for error checking of the header and data
+0
+A
+1
+Which of the addresses is a valid private address?
+3
+A. 10.255.256.0/29
+B. 10.255.255.0/28
+C. 193.168.0.0/29
+0
+B
+1
+Which is the third level in the OSI Reference Model Layer?
+3
+A. Network
+B. Session
+C. Transport
+0
+A
+1
+Which is the network address of the second subnet of a network having 93 computers, where the first contains 22 computers, and starts from 192.168.0.0?
+3
+A. 192.168.0.33
+B. 192.168.0.32
+C. 192.168.0.24
+0
+B
+1
+The natural mask for a class B address is:
+3
+A. 255.0.0.0
+B. 255.255.0.0
+C. 255.255.255.0
+0
+B
+1
+The last network address is reserved for the ......... .
+0
+0
+broadcast
+2
+The size of a class C, IP Adresses per network is .......... Hosts.
+0
+0
+254
+2
+DHCP stands for ................... ......... ................ Protocol.
+0
+0
+DynamicHostConfiguration
+2
+The network address of the third subnet of a network having 93 computers that starts from 192.168.0.0, where the first contains 22 computers and the second has 10 hosts is ........................
+0
+0
+192.168.0.48
+5
+The networks can be classified on the types of transmission as .......... switching and ..........switching.
+0
+0
+circuit, packet
+5
+What is a property of a computer network?
+4
+A. all components are linked to a router.
+B. all components are interconnected.
+C. all components are linked using a coaxial cable.
+D. it has only PCs and workstations.
+0
+B
+2
+Which of the following is NOT a computer network?
+4
+A. The Internet.
+B. Worldwide telephone system.
+C. A PC connected to headphones.
+D. Telephone system.
+0
+C
+2
+If AB12 is represented in big endian as AB12, what is its representation in little endian?
+4
+A. 21BA.
+B. 12BA.
+C. BA21.
+D. 12AB.
+0
+D
+1
+If 43ED is represented in big endian as 43ED, what is its representation in little endian?
+4
+A. DE34.
+B. ED43.
+C. DE43.
+D. ED34.
+0
+B
+2
+What function call you don't find in an UDP server?
+4
+A. recvfrom.
+B. bind.
+C. sendto.
+D. accept.
+0
+D
+1
+What happens with the bytes that are not read by a TCP server?
+4
+A. Are lost forever.
+B. Are sent back to source.
+C. Stay avalaible for next read.
+D. Are transfered to a special location in the network.
+0
+C
+1
+How many bits have an IP address?
+4
+A. 64.
+B. 32.
+C. 4.
+D. 16.
+0
+B
+1
+Which of the following is NOT a valid IP netmask combination?
+4
+A. 168.220.186.8/225.255.225.252.
+B. 156.198.186.8/255.255.255.254.
+C. 209.198.186.8/255.255.255.246.
+D. 168.220.186.64/255.255.255.240.
+0
+B,C
+3
+When you have an ip address and the network mask what operation you need to do in order to find out the network address?
+4
+A. or between ip and netmask.
+B. and between ip and netmask.
+C. divide the ip by the mask.
+D. you can't find the network address.
+0
+B
+2
+Which of the following is NOT a valid IP netmask combination?
+4
+A. 168.220.186.8/225.255.225.252.
+B. 156.198.186.16/255.255.255.254.
+C. 209.198.186.8/255.255.255.248.
+D. 168.220.186.8/255.255.255.240.
+0
+B
+5
+Which of the following is a class C IP address?
+4
+A. 10.10.14.118
+B. 135.23.112.57
+C. 191.200.199.199
+D. 204.67.118.54
+0
+D
+3
+UDP packets are encapsulated in:
+4
+A. en Ethernet frame
+B. a TCP segment
+C. an IP diagram
+D. none of the above
+0
+A
+2
+Which of the following functions does UDP perform?
+4
+A. process to process communication
+B. improve the data transfer rate of large files (compared to TCP)
+C. assure that the sent messages arrive in the order that have been sent
+D. protect the data sent against any corruption while transferring it.
+0
+A,B
+3
+Which of the following is not an application layer protocol?
+4
+A. HTTP
+B. IMAP
+C. SMTP
+D. TCP
+0
+D
+2
+A one-to-all communication between one source and all hosts on a network can be classified as:
+4
+A. unicast communication
+B. broadcast communication
+C. multicast communication
+D. anycast communication
+0
+C
+2
+The data link layer takes packets from .............. and encapsulated them into frames for transmission
+4
+A. network layer
+B. physical layer
+C. transport layer
+D. application layer
+0
+A
+2
+FTP uses the following channels:
+4
+A. the delta channel
+B. the control channel
+C. the bearer channel
+D. the data channel
+0
+B,D
+3
+Which can be an Ethernet physical address?
+4
+A. 07:01:02:01:2C:4B
+B. 07:01:02:01:2C:4B:2C
+C. 07:02:01:2C:4B
+D. none of the above
+0
+A
+3
+The underlying transport layer protocol used by SMTP:
+4
+A. TCP
+B. UDP
+C. both TCP and UDP
+D. none of the above
+0
+A
+2
+In HTTP Protocol, a client can directly connect to a server using:
+4
+A. Web
+B. Domain
+C. TELNET
+D. HTTP
+0
+C
+2
+Internet API is a set of rules that the sending program must follow so that the Internet can deliver the data to the destination program
+2
+A. True
+B. False
+0
+A
+1
+UDP is used together with IP when small amounts of information are involved but it uses more system resources than TCP
+2
+A. True
+B. False
+0
+B
+1
+UDP is used together with IP when small amounts of information are involved but it uses fewer system resources than TCP
+2
+A. True
+B. False
+0
+A
+1
+When configuring email clients, an Internet address for an SMTP server must be entered.
+2
+A. True
+B. False
+0
+A
+1
+File Transfer Protocol (FTP) provides the transmission in encrypted form to provide security for sensitive data.
+2
+A. True
+B. False
+0
+B
+1
+File Transfer Protocol (FTP) provides a method for copying files over a network from one computer  to another.
+2
+A. True
+B. False
+0
+A
+1
+The Open System Interconnection (OSI) model defines a networking framework to implement protocols in layers, with control passed from one layer to the next.
+2
+A. True
+B. False
+0
+A
+1
+The Transport Layer manages the mapping between these logical addresses and physical addresses. In IP networking, this mapping is accomplished through the Address Resolution Protocol (ARP).
+2
+A. True
+B. False
+0
+B
+1
+The Network Layer manages the mapping between these logical addresses and physical addresses. In IP networking, this mapping is accomplished through the  Resolution Protocol (ARP).
+2
+A. True
+B. False
+0
+A
+1
+The maximum number of IP addresses that can be assigned to hosts on a local subnet that uses the 255.255.255.224 subnet mask is 40.
+2
+A. True
+B. False
+0
+B
+1
+255.255.255.224 is a class A/27 and its last 5 bits are zero=> provides 8 subnets, each with 30 hosts.
+2
+A. True
+B. False
+0
+B
+1
+The subnetwork address of a host with an IP address of 172.16.66.0/21 is 172.16.64.0.
+2
+A. True
+B. False
+0
+A
+1
+To test the IP stack on your local host, you would ping the IP address 127.0.0.0
+2
+A. True
+B. False
+0
+B
+1
+To test the IP stack on your local host, you would ping the IP address 127.0.0.1
+2
+A. True
+B. False
+0
+A
+1
+A switch does not keep a record of the MAC addresses of the devices connected to it.
+2
+A. True
+B. False
+0
+B
+1
+A switch keeps a record of the MAC addresses of all the devices connected to it
+2
+A. True
+B. False
+0
+A
+1
+The UDP .......... identifies the destination port and a reply port.
+0
+0
+header
+2
+TCP/IP allows a packet to be sent without waiting for the ...................of the previous packet.
+0
+0
+acknowledgement
+3
+A 10/100Mbps hub must share its .............. with each and every one of its ports.
+0
+0
+bandwidth
+3
+............ is a Computer Network diagnostic tool for displaying the route (path) and measuring transit delays of packets across an  (IP) network.
+0
+0
+traceroute
+3
+A ............... defines the format and the order of messages exchanged between two or more communicating entities.
+0
+0
+protocol
+2
+The TCP/IP...........is used to detect corruption of data over a TCP or IPv4 connection.
+0
+0
+checksum
+2
+....................in a network may occur when the load on the network  is greater than the capacity of the network.
+0
+0
+congestion
+2
+HTTP Protocol allows exchange of ......... and ..........
+0
+0
+HTML,WebData
+5
+Which one of the following addresses is a public IP address assignable to a computer?
+4
+A. 10.5.125.4
+B. 1.0.0.1
+C. 225.46.130.1
+D. 172.16.23.201
+0
+B,C
+2
+Which of the following address can be a valid host IP that can be allocated to a host:
+3
+A. 18.19.20.255
+B. 193.231.21.0
+C. 223.245.256.17
+0
+A,B
+3
+What is the netmask of the largest network with the address 84.176.0.0 ?(as x.y.z.t)
+0
+0
+255.240.0.0
+1
+Which IP address is reserved for software loop-back?
+4
+A. 224.x.y.z
+B. 255.255.255.255
+C. 0.0.0.0
+D. 127.x.y.z
+0
+D
+2
+255.192.0.0 is a valid netmask for the network
+4
+A. 192.128.0.0
+B. None of the choices
+C. 192.193.1.0
+D. 132.128.0.0
+0
+A,D
+3
+The natural mask for a class A address is:
+4
+A. 255.255.255.0
+B. 255.255.0.0
+C. 255.0.0.0
+D. 256.0.0.0
+0
+C
+1
+How many hosts can be addressed on 10.0.0.0/16?
+0
+0
+65534
+3
+Write the network mask of the minimum sized network that contain both 80.81.82.83 and 80.83.84.85.
+0
+0
+255.252.0.0
+4
+Which of the following is a correct mac address?
+4
+A. 12-34-56-78-90-AB-CD
+B. G2-H3-24-13-12-3E
+C. 12-34-56-78-90-AB
+D. G2-H3-24-13-12-3E-CD
+0
+C
+1
+43.29.45.132/27 can be a network address
+2
+A. True
+B. False
+0
+B
+1
+What is the range of network IPs in which the following given IP resides: 194.168.19.69/28 ?
+4
+A. 194.168.19.64 - 194.168.19.79
+B. 194.168.19.0 - 194.168.19.15
+C. 194.167.19.68 - 194.167.19.83
+D. 194.168.19.64 - 194.168.19.87
+0
+A
+1
+The listen() call is not mandatory in any TCP client
+2
+A. True
+B. False
+0
+A
+1
+The listen() call is mandatory in any TCP client
+2
+A. True
+B. False
+0
+B
+1
+The default gateway of a computer is the IP of the router from that network
+2
+A. True
+B. False
+0
+A
+1
+A computer cannot have 2 gateways
+2
+A. True
+B. False
+0
+B
+1
+A computer can have 2 gateways
+2
+A. True
+B. False
+0
+A
+1
+The netmask /10 corresponds to ..........(x.y.z.t)
+0
+0
+255.192.0.0
+1
+What is the broadcast address for subnet 200.35.1.192/27 ?
+0
+0
+200.35.1.223
+3
+What is the netmask of the minimum sized network that has as broadcast 70.71.79.255 and also contains the host IP address 70.71.79.240 ?
+0
+0
+255.255.255.224
+4
+What is the 4 byte netmask for the following IP network? 10.10.0.0/17
+5
+A. 255.255.0.0
+B. None of the network masks are correct
+C. 255.255.255.128
+D. 255.255.128.0
+E. 255.255.255.0
+0
+D
+1
+Given the address 137.25.28.0/255.255.254.0 provide the maximum number of valid subnets that can be obtained from splitting this network
+0
+0
+128
+3
+What is the broadcast address for subnet 132.45.99.0/19?
+0
+0
+132.45.127.255
+4
+How many bits of zero does the following netmask have? 255.255.255.248
+4
+A. 2 bits
+B. 8 bits
+C. 3 bits
+D. 4 bits
+0
+C
+1
+1.1.1.1 is not a private IP address
+2
+A. True
+B. False
+0
+A
+1
+1.1.1.1 is a private IP address
+2
+A. True
+B. False
+0
+B
+1
+A network with the netmask 255.255.255.0 can have a maximum of 2^8-2=126 hosts
+2
+A. True
+B. False
+0
+B
+1
+A network with the netmask 255.255.255.0 can have a maximum of 2^8-2=254 hosts
+2
+A. True
+B. False
+0
+A
+1
+A company has three departments: Offices, Public and Managers, The offices have 123 computers, Public Relationship has 29 computers and Managers have 5 computers. The company wants to make a network such that: - every compter has access to internet - have minimum costs - it must be certainly known for which department some webpages are accesed from the HQ in another city. Provide a good configuration for the requirements:
+4
+A. 3 subnetworks, 192.168.0.0/25, 192.168.0.128/27, 192.268.0.160/29, one router which translates first network to 30.0.0.1, second to 30.0.0.2 and third to 30.0.0.3
+B. 1 subnetwork for all company, 192.168.0.0/24, connect computers to internet through a router which translates every address ip to a public ip address with different class depending on department
+C. 3 subnetworks, 192.168.0.0/25, 192.168.0.128/27, 192.168.0.160/29 and connect them to a central router which translates all the ips on 192.168.0.0/24 with the ip 30.0.0.5
+D. 3 subnetworks, 192.168.0.0/24, 192.168.1.0/24, 192.168.2.0/24 for every department and connect every subnet directly to the internet, using NAT, through a different provider
+0
+A
+4
+What is true about ICMP packets ?
+4
+A. ICMP is encapsulated within UDP datagrams.
+B. They are encapsulated within IP datagrams.
+C. They do not provide hosts with information about network problems.
+D. They guarantee datagram delivery
+0
+B
+2
+Which of the following is a valid IP/Netmask combination?
+5
+A. 209.220.186.8/255.255.255.240
+B. None of the combinations are correct
+C. 209.220.186.8/255.255.255.252
+D. 209.220.186.8/255.255.255.240
+E. 209.220.186.8/255.255.255.248
+0
+A,C,D,E
+2
+All IP addresses form the class 172.16.0.0/12 are private
+2
+A. True
+B. False
+0
+A
+1
+HTTP stands for Hyperspeed Transfer Protocol
+2
+A. True
+B. False
+0
+B
+1
+HTTP stands for Hypertext Transfer Protocol
+2
+A. True
+B. False
+0
+A
+1
+The maximum number of actual hosts from a class C network is
+0
+0
+254
+2
+193.255.20.0 can be a network address
+2
+A. True
+B. False
+0
+A
+1
+How many pairs of address/mask are needed to write the range 193.226.17.224 ... 193.226.23.23 as network/mask in the most compact way?
+0
+0
+6
+4
+A hub understands a MAC address
+2
+A. True
+B. False
+0
+B
+1
+A hub does not understands a MAC address
+2
+A. True
+B. False
+0
+A
+1
+The time-to-live for a packet(TTL) is expressed in:
+5
+A. routers/second
+B. the number of routers the packet has already passed through(incremented by 1)
+C. the number of routers the packet is allowed to pass
+D. milliseconds
+E. seconds
+0
+C
+2
+accept() is not required in any TCP client
+2
+A. True
+B. False
+0
+A
+1
+accept() is required in any TCP client
+2
+A. True
+B. False
+0
+B
+1
+The netmask /30 corresponds to ....(x.y.z.t)
+0
+0
+255.255.255.252
+1
+An IP address is a unique identifier for each computer in a IP network
+2
+A. True
+B. False
+0
+A
+1
+172.15.0.1 is not a private IP address
+2
+A. True
+B. False
+0
+A
+1
+172.15.0.1 is a private IP address
+2
+A. True
+B. False
+0
+B
+1
+Consider one SWITCH and 10 PC's connected to it. Which of the following is false?
+4
+A. when PC1 sends a message to PC5, the message will be received and processed just by PC5 and the answer of PC5 will be received and processed just by PC1
+B. when PC1 sends a message to PC5, the message will be received by all the PC's but only PC5 process it, the answer will be also received by all the PC's but only PC1 will process it
+C. when PC1 sends a message to PC5, the message will be received by all the PC's, each of them sending an answer back
+D. when PC1 sends a message to PC5, the message will be received by all the PC's, but only PC5 process it, the answer is sent back and received only by PC1
+0
+B,C,D
+3
+Broadcasting is:
+4
+A. When a transmitted packet is receive by every machine on the network but processed by none of them
+B. A mechanism which is used when transmission of a packet fails
+C. When a transmitted packet is received by every machine on the network but processed by only one of them
+D. When a transmitted packet is received and processed by every machine on the network
+0
+D
+2
+00:00:00:00:00:00 is not a MAC broadcast address
+2
+A. True
+B. False
+0
+A
+1
+Which of the following cannot be a broadcast address ?
+5
+A. 21.20.19.18
+B. 20.19.18.17
+C. 22.21.20.19
+D. 192.168.1.255
+E. 10.20.30.255
+0
+A,B
+3
+Consider one HUB and 10 PC's connected to it
+4
+A. when PC1 sends a message to PC5, the message will be received by all the PC's but only PC5 process it; the answer will be also received by all the PC's but only PC1 will process it
+B. when PC1 sends a message to PC5, the message will be received by all the PC's, but only PC5 process it; the answer is sent back and received only by PC1
+C. when PC1 sends a message to PC5, the message will be received and processed just by PC5 and the answer of PC5 will be received and processed just by PC1
+D. when PC1 sends a message to PC5, the message will be received by all the PC's, each of them sending back an answer
+0
+A
+2
+A computer can have multiple IP addresses
+2
+A. True
+B. False
+0
+A
+1
+A computer cannot have multiple IP addresses
+2
+A. True
+B. False
+0
+B
+1
+SSH is not located at the Application layer
+2
+A. True
+B. False
+0
+B
+1
+SSH is located at the Application layer
+2
+A. True
+B. False
+0
+A
+1
+The netmask of a network with 1024 IP addresses is /22
+2
+A. True
+B. False
+0
+A
+1
+Which of the following addresses can be valid network addresses provided appropriate network masks?
+5
+A. 193.231.20.0
+B. 193.231.20.2
+C. 193.231.20.1
+D. 193.231.20.3
+E. 193.231.20.4
+0
+A,E
+3
+You have an interface on a router with the IP address of 192.168.192.10/29. Including the router interface, how many hosts can have IP addresses on the LAN attached to the router interface?
+4
+A. 8
+B. 7
+C. 6
+D. 5
+0
+C
+3
+127.0.0.1 it can not be set on a system as default gateway
+2
+A. True
+B. False
+0
+A
+1
+Localhost is 127.0.0.1
+2
+A. True
+B. False
+0
+A
+1
+Localhost is not 127.0.0.1
+2
+A. True
+B. False
+0
+B
+1
+Localhost is 172.0.0.1
+2
+A. True
+B. False
+0
+B
+1
+Localhost is not 172.0.0.1
+2
+A. True
+B. False
+0
+A
+1
+Which protocol(s) are used in the transport of Ping packets?
+5
+A. TCP
+B. IP
+C. ARP
+D. UDP
+E. ICMP
+0
+B,E
+2
+The recvfrom() call reads data from a TCP client
+2
+A. True
+B. False
+0
+B
+1
+The recvfrom() call reads data from a UDP client
+2
+A. True
+B. False
+0
+A
+1
+Write as [network address]/[xx] - in the most compact and ordered way - the addressing space 62.255.254.224...63.64.0.31(if multiple combinations are needed write them separated by commas without spaces or other chars)
+0
+0
+62.255.254.224/27,62.255.255.0/24,63.0.0.0/10,63.64.0.0/27
+5
+Which of the following involve NAT?
+3
+A. Port forwarding.
+B. Accessing the web from an internal network. Your PC's network will be translated to your public IP (i. e. home network)
+C. Address Translation.
+0
+A,B,C
+1
+A switch can transport
+3
+A. UDP packets
+B. IP packets
+C. TCP packets
+0
+A,B,C
+2
+192.168.1.155 belongs to the class 192.168.1.0/24
+2
+A. True
+B. False
+0
+A
+1
+192.168.1.155 belongs to the class 192.168.0.0/24
+2
+A. True
+B. False
+0
+B
+1
+Star is a network topology
+2
+A. True
+B. False
+0
+A
+1
+Star is not a network topology
+2
+A. True
+B. False
+0
+B
+1
+TCP is not located at the Network layer
+2
+A. True
+B. False
+0
+A
+1
+Ring is not a network topology
+2
+A. True
+B. False
+0
+B
+1
+Ring is a network topology
+2
+A. True
+B. False
+0
+A
+1
+Two computers from the internet can have the same IP address if they use private IP addresses
+2
+A. True
+B. False
+0
+A
+1
+A switch can transport IP packets
+2
+A. True
+B. False
+0
+A
+1
+Given the network diagram bellow and the routing talbes for routers R1, R2, R3 - provide the first 4 IP addresses displayed by executing on host S - traceroute 10.0.8.5
+0
+1
+3.png
+10.0.0.1,192.168.2.254,192.168.1.254,192.168.1.1
+5
+The maximum number of valid networks (that can be allocated) in a class A network is
+0
+0
+127
+2
+Which of the following are valid subnetwork addresses?
+4
+A. 177.91.107.0/30
+B. 177.91.107.1/25
+C. 177.91.154.2/30
+D. 177.91.107.144/29
+0
+A,D
+1
+The netmask cannot contain 1 bits intercalated with 0 bits
+2
+A. True
+B. False
+0
+A
+1
+Choose the true statement(s)
+4
+A. Using UDP protocols packets can be lost
+B. UDP reads bytes from a packet
+C. TCP writes stream of bytes
+D. TCP reads bytes from a packet
+0
+A,B,C
+3
+Represent /26 in doted
+0
+0
+255.255.255.192
+2
+The netmask can't be determined using an IP address and the broadcast address
+2
+A. True
+B. False
+0
+A
+1
+A web server can run on ports different than 80
+2
+A. True
+B. False
+0
+A
+1
+A web server cannot run on ports different than 80
+2
+A. True
+B. False
+0
+B
+1
+The broadcast address cannot be calculated using the IP address and the netmask
+2
+A. True
+B. False
+0
+B
+1
+Given the ip address 172.16.1.1 with a mask of 255.255.255.0. How many total subnets could be created? Use the same subnet mask
+0
+0
+64
+3
+A UDP socket is created using the parameters AF_INET and SOCK_STREAM
+2
+A. True
+B. False
+0
+B
+1
+The network address cannot be calculated using the broadcast address and the netmask
+2
+A. True
+B. False
+0
+B
+1
+bind() cannot be used in UDP clients
+2
+A. True
+B. False
+0
+B
+1
+bind() can be used in UDP clients
+2
+A. True
+B. False
+0
+A
+1
+LAN is a global network
+2
+A. True
+B. False
+0
+B
+1
+bind() is required in any UDP client
+2
+A. True
+B. False
+0
+B
+1
+A switch cannot transport TCP packets
+2
+A. True
+B. False
+0
+B
+1
+HTTP is located at the Transport Layer
+2
+A. True
+B. False
+0
+B
+1
+127.0.01 can not be a broadcast address
+2
+A. True
+B. False
+0
+A
+1
+The sendto() call sends data to the TCP client
+2
+A. True
+B. False
+0
+B
+1
+192.168.2.32/27 can be a network address
+2
+A. True
+B. False
+0
+A
+1
+The recvfrom() call sends data to the UDP client
+2
+A. True
+B. False
+0
+B
+1
+UDP waits for a confirmation of the received packets
+2
+A. True
+B. False
+0
+B
+1
+The MAC address has 48 bits
+2
+A. True
+B. False
+0
+A
+1
+accept() is required in any UDP client
+2
+A. True
+B. False
+0
+B
+1
+192.168.0.2/23 and 192.168.1.6/23 belong to the same network
+2
+A. True
+B. False
+0
+A
+1

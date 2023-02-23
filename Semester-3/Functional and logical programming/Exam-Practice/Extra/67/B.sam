@@ -1,0 +1,43 @@
+% B. Să se scrie un program PROLOG care generează lista submulţimilor cu valori din intervalul
+%    [a, b], având număr par de elemente pare și număr impar de elemente impare.
+%    Se vor scrie modelele matematice și modelele de flux pentru predicatele folosite.
+% Exemplu- pentru a=2 și b=4 ⇒ [[2,3,4]]
+
+generateList(B, B, [B]).
+generateList(A, B, [A | R]) :-
+    A1 is A + 1,
+    generateList(A1, B, R).
+
+subsets([], []).
+
+subsets([_ | T], R) :-
+    subsets(T, R).
+
+subsets([H | T], [H | R]) :-
+    subsets(T, R).
+
+
+verify([], E, O) :-
+    E =\= 0, O =\= 0,
+    E mod 2 =:= 0,
+    O mod 2 =:= 1.
+
+
+verify([H | T], E, O) :-
+    H mod 2 =:= 0, !,
+    E1 is E + 1,
+    verify(T, E1, O).
+
+verify([H | T], E, O) :-
+    O1 is O + 1,
+    verify(T, E, O1).
+
+oneSolution(L, R) :-
+    subsets(L, R),
+    verify(R).
+
+
+main(A, B, R) :-
+    generateList(A, B, L),
+    findall(R1, oneSolution(L, R1), R).
+
