@@ -1,0 +1,7 @@
+**/.ignore/**
+**/.vscode/**
+**/.idea/**
+**/.vs/**
+**/Debug/**
+**/Release/**
+**/x64/**
